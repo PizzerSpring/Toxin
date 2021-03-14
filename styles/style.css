@@ -159,3 +159,82 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     border-radius: 22px;
     padding: 9px 20px 10px 20px; }
+
+.main {
+  background-image: url("images/image 3.png");
+  height: 830px; }
+
+.footer {
+  margin-top: 106px; }
+  .footer__topinfo {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+  .footer__text {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 16.7px;
+    color: rgba(31, 32, 65, 0.75);
+    line-height: 24px;
+    margin: 20px 0 0 0; }
+  .footer__logolist {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 13.7px;
+    font-weight: bold;
+    color: #1F2041;
+    text-transform: uppercase; }
+  .footer__menulink {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 16.7px;
+    color: rgba(31, 32, 65, 0.5);
+    line-height: 17px;
+    display: inline-block;
+    margin: 25px 0 0 0; }
+  .footer__e-mail {
+    margin: 26px 0 0 0;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    width: 270px;
+    height: 46px;
+    text-indent: 15px;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 16.7px;
+    color: rgba(31, 32, 65, 0.25);
+    /****/ }
+  .footer__bottominfo {
+    margin: 105px 0 0 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 70px;
+    padding-top: 26px; }
+  .footer__copyright {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    /****/
+    font-size: 16.3px;
+    color: rgba(31, 32, 65, 0.75);
+    text-indent: -3px; }
+  .footer__icon {
+    margin-right: 0; }
+  .footer__iconlink {
+    margin: 0 0 0 20px; }
+
+.column0 {
+  margin-right: 50px; }
+
+.column1 {
+  margin-right: 57px; }
+
+.column2 {
+  margin-right: 95px; }
+
+.column3 {
+  margin-right: 70px; }
+
+.column4 {
+  margin-right: 0; }
