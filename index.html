@@ -32,11 +32,39 @@
             </div>
         </header>
         <main class="main">
+            <form action="" class="main__searchnumber">
+                <h2 class="main__title">Найдём номера под<br> ваши пожелания</h2>
+            <div class="main__topinput">
+                <label class="main__arrival" for="arrival">Прибытие
+                    <input id="arrival" class="main__iarrival" type="date">
+                </label>
+                <label class="main__departure" for="departure">Выезд
+                    <input id="departure" class="main__ideparture" type="date" >
+                </label>
+            </div>
+                <label class="main__guestcount" for="guestcount">Гости
+                    <select id="guestcount" class="main__sguestcount">
+                        <option value="">Сколько гостей</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                    </select>
+                </label>
+                <a class="main__searchbutton" href="">Подобрать номер</a>
+            </form>
+            <span class="main__legend">Лучшие номера для вашей работы,<br> отдыха и просто вдохновения</span>
         </main>
         <footer class="footer">
             <div class="container">
                 <div class="footer__topinfo">
-                    <div class="footer__column column0">
+                    <div class="footer__column1">
                         <div class="footer__logo">
                             <a href=""><img src="styles/images/Logo.svg" alt=""></a>
                         </div>
@@ -44,7 +72,7 @@
                             Бронирование номеров в лучшем<br>отеле 2019 года по версии<br>ассоциации «Отельные взгляды»
                         </p>
                     </div>
-                    <div class="footer__column column1">
+                    <div class="footer__column2">
                         <p class="footer__logolist">навигация</p>
                         <ul class="footer__menu">
                             <li><a href="" class="footer__menulink">О нас</a></li>
@@ -53,7 +81,7 @@
                             <li><a href="" class="footer__menulink">Услуги</a></li>
                         </ul>
                     </div>
-                    <div class="footer__column column2">
+                    <div class="footer__column3">
                         <p class="footer__logolist">о нас</p>
                         <ul class="footer__menu">
                             <li><a href="" class="footer__menulink">О сервисе</a></li>
@@ -62,7 +90,7 @@
                             <li><a href="" class="footer__menulink">Инвесторы</a></li>
                         </ul>
                     </div>
-                    <div class="footer__column column3">
+                    <div class="footer__column4">
                         <p class="footer__logolist">служба поддержки</p>
                         <ul class="footer__menu">
                             <li><a href="" class="footer__menulink">Соглашения</a></li>
@@ -70,16 +98,18 @@
                             <li><a href="" class="footer__menulink">Связь с нами</a></li>
                         </ul>
                     </div>
-                    <div class="footer__column column4">
+                    <div class="footer__column5">
                         <p class="footer__logolist">Подписка</p>
                         <p class="footer__text">Получайте специальные<br> предложения и новости сервиса</p>
                         <form action="" class="footer__send">
-                            <input type="email" placeholder="Email" class="footer__e-mail">
+                            <label for="e-mail">
+                            <input type="email" placeholder="Email" id="e-mail" class="footer__e-mail">
+                            </label>
                         </form>
                     </div>
                 </div>
                 <div class="footer__bottominfo">
-                    <p class="footer__copyright">Copyright © 2018 Toxin отель. Все права зачищены.</p>
+                    <p class="footer__copyright">Copyright &copy; 2018 Toxin отель. Все права зачищены.</p>
                     <p class="footer__icon">
                        <a class="footer__iconlink" href=""><img src="styles/images/twiter.png" alt=""></a>
                        <a class="footer__iconlink" href=""><img src="styles/images/facebook.png" alt=""></a>
