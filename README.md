@@ -1,1 +1,1 @@
-https://pizzerspring.github.io/Toxin/a605289
+https://pizzerspring.github.io/Toxin/
