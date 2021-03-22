@@ -2,15 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 @font-face {
   font-family: 'Conv_Montserrat-Regular';
-  src: url("fonts/Montserrat-Regular.eot");
-  src: local("☺"), url("fonts/Montserrat-Regular.woff") format("woff"), url("fonts/Montserrat-Regular.ttf") format("truetype"), url("fonts/Montserrat-Regular.svg") format("svg");
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Conv_Montserrat-Bold';
-  src: url("fonts/Montserrat-Bold.eot");
-  src: local("☺"), url("fonts/Montserrat-Bold.woff") format("woff"), url("fonts/Montserrat-Bold.ttf") format("truetype"), url("fonts/Montserrat-Bold.svg") format("svg");
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -106,7 +106,9 @@ h1, h2, h3, h4, h5, h6 {
     @media(max-width: $md2+px) {max-width: none; padding: 0 10px;} */ }
 
 .header {
-  padding: 18px 0; }
+  padding: 18px 0;
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
   .header__main {
     display: -webkit-box;
     display: -moz-box;
@@ -136,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Conv_Montserrat-Regular', sans-serif;
     color: rgba(31, 32, 65, 0.5);
     margin: 0 26px 0 0;
-    font-size: 16.7px; }
+    font-size: 14.5px; }
   .header__login {
     font-family: 'Conv_Montserrat-Bold', sans-serif;
     color: #BC9CFF;
@@ -151,7 +153,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Conv_Montserrat-Bold', sans-serif;
     color: #FFFFFF;
     font-weight: bold;
-    font-size: 13.7px;
+    font-size: 12.7px;
     text-transform: uppercase;
     background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
     background: -webkit-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
@@ -176,7 +178,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Conv_Montserrat-Bold', sans-serif;
     color: #1F2041;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 25.5px;
     margin-bottom: 21px; }
   .main__topinput {
     display: -webkit-box;
@@ -191,11 +193,11 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Conv_Montserrat-Bold', sans-serif;
     color: #1F2041;
     font-weight: bold;
-    font-size: 13.7px;
+    font-size: 12.7px;
     text-transform: uppercase; }
   .main__iarrival {
     font-family: 'Conv_Montserrat-Regular', sans-serif;
-    font-size: 14px;
+    font-size: 14.5px;
     color: rgba(31, 32, 65, 0.75);
     text-indent: 8px;
     text-transform: uppercase;
@@ -204,19 +206,17 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 4px;
     width: 160px;
     height: 44px;
-    margin: 6px 0 0 0; }
-  .main__iarrival::-webkit-calendar-picker-indicator {
-    background: url("images/expand_more.png") no-repeat;
-    background-position: 0px 5px; }
+    margin: 6px 0 0 0;
+    background: url("images/expand_more.png") 90% 50% no-repeat; }
   .main__departure {
     font-family: 'Conv_Montserrat-Bold', sans-serif;
     color: #1F2041;
     font-weight: bold;
-    font-size: 13.7px;
+    font-size: 12.7px;
     text-transform: uppercase; }
   .main__ideparture {
     font-family: 'Conv_Montserrat-Regular', sans-serif;
-    font-size: 14px;
+    font-size: 14.5px;
     color: rgba(31, 32, 65, 0.75);
     text-indent: 8px;
     text-transform: uppercase;
@@ -233,13 +233,13 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Conv_Montserrat-Bold', sans-serif;
     color: #1F2041;
     font-weight: bold;
-    font-size: 13.7px;
+    font-size: 12.7px;
     text-transform: uppercase;
     display: block;
     margin: 20px 0 0 0; }
   .main__sguestcount {
     font-family: 'Conv_Montserrat-Regular', sans-serif;
-    font-size: 16.7px;
+    font-size: 14.5px;
     color: rgba(31, 32, 65, 0.5);
     text-indent: 6px;
     display: block;
@@ -267,7 +267,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Conv_Montserrat-Bold', sans-serif;
     color: #ffffff;
     font-weight: bold;
-    font-size: 13.7px;
+    font-size: 12.7px;
     text-transform: uppercase;
     text-align: center; }
   .main__legend {
@@ -275,7 +275,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 764px;
     left: 1056px;
     font-family: 'Conv_Montserrat-Regular', sans-serif;
-    font-size: 16.7px;
+    font-size: 14.5px;
     text-indent: -40px;
     color: rgba(31, 32, 65, 0.75);
     line-height: 24px; }
@@ -300,19 +300,19 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 0; }
   .footer__text {
     font-family: 'Conv_Montserrat-Regular', sans-serif;
-    font-size: 16.7px;
+    font-size: 14.5px;
     color: rgba(31, 32, 65, 0.75);
     line-height: 24px;
     margin: 20px 0 0 0; }
   .footer__logolist {
     font-family: 'Conv_Montserrat-Bold', sans-serif;
-    font-size: 13.7px;
+    font-size: 12.7px;
     font-weight: bold;
     color: #1F2041;
     text-transform: uppercase; }
   .footer__menulink {
     font-family: 'Conv_Montserrat-Regular', sans-serif;
-    font-size: 16.7px;
+    font-size: 14.5px;
     color: rgba(31, 32, 65, 0.5);
     line-height: 17px;
     display: inline-block;
@@ -339,7 +339,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 46px;
     text-indent: 15px;
     font-family: 'Conv_Montserrat-Regular', sans-serif;
-    font-size: 16.7px;
+    font-size: 14.5px;
     color: rgba(31, 32, 65, 0.25);
     /****/ }
   .footer__bottominfo {
@@ -356,8 +356,24 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 26px; }
   .footer__copyright {
     font-family: 'Conv_Montserrat-Regular', sans-serif;
-    font-size: 16.3px;
+    font-size: 14.7px;
     color: rgba(31, 32, 65, 0.75);
     text-indent: -3px; }
   .footer__iconlink {
     margin: 0 0 0 20px; }
+
+/************************************SearchRoomFilter*********************************************/
+.section__numbers {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
+.section__searchfilter {
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%; }
+
+.section__cardnumbers {
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%; }

@@ -2,16 +2,16 @@
 
 @font-face {
 	font-family: 'Conv_Montserrat-Regular';
-	src: url('fonts/Montserrat-Regular.eot');
-	src: local('☺'), url('fonts/Montserrat-Regular.woff') format('woff'), url('fonts/Montserrat-Regular.ttf') format('truetype'), url('fonts/Montserrat-Regular.svg') format('svg');
+	src: url('../fonts/Montserrat-Regular.eot');
+	src: local('☺'), url('../fonts/Montserrat-Regular.woff') format('woff'), url('../fonts/Montserrat-Regular.ttf') format('truetype'), url('../fonts/Montserrat-Regular.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Conv_Montserrat-Bold';
-	src: url('fonts/Montserrat-Bold.eot');
-	src: local('☺'), url('fonts/Montserrat-Bold.woff') format('woff'), url('fonts/Montserrat-Bold.ttf') format('truetype'), url('fonts/Montserrat-Bold.svg') format('svg');
+	src: url('../fonts/Montserrat-Bold.eot');
+	src: local('☺'), url('../fonts/Montserrat-Bold.woff') format('woff'), url('../fonts/Montserrat-Bold.ttf') format('truetype'), url('../fonts/Montserrat-Bold.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -60,6 +60,7 @@ $md4: 479.98;*/
 
  .header {
   padding: 18px 0;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 
   &__main {
     @include flexbox();
@@ -84,7 +85,7 @@ $md4: 479.98;*/
     font-family: 'Conv_Montserrat-Regular', sans-serif;
     color: rgba(31, 32, 65, 0.5);
     margin:  0 26px 0 0;
-    font-size: 16.7px;
+    font-size: 14.5px;
   }
 
   &__login {
@@ -103,7 +104,7 @@ $md4: 479.98;*/
     font-family: 'Conv_Montserrat-Bold', sans-serif;
     color: #FFFFFF;
     font-weight: bold;
-    font-size: 13.7px;
+    font-size: 12.7px;
     text-transform: uppercase;
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     border-radius: 22px;
@@ -130,7 +131,7 @@ $md4: 479.98;*/
     font-family: 'Conv_Montserrat-Bold', sans-serif;
     color: #1F2041;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 25.5px;
     margin-bottom: 21px;
   }
 
@@ -143,12 +144,12 @@ $md4: 479.98;*/
     font-family: 'Conv_Montserrat-Bold', sans-serif;
     color: #1F2041;
     font-weight: bold;
-    font-size: 13.7px;
+    font-size: 12.7px;
     text-transform: uppercase;
   }
   &__iarrival {
     font-family: 'Conv_Montserrat-Regular', sans-serif;
-    font-size: 14px;
+    font-size: 14.5px;
     color: rgba(31, 32, 65, 0.75);
     text-indent: 8px;
     text-transform: uppercase;
@@ -158,23 +159,20 @@ $md4: 479.98;*/
     width: 160px;
     height: 44px;
     margin: 6px 0 0 0;
-  }
-  &__iarrival::-webkit-calendar-picker-indicator {
-    background: url('images/expand_more.png') no-repeat;
-    background-position: 0px 5px;
+    background: url('images/expand_more.png') 90% 50% no-repeat;
   }
 
   &__departure {
     font-family: 'Conv_Montserrat-Bold', sans-serif;
     color: #1F2041;
     font-weight: bold;
-    font-size: 13.7px;
+    font-size: 12.7px;
     text-transform: uppercase;
   }
 
   &__ideparture {
     font-family: 'Conv_Montserrat-Regular', sans-serif;
-    font-size: 14px;
+    font-size: 14.5px;
     color: rgba(31, 32, 65, 0.75);
     text-indent: 8px;
     text-transform: uppercase;
@@ -194,7 +192,7 @@ $md4: 479.98;*/
     font-family: 'Conv_Montserrat-Bold', sans-serif;
     color: #1F2041;
     font-weight: bold;
-    font-size: 13.7px;
+    font-size: 12.7px;
     text-transform: uppercase;
     display: block;
     margin: 20px 0 0 0;
@@ -202,7 +200,7 @@ $md4: 479.98;*/
 
   &__sguestcount {
     font-family: 'Conv_Montserrat-Regular', sans-serif;
-    font-size: 16.7px;
+    font-size: 14.5px;
     color: rgba(31, 32, 65, 0.5);
     text-indent: 6px;
     display: block;
@@ -228,7 +226,7 @@ $md4: 479.98;*/
     font-family: 'Conv_Montserrat-Bold', sans-serif;
     color: #ffffff;
     font-weight: bold;
-    font-size: 13.7px;
+    font-size: 12.7px;
     text-transform: uppercase;
     text-align: center;
   }
@@ -238,7 +236,7 @@ $md4: 479.98;*/
     top: 764px;
     left: 1056px;
     font-family: 'Conv_Montserrat-Regular', sans-serif;
-    font-size: 16.7px;
+    font-size: 14.5px;
     text-indent: -40px;
     color: rgba(31, 32, 65, 0.75);
     line-height: 24px;
@@ -269,7 +267,7 @@ $md4: 479.98;*/
 
   &__text {
     font-family: 'Conv_Montserrat-Regular', sans-serif;
-    font-size: 16.7px;
+    font-size: 14.5px;
     color: rgba(31, 32, 65, 0.75);
     line-height: 24px;
     margin: 20px 0 0 0;
@@ -277,7 +275,7 @@ $md4: 479.98;*/
 
   &__logolist {
     font-family: 'Conv_Montserrat-Bold', sans-serif;
-    font-size: 13.7px;
+    font-size: 12.7px;
     font-weight: bold;
     color: #1F2041;
     text-transform: uppercase;
@@ -285,7 +283,7 @@ $md4: 479.98;*/
 
   &__menulink {
     font-family: 'Conv_Montserrat-Regular', sans-serif;
-    font-size: 16.7px;
+    font-size: 14.5px;
     color: rgba(31, 32, 65, 0.5);
     line-height: 17px;
     display: inline-block;
@@ -316,7 +314,7 @@ $md4: 479.98;*/
     height: 46px;
     text-indent: 15px;
     font-family: 'Conv_Montserrat-Regular', sans-serif;
-    font-size: 16.7px;
+    font-size: 14.5px;
     color: rgba(31, 32, 65, 0.25); /****/
   }
 
@@ -330,7 +328,7 @@ $md4: 479.98;*/
 
   &__copyright {
     font-family: 'Conv_Montserrat-Regular', sans-serif;
-    font-size: 16.3px;
+    font-size: 14.7px;
     color: rgba(31, 32, 65, 0.75);
     text-indent: -3px;
    
@@ -340,6 +338,250 @@ $md4: 479.98;*/
     margin: 0 0 0 20px;
   }
 }
+/************************************SearchRoomFilter*********************************************/
+
+.section {
+
+  // .section__numbers
+
+  &__numbers {
+    @include flexbox();
+  }
+
+  // .section__searchfilter
+
+  &__searchfilter {
+    flex-basis: 50%;
+  }
+
+  // .section__darrival
+
+  &__darrival {
+  }
+
+  // .section__idarrival
+
+  &__idarrival {
+  }
+
+  // .section__guests
+
+  &__guests {
+  }
+
+  // .section__iguests
+
+  &__iguests {
+  }
+
+  // .section__rangePrice
+
+  &__rangePrice {
+  }
+
+  // .section__irangePrice
+
+  &__irangePrice {
+  }
+
+  // .section__homeRules
+
+  &__homeRules {
+  }
+
+  // .section__smoke
+
+  &__smoke {
+  }
+
+  // .section__ismoke
+
+  &__ismoke {
+  }
+
+  // .section__pet
+
+  &__pet {
+  }
+
+  // .section__ipet
+
+  &__ipet {
+  }
+
+  // .section__invite
+
+  &__invite {
+  }
+
+  // .section__iinvite
+
+  &__iinvite {
+  }
+
+  // .section__availability
+
+  &__availability {
+  }
+
+  // .section__hall
+
+  &__hall {
+  }
+
+  // .section__ihall
+
+  &__ihall {
+  }
+
+  // .section__invalid
+
+  &__invalid {
+  }
+
+  // .section__iinvalid
+
+  &__iinvalid {
+  }
+
+  // .section__comfort
+
+  &__comfort {
+  }
+
+  // .section__scomfort
+
+  &__scomfort {
+  }
+
+  // .section__morecomfort
+
+  &__morecomfort {
+  }
+
+  // .section__breakfast
+
+  &__breakfast {
+  }
+
+  // .section__ibreakfast
+
+  &__ibreakfast {
+  }
+
+  // .section__wtitetable
+
+  &__wtitetable {
+  }
+
+  // .section__iwtitetable
+
+  &__iwtitetable {
+  }
+
+  // .section__chair
+
+  &__chair {
+  }
+
+  // .section__ichair
+
+  &__ichair {
+  }
+
+  // .section__bed
+
+  &__bed {
+  }
+
+  // .section__ibed
+
+  &__ibed {
+  }
+
+  // .section__tv
+
+  &__tv {
+  }
+
+  // .section__itv
+
+  &__itv {
+  }
+
+  // .section__shampoo
+
+  &__shampoo {
+  }
+
+  // .section__ishampoo
+
+  &__ishampoo {
+  }
+
+  // .section__cardnumbers
+
+  &__cardnumbers {
+    flex-basis: 50%;
+  }
+
+  // .section__cardnumberstitle
+
+  &__cardnumberstitle {
+  }
+
+  // .section__gridcontainer
+
+  &__gridcontainer {
+  }
+
+  // .section__cardhotel
+
+  &__cardhotel {
+  }
+
+  // .section__numberphoto
+
+  &__numberphoto {
+  }
+
+  // .section__number
+
+  &__number {
+  }
+
+  // .section__price
+
+  &__price {
+  }
+
+  // .section__raiting
+
+  &__raiting {
+  }
+
+  // .section__reviews
+
+  &__reviews {
+  }
+
+  // .section__list
+
+  &__list {
+  }
+
+  // .section__page
+
+  &__page {
+  }
+
+  // .section__legend
+
+  &__legend {
+  }
+}
+
+
 
 
 

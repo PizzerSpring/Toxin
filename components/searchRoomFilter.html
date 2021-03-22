@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toxin</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__main">
+                    <div class="header__logo">
+                        <a href=""><img src="../styles/images/Logo.svg" alt=""></a>
+                    </div>
+                    <nav class="header__nav">
+                        <ul class="header__menu">
+                            <li><a class="header__menulink" href="">О нас</a></li>
+                            <li><a class="header__menulink" href="">Услуги</a></li>
+                            <li><a class="header__menulink icon" href="">Вакансии</a></li>
+                            <li><a class="header__menulink" href="">Новости</a></li>
+                            <li><a class="header__menulink" href="">Соглашения</a></li>
+                            <li><a href="" class="header__login icon">Войти</a></li>
+                            <li><a href="" class="header__reg">Зарегистрироваться</a>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section class="section">
+            <div class="container">
+                <div class="section__numbers">
+                    <form action="" class="section__searchfilter">
+                        <label class="section__darrival" for="darrival">
+                            Даты пребывания в отеле
+                            <input placeholder="19 авг - 23 авг" id="darrival" class="section__idarrival" type="text">
+                        </label>
+                        <label class="section__guests" for="guests">
+                            Гости
+                            <input placeholder="3 гостя, 1 младенец" id="guests" class="section__iguests" type="text">
+                        </label>
+                        <label class="section__rangePrice" for="rangePrice">
+                            Диапазон цены
+                            <input id="rangePrice" class="section__irangePrice" type="range">
+                        </label>
+                        <div class="section__homeRules">
+                            Правила дома
+                            <label class="section__smoke" for="smoke">
+                            <input id="smoke" class="section__ismoke" type="checkbox"> Можно курить
+                            </label>
+                            <label class="section__pet" for="pet">
+                            <input id="pet" class="section__ipet" type="checkbox"> Можно с питомцами
+                            </label>
+                            <label class="section__invite" for="invite">
+                            <input id="invite" class="section__iinvite" type="checkbox"> Можно пригласить гостей(до 10 человек)
+                            </label>
+                        </div>
+                        <div class="section__availability">
+                            Доступность
+                            <label class="section__hall" for="hall">
+                            <input id="hall" class="section__ihall" type="checkbox"> Широкий коридор Ширина коридоров в номере не менее 91 см.
+                            </label>
+                            <label class="section__invalid" for="invalid">
+                            <input id="invalid" class="section__iinvalid" type="checkbox"> Помощник для инвалидов На 1 этаже вас встретит специалист  и проводит до номера.
+                            </label>
+                        </div>
+                        <label class="section__comfort" for="comfort">
+                            <select name="" id="comfort" class="section__scomfort">
+                                <option value="">2 спальни 2 кровати</option>
+                            </select>
+                        </label>
+                        <div class="section__morecomfort">
+                            Дополнительные удобства
+                            <label class="section__breakfast" for="breakfast">
+                            <input id="breakfast" class="section__ibreakfast" type="checkbox"> Завтрак
+                            </label>
+                            <label class="section__wtitetable" for="wtitetable">
+                            <input id="wtitetable" class="section__iwtitetable" type="checkbox"> Письменный стол
+                            </label>
+                            <label class="section__chair" for="chair">
+                            <input id="chair" class="section__ichair" type="checkbox"> Стул для кормления
+                            </label>
+                            <label class="section__bed" for="bed">
+                            <input id="bed" class="section__ibed" type="checkbox"> Кроватка
+                            </label>
+                            <label class="section__tv" for="tv">
+                            <input id="tv" class="section__itv" type="checkbox"> Телевизор
+                            </label>
+                            <label class="section__shampoo" for="shampoo">
+                            <input id="shampoo" class="section__ishampoo" type="checkbox"> Шампунь
+                            </label>
+                        </div>
+                    </form>
+                    <div class="section__cardnumbers">
+                        <h2 class="section__cardnumberstitle">Номера, которые мы для вас подобрали</h2>
+                        <div class="section__gridcontainer">
+                            <div class="section__cardhotel">
+                                <img class="section__numberphoto" src="../styles/images/image.png" alt="">
+                                <p class="section__number"></p>
+                                <p class="section__price"></p>
+                                <p class="section__raiting"></p>
+                                <p class="section__reviews"></p>
+                            </div>
+                            <div class="section__cardhotel"></div>
+                            <div class="section__cardhotel"></div>
+                            <div class="section__cardhotel"></div>
+                            <!-- Карточки номеров-->
+                        </div>
+                        <div class="section__list">
+                            <div class="section__page">1 2 3 4 5 ... 15</div>
+                            <div class="section__legend">1 – 12 из 100+ вариантов аренды</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- <footer class="footer">
+            <div class="container">
+                <div class="footer__topinfo">
+                    <div class="footer__column1">
+                        <div class="footer__logo">
+                            <a href=""><img src="../styles/images/Logo.svg" alt=""></a>
+                        </div>
+                        <p class="footer__text">
+                            Бронирование номеров в лучшем<br>отеле 2019 года по версии<br>ассоциации «Отельные взгляды»
+                        </p>
+                    </div>
+                    <div class="footer__column2">
+                        <p class="footer__logolist">навигация</p>
+                        <ul class="footer__menu">
+                            <li><a href="" class="footer__menulink">О нас</a></li>
+                            <li><a href="" class="footer__menulink">Новости</a></li>
+                            <li><a href="" class="footer__menulink">Служба поддержки</a></li>
+                            <li><a href="" class="footer__menulink">Услуги</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column3">
+                        <p class="footer__logolist">о нас</p>
+                        <ul class="footer__menu">
+                            <li><a href="" class="footer__menulink">О сервисе</a></li>
+                            <li><a href="" class="footer__menulink">Наша команда</a></li>
+                            <li><a href="" class="footer__menulink">Вакансии</a></li>
+                            <li><a href="" class="footer__menulink">Инвесторы</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column4">
+                        <p class="footer__logolist">служба поддержки</p>
+                        <ul class="footer__menu">
+                            <li><a href="" class="footer__menulink">Соглашения</a></li>
+                            <li><a href="" class="footer__menulink">Сообщества</a></li>
+                            <li><a href="" class="footer__menulink">Связь с нами</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column5">
+                        <p class="footer__logolist">Подписка</p>
+                        <p class="footer__text">Получайте специальные<br> предложения и новости сервиса</p>
+                        <form action="" class="footer__send">
+                            <label for="e-mail">
+                            <input type="email" placeholder="Email" id="e-mail" class="footer__e-mail">
+                            </label>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer__bottominfo">
+                    <p class="footer__copyright">Copyright &copy; 2018 Toxin отель. Все права зачищены.</p>
+                    <p class="footer__icon">
+                       <a class="footer__iconlink" href=""><img src="styles/images/twiter.png" alt=""></a>
+                       <a class="footer__iconlink" href=""><img src="styles/images/facebook.png" alt=""></a>
+                       <a class="footer__iconlink" href=""><img src="styles/images/instagram.png" alt=""></a>
+                    </p>
+                </div>
+            </div>
+        </footer> -->
+    </div>
+</body>
+
+</html>
