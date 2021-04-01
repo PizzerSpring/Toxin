@@ -45,30 +45,31 @@
                         </label>
                         <label class="section__rangePrice" for="rangePrice">
                             Диапазон цены
-                            <input id="rangePrice" class="section__irangePrice" type="range">
+                            <span class="section__irangePrisescount">5 000₽ - 10 000₽</span>
+                            <input id="rangePrice" class="section__irangePrice" type="range"><span class="section__irangePrices">Стоимость за сутки пребывания в номере</span>
                         </label>
                         <div class="section__homeRules">
                             Правила дома
                             <label class="section__smoke" for="smoke">
-                            <input id="smoke" class="section__ismoke" type="checkbox"> Можно курить
+                            <input id="smoke" class="section__ismoke" type="checkbox"><span class="section__ismokes">Можно курить</span>
                             </label>
                             <label class="section__pet" for="pet">
-                            <input id="pet" class="section__ipet" type="checkbox"> Можно с питомцами
+                            <input id="pet" class="section__ipet" type="checkbox"><span class="section__ipets">Можно с питомцами</span>
                             </label>
                             <label class="section__invite" for="invite">
-                            <input id="invite" class="section__iinvite" type="checkbox"> Можно пригласить гостей(до 10 человек)
+                            <input id="invite" class="section__iinvite" type="checkbox"><span class="section__iinvites">Можно пригласить гостей<br>(до 10 человек)</span>
                             </label>
                         </div>
                         <div class="section__availability">
                             Доступность
                             <label class="section__hall" for="hall">
-                            <input id="hall" class="section__ihall" type="checkbox"> Широкий коридор Ширина коридоров в номере не менее 91 см.
+                            <input id="hall" class="section__ihall" type="checkbox"><span class="section__ihallm">Широкий коридор</span><span class="section__ihalls">Ширина коридоров в номере<br> не менее 91 см.</span>
                             </label>
                             <label class="section__invalid" for="invalid">
-                            <input id="invalid" class="section__iinvalid" type="checkbox"> Помощник для инвалидов На 1 этаже вас встретит специалист  и проводит до номера.
+                            <input id="invalid" class="section__iinvalid" type="checkbox"><span class="section__iinvalidm">Помощник для инвалидов</span><span class="section__iinvalids">На 1 этаже вас встретит специалист<br>  и проводит до номера.</span>
                             </label>
                         </div>
-                        <label class="section__comfort" for="comfort">
+                        <label class="section__comfort" for="comfort">Удобства номера
                             <select name="" id="comfort" class="section__scomfort">
                                 <option value="">2 спальни 2 кровати</option>
                             </select>
@@ -76,42 +77,249 @@
                         <div class="section__morecomfort">
                             Дополнительные удобства
                             <label class="section__breakfast" for="breakfast">
-                            <input id="breakfast" class="section__ibreakfast" type="checkbox"> Завтрак
+                            <input id="breakfast" class="section__ibreakfast" type="checkbox"><span class="section__ibreakfasts">Завтрак</span>
                             </label>
-                            <label class="section__wtitetable" for="wtitetable">
-                            <input id="wtitetable" class="section__iwtitetable" type="checkbox"> Письменный стол
+                            <label class="section__writetable" for="writetable">
+                            <input id="writetable" class="section__iwritetable" type="checkbox"><span class="section__iwritetables">Письменный стол</span>
                             </label>
                             <label class="section__chair" for="chair">
-                            <input id="chair" class="section__ichair" type="checkbox"> Стул для кормления
+                            <input id="chair" class="section__ichair" type="checkbox"><span class="section__ichairs">Стул для кормления</span>
                             </label>
                             <label class="section__bed" for="bed">
-                            <input id="bed" class="section__ibed" type="checkbox"> Кроватка
+                            <input id="bed" class="section__ibed" type="checkbox"><span class="section__ibeds">Кроватка</span>
                             </label>
                             <label class="section__tv" for="tv">
-                            <input id="tv" class="section__itv" type="checkbox"> Телевизор
+                            <input id="tv" class="section__itv" type="checkbox"><span class="section__itvs">Телевизор</span>
                             </label>
                             <label class="section__shampoo" for="shampoo">
-                            <input id="shampoo" class="section__ishampoo" type="checkbox"> Шампунь
+                            <input id="shampoo" class="section__ishampoo" type="checkbox"><span class="section__ishampoos">Шампунь</span>
                             </label>
                         </div>
                     </form>
                     <div class="section__cardnumbers">
                         <h2 class="section__cardnumberstitle">Номера, которые мы для вас подобрали</h2>
                         <div class="section__gridcontainer">
-                            <div class="section__cardhotel">
+                            <div class="section__cardhotel"> 
                                 <img class="section__numberphoto" src="../styles/images/image.png" alt="">
-                                <p class="section__number"></p>
-                                <p class="section__price"></p>
-                                <p class="section__raiting"></p>
-                                <p class="section__reviews"></p>
+                                <span class="section__circlewhite"></span>
+                                <span class="section__circle1"></span>
+                                <span class="section__circle2"></span>
+                                <span class="section__circle3"></span>
+                                <p class="section__number">№ 888 <span class="section__lux">люкс</span></p>
+                                <p class="section__pricelux">9 990₽ <span class="section__day">в сутки</span></p>
+                                <hr class="section__cardline">
+                                <p class="section__raiting">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                </p>
+                                <p class="section__reviews">145 <span class="section__revs">Отзывов</span></p>
                             </div>
-                            <div class="section__cardhotel"></div>
-                            <div class="section__cardhotel"></div>
-                            <div class="section__cardhotel"></div>
-                            <!-- Карточки номеров-->
+                            <div class="section__cardhotel">
+                                <img class="section__numberphoto" src="../styles/images/image4.png" alt="">
+                                <span class="section__circlewhite"></span>
+                                <span class="section__circle1"></span>
+                                <span class="section__circle2"></span>
+                                <span class="section__circle3"></span>
+                                <p class="section__number">№ 840</p>
+                                <p class="section__price">9 900₽ <span class="section__day">в сутки</span></p>
+                                <hr class="section__cardline">
+                                <p class="section__raiting">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                </p>
+                                <p class="section__reviews">65 <span class="section__revs">Отзывов</span></p>
+                            </div>
+                            <div class="section__cardhotel">
+                                <img class="section__numberphoto" src="../styles/images/image5.png" alt="">
+                                <span class="section__circlewhite"></span>
+                                <span class="section__circle1"></span>
+                                <span class="section__circle2"></span>
+                                <span class="section__circle3"></span>
+                                <p class="section__number">№ 980 <span class="section__lux">люкс</span></p>
+                                <p class="section__pricelux">8 500₽ <span class="section__day">в сутки</span></p>
+                                <hr class="section__cardline">
+                                <p class="section__raiting">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                </p>
+                                <p class="section__reviews">35 <span class="section__revs">Отзывов</span></p>
+                            </div>
+                            <div class="section__cardhotel">
+                                <img class="section__numberphoto" src="../styles/images/image6.png" alt="">
+                                <span class="section__circlewhite"></span>
+                                <span class="section__circle1"></span>
+                                <span class="section__circle2"></span>
+                                <span class="section__circle3"></span>
+                                <p class="section__number">№ 856</p>
+                                <p class="section__price">7 300₽ <span class="section__day">в сутки</span></p>
+                                <hr class="section__cardline">
+                                <p class="section__raiting">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                </p>
+                                <p class="section__reviews">19 <span class="section__revs">Отзывов</span></p>
+                            </div>
+                            <div class="section__cardhotel">
+                                <img class="section__numberphoto" src="../styles/images/image 7.1.png" alt="">
+                                <span class="section__circlewhite"></span>
+                                <span class="section__circle1"></span>
+                                <span class="section__circle2"></span>
+                                <span class="section__circle3"></span>
+                                <p class="section__number">№ 740</p>
+                                <p class="section__price">6 000₽ <span class="section__day">в сутки</span></p>
+                                <hr class="section__cardline">
+                                <p class="section__raiting">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                </p>
+                                <p class="section__reviews">44 <span class="section__revs">Отзывов</span></p>
+                            </div>
+                            <div class="section__cardhotel">
+                                <img class="section__numberphoto" src="../styles/images/image 7.2.png" alt="">
+                                <span class="section__circlewhite"></span>
+                                <span class="section__circle1"></span>
+                                <span class="section__circle2"></span>
+                                <span class="section__circle3"></span>
+                                <p class="section__number">№ 982</p>
+                                <p class="section__price">5 800₽ <span class="section__day">в сутки</span></p>
+                                <hr class="section__cardline">
+                                <p class="section__raiting">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                </p>
+                                <p class="section__reviews">56 <span class="section__revs">Отзывов</span></p>
+                            </div>
+                            <div class="section__cardhotel">
+                                <img class="section__numberphoto" src="../styles/images/image 7.png" alt="">
+                                <span class="section__circlewhite"></span>
+                                <span class="section__circle1"></span>
+                                <span class="section__circle2"></span>
+                                <span class="section__circle3"></span>
+                                <p class="section__number">№ 678</p>
+                                <p class="section__price">5 500₽ <span class="section__day">в сутки</span></p>
+                                <hr class="section__cardline">
+                                <p class="section__raiting">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                </p>
+                                <p class="section__reviews">45 <span class="section__revs">Отзывов</span></p>
+                            </div>
+                            <div class="section__cardhotel">
+                                <img class="section__numberphoto" src="../styles/images/image 8.png" alt="">
+                                <span class="section__circlewhite"></span>
+                                <span class="section__circle1"></span>
+                                <span class="section__circle2"></span>
+                                <span class="section__circle3"></span>
+                                <p class="section__number">№ 450</p>
+                                <p class="section__price">5 300₽ <span class="section__day">в сутки</span></p>
+                                <hr class="section__cardline">
+                                <p class="section__raiting">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                </p>
+                                <p class="section__reviews">39 <span class="section__revs">Отзывов</span></p>
+                            </div>
+                            <div class="section__cardhotel">
+                                <img class="section__numberphoto" src="../styles/images/image 9.png" alt="">
+                                <span class="section__circlewhite"></span>
+                                <span class="section__circle1"></span>
+                                <span class="section__circle2"></span>
+                                <span class="section__circle3"></span>
+                                <p class="section__number">№ 350</p>
+                                <p class="section__price">5 000₽ <span class="section__day">в сутки</span></p>
+                                <hr class="section__cardline">
+                                <p class="section__raiting">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                </p>
+                                <p class="section__reviews">77 <span class="section__revs">Отзывов</span></p>
+                            </div>
+                            <div class="section__cardhotel">
+                                <img class="section__numberphoto" src="../styles/images/image 10.png" alt="">
+                                <span class="section__circlewhite"></span>
+                                <span class="section__circle1"></span>
+                                <span class="section__circle2"></span>
+                                <span class="section__circle3"></span>
+                                <p class="section__number">№ 666</p>
+                                <p class="section__price">5 000₽ <span class="section__day">в сутки</span></p>
+                                <hr class="section__cardline">
+                                <p class="section__raiting">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                </p>
+                                <p class="section__reviews">25 <span class="section__revs">Отзывов</span></p>
+                            </div>
+                            <div class="section__cardhotel">
+                                <img class="section__numberphoto" src="../styles/images/image 11.png" alt="">
+                                <span class="section__circlewhite"></span>
+                                <span class="section__circle1"></span>
+                                <span class="section__circle2"></span>
+                                <span class="section__circle3"></span>
+                                <p class="section__number">№ 444</p>
+                                <p class="section__price">5 000₽ <span class="section__day">в сутки</span></p>
+                                <hr class="section__cardline">
+                                <p class="section__raiting">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                </p>
+                                <p class="section__reviews">15 <span class="section__revs">Отзывов</span></p>
+                            </div>
+                            <div class="section__cardhotel">
+                                <img class="section__numberphoto" src="../styles/images/image 12.png" alt="">
+                                <span class="section__circlewhite"></span>
+                                <span class="section__circle1"></span>
+                                <span class="section__circle2"></span>
+                                <span class="section__circle3"></span>
+                                <p class="section__number">№ 352</p>
+                                <p class="section__price">5 000₽ <span class="section__day">в сутки</span></p>
+                                <hr class="section__cardline">
+                                <p class="section__raiting">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                    <img class="section__star" src="../styles/images/star.png" alt="">
+                                </p>
+                                <p class="section__reviews">55 <span class="section__revs">Отзывов</span></p>
+                            </div>
                         </div>
                         <div class="section__list">
-                            <div class="section__page">1 2 3 4 5 ... 15</div>
+                            <div class="section__page"><a class="section__onepage" href="">1</a> 2 3 ... 15 
+                               <a href=""><img class="section__nextpagearrow" src="../styles/images/nextpagearrow.png" alt=""></a> 
+                            </div>
                             <div class="section__legend">1 – 12 из 100+ вариантов аренды</div>
                         </div>
                     </div>
@@ -120,7 +328,7 @@
             </div>
         </section>
 
-        <!-- <footer class="footer">
+         <footer class="footer">
             <div class="container">
                 <div class="footer__topinfo">
                     <div class="footer__column1">
@@ -176,7 +384,7 @@
                     </p>
                 </div>
             </div>
-        </footer> -->
+        </footer> 
     </div>
 </body>
 
