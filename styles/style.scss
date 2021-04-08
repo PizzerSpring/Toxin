@@ -1593,6 +1593,353 @@ $md4: 479.98;*/
   }
 }
 
+/************************************************login*********************************************/
+
+.sectionlogin {
+  background: url('images/loginreg.png');
+  height: 770px;
+  position: relative;
+
+  &__loginform {
+    width: 380px;
+    height: 358px;
+    padding: 40px 30px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 530px;
+    top: 230px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  // .sectionlogin__logintitle
+
+  &__logintitle {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #1F2041;
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  // .sectionlogin__usertitle
+
+  &__usertitle {
+  }
+
+  // .sectionlogin__iusertitle
+
+  &__iusertitle {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.25);
+    text-indent: 15px;
+    display: block;
+    margin: 20px 0 0 0;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 320px;
+    height: 44px;
+  }
+
+  // .sectionlogin__pass
+
+  &__pass {
+  }
+
+  // .sectionlogin__ipass
+
+  &__ipass {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.25);
+    text-indent: 15px;
+    display: block;
+    margin: 10px 0 0 0;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 320px;
+    height: 44px;
+  }
+
+  // .sectionlogin__signin
+
+  &__signin {
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 14px 0 15px 0;
+    width: 320px;
+    height: 44px;
+    background:  url('images/arrow_forwardright.png') 95% 50% no-repeat, 
+    linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  // .sectionlogin__noaccaunt
+
+  &__noaccaunt {
+    display: inline-block;
+    margin: 0 47px 0 0;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: #000000;
+  }
+
+  // .sectionlogin__create
+
+  &__create {
+    display: inline-block;
+    margin: 30px 0 0 0;
+    padding: 13px 0 15px 0;
+    width: 99px;
+    height: 44px;
+    border-radius: 22px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #BC9CFF;
+    background: #ffffff;
+    border: 2px solid #BC9CFF;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+
+/********************************************registration******************************************/
+
+.sectionregistration {
+  background: url('images/loginreg.png');
+  height: 770px;
+  position: relative;
+
+  // .sectionregistration__registrationform
+
+  &__registrationform {
+    width: 380px;
+    height: 646px;
+    padding: 40px 30px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 530px;
+    top: 19px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  // .sectionregistration__registrationtitle
+
+  &__registrationtitle {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #1F2041;
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  // .sectionregistration__name
+
+  &__name {
+  }
+
+  // .sectionregistration__iname
+
+  &__iname {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.25);
+    text-indent: 15px;
+    display: block;
+    margin: 20px 0 0 0;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 320px;
+    height: 44px;
+  }
+
+  // .sectionregistration__surname
+
+  &__surname {
+  }
+
+  // .sectionregistration__isurname
+
+  &__isurname {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.25);
+    text-indent: 15px;
+    display: block;
+    margin: 20px 0 0 0;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 320px;
+    height: 44px;
+  }
+
+  // .sectionregistration__malefemale
+
+  &__imale {
+    display: inline-block;
+    margin: 10.5px 0 0 0;
+  }
+
+  &__smale {
+    display: inline-block;
+    margin: 0 20px 0 14px;
+  }
+
+  &__ifemale {
+  }
+
+  &__sfemale {
+    display: inline-block;
+    margin: 0 0 0 14px;
+  }
+
+  // .sectionregistration__birth
+
+  &__birth {
+    display: block;
+    margin: 19.5px 0 0 0;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #1F2041;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase;
+  }
+
+  // .sectionregistration__ibirth
+
+  &__ibirth {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.25);
+    text-indent: 15px;
+    display: block;
+    margin: 5px 0 0 0;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 320px;
+    height: 44px;
+  }
+
+  // .sectionregistration__mail
+
+  &__mail {
+    display: block;
+    margin: 20px 0 0 0;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #1F2041;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase;
+  }
+
+  // .sectionregistration__imail
+
+  &__imail {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.25);
+    text-indent: 15px;
+    display: block;
+    margin: 5px 0 0 0;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 320px;
+    height: 44px;
+  }
+
+  // .sectionregistration__passlog
+
+  &__passlog {
+  }
+
+  // .sectionregistration__ipasslog
+
+  &__ipasslog {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.25);
+    text-indent: 15px;
+    display: block;
+    margin: 10px 0 0 0;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 320px;
+    height: 44px;
+  }
+
+  // .sectionregistration__slider
+
+  &__slider {
+    display: inline-block;
+    margin: 10px 10px 0 0;
+  }
+
+  // .sectionregistration__specialoffers
+
+  &__specialoffers {
+    display: inline-block;
+    margin: 13px 0 0 0;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  // .sectionregistration__registrlog
+
+  &__registrlog {
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 14px 0 15px 0;
+    width: 320px;
+    height: 44px;
+    background:  url('images/arrow_forwardright.png') 95% 50% no-repeat, 
+    linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  // .sectionregistration__haceanaccount
+
+  &__haceanaccount {
+    display: inline-block;
+    margin: 0 22px 0 0;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: #000000;
+  }
+
+  // .sectionregistration__signinreg
+
+  &__signinreg {
+    display: inline-block;
+    margin: 30px 0 0 0;
+    padding: 13px 0 15px 0;
+    width: 99px;
+    height: 44px;
+    border-radius: 22px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #BC9CFF;
+    background: #ffffff;
+    border: 2px solid #BC9CFF;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+/************************************************UIkit*********************************************/
+
 
 
 

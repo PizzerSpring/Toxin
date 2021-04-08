@@ -1221,3 +1221,234 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 12.7px;
     text-transform: uppercase;
     text-align: center; }
+
+/************************************************login*********************************************/
+.sectionlogin {
+  background: url("images/loginreg.png");
+  height: 770px;
+  position: relative; }
+  .sectionlogin__loginform {
+    width: 380px;
+    height: 358px;
+    padding: 40px 30px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 530px;
+    top: 230px;
+    -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2); }
+  .sectionlogin__logintitle {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #1F2041;
+    font-weight: bold;
+    font-size: 24px; }
+  .sectionlogin__iusertitle {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.25);
+    text-indent: 15px;
+    display: block;
+    margin: 20px 0 0 0;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 320px;
+    height: 44px; }
+  .sectionlogin__ipass {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.25);
+    text-indent: 15px;
+    display: block;
+    margin: 10px 0 0 0;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 320px;
+    height: 44px; }
+  .sectionlogin__signin {
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 14px 0 15px 0;
+    width: 320px;
+    height: 44px;
+    background: url("images/arrow_forwardright.png") 95% 50% no-repeat, -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+    background: url("images/arrow_forwardright.png") 95% 50% no-repeat, -webkit-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
+    background: url("images/arrow_forwardright.png") 95% 50% no-repeat, -o-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
+    background: url("images/arrow_forwardright.png") 95% 50% no-repeat, linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase;
+    text-align: center; }
+  .sectionlogin__noaccaunt {
+    display: inline-block;
+    margin: 0 47px 0 0;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: #000000; }
+  .sectionlogin__create {
+    display: inline-block;
+    margin: 30px 0 0 0;
+    padding: 13px 0 15px 0;
+    width: 99px;
+    height: 44px;
+    border-radius: 22px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #BC9CFF;
+    background: #ffffff;
+    border: 2px solid #BC9CFF;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase;
+    text-align: center; }
+
+/********************************************registration******************************************/
+.sectionregistration {
+  background: url("images/loginreg.png");
+  height: 770px;
+  position: relative; }
+  .sectionregistration__registrationform {
+    width: 380px;
+    height: 646px;
+    padding: 40px 30px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 530px;
+    top: 19px;
+    -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2); }
+  .sectionregistration__registrationtitle {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #1F2041;
+    font-weight: bold;
+    font-size: 24px; }
+  .sectionregistration__iname {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.25);
+    text-indent: 15px;
+    display: block;
+    margin: 20px 0 0 0;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 320px;
+    height: 44px; }
+  .sectionregistration__isurname {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.25);
+    text-indent: 15px;
+    display: block;
+    margin: 20px 0 0 0;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 320px;
+    height: 44px; }
+  .sectionregistration__imale {
+    display: inline-block;
+    margin: 10.5px 0 0 0; }
+  .sectionregistration__smale {
+    display: inline-block;
+    margin: 0 20px 0 14px; }
+  .sectionregistration__sfemale {
+    display: inline-block;
+    margin: 0 0 0 14px; }
+  .sectionregistration__birth {
+    display: block;
+    margin: 19.5px 0 0 0;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #1F2041;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase; }
+  .sectionregistration__ibirth {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.25);
+    text-indent: 15px;
+    display: block;
+    margin: 5px 0 0 0;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 320px;
+    height: 44px; }
+  .sectionregistration__mail {
+    display: block;
+    margin: 20px 0 0 0;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #1F2041;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase; }
+  .sectionregistration__imail {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.25);
+    text-indent: 15px;
+    display: block;
+    margin: 5px 0 0 0;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 320px;
+    height: 44px; }
+  .sectionregistration__ipasslog {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.25);
+    text-indent: 15px;
+    display: block;
+    margin: 10px 0 0 0;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 320px;
+    height: 44px; }
+  .sectionregistration__slider {
+    display: inline-block;
+    margin: 10px 10px 0 0; }
+  .sectionregistration__specialoffers {
+    display: inline-block;
+    margin: 13px 0 0 0;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75); }
+  .sectionregistration__registrlog {
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 14px 0 15px 0;
+    width: 320px;
+    height: 44px;
+    background: url("images/arrow_forwardright.png") 95% 50% no-repeat, -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+    background: url("images/arrow_forwardright.png") 95% 50% no-repeat, -webkit-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
+    background: url("images/arrow_forwardright.png") 95% 50% no-repeat, -o-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
+    background: url("images/arrow_forwardright.png") 95% 50% no-repeat, linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase;
+    text-align: center; }
+  .sectionregistration__haceanaccount {
+    display: inline-block;
+    margin: 0 22px 0 0;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: #000000; }
+  .sectionregistration__signinreg {
+    display: inline-block;
+    margin: 30px 0 0 0;
+    padding: 13px 0 15px 0;
+    width: 99px;
+    height: 44px;
+    border-radius: 22px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #BC9CFF;
+    background: #ffffff;
+    border: 2px solid #BC9CFF;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase;
+    text-align: center; }
+
+/************************************************UIkit*********************************************/
