@@ -1452,3 +1452,205 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center; }
 
 /************************************************UIkit*********************************************/
+.colorsandtype {
+  margin: 145px 0 0 0;
+  padding-bottom: 145px;
+  border-bottom: 1px solid rgba(31, 32, 65, 0.25); }
+  .colorsandtype__flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .colorsandtype__colorblock {
+    margin-bottom: 20px; }
+  .colorsandtype__darkshade100 {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background: #1F2041;
+    border-radius: 6px; }
+  .colorsandtype__ds100title {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 19px;
+    color: #1F2041;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 28px;
+    margin: 7px 0 0 40px; }
+  .colorsandtype__ds100color {
+    display: block;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-weight: normal;
+    color: #1F2041; }
+  .colorsandtype__darkshade75 {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background: rgba(31, 32, 65, 0.75);
+    border-radius: 6px; }
+  .colorsandtype__ds75title {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 19px;
+    color: #1F2041;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 28px;
+    margin: 7px 0 0 40px; }
+  .colorsandtype__ds75color {
+    display: block;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-weight: normal;
+    color: #1F2041; }
+  .colorsandtype__darkshade50 {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background: rgba(31, 32, 65, 0.5);
+    border-radius: 6px; }
+  .colorsandtype__ds50title {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 19px;
+    color: #1F2041;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 28px;
+    margin: 7px 0 0 40px; }
+  .colorsandtype__ds50color {
+    display: block;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-weight: normal;
+    color: #1F2041; }
+  .colorsandtype__darkshade25 {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background: rgba(31, 32, 65, 0.25);
+    border-radius: 6px; }
+  .colorsandtype__ds25title {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 19px;
+    color: #1F2041;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 28px;
+    margin: 7px 0 0 40px; }
+  .colorsandtype__ds25color {
+    display: block;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-weight: normal;
+    color: #1F2041; }
+  .colorsandtype__darkshade5 {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background: rgba(31, 32, 65, 0.05);
+    border-radius: 6px; }
+  .colorsandtype__ds5title {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 19px;
+    color: #1F2041;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 28px;
+    margin: 7px 0 0 40px; }
+  .colorsandtype__ds5color {
+    display: block;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-weight: normal;
+    color: #1F2041; }
+  .colorsandtype__darkshadepurple {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background: #BC9CFF;
+    border-radius: 6px; }
+  .colorsandtype__dspurpletitle {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 19px;
+    color: #1F2041;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 28px;
+    margin: 7px 0 0 40px; }
+  .colorsandtype__dspurplecolor {
+    display: block;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-weight: normal;
+    color: #1F2041; }
+  .colorsandtype__darkshadegreen {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background: #6FCF97;
+    border-radius: 6px; }
+  .colorsandtype__dsgreentitle {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 19px;
+    color: #1F2041;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 28px;
+    margin: 7px 0 0 40px; }
+  .colorsandtype__dsgreencolor {
+    display: block;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-weight: normal;
+    color: #1F2041; }
+  .colorsandtype__hblock {
+    margin-bottom: 51px; }
+  .colorsandtype__h1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: -55px 30px 0 0;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 24px;
+    color: rgba(31, 32, 65, 0.25); }
+  .colorsandtype__thisone {
+    display: inline-block;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #1F2041; }
+  .colorsandtype__h2 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: -43px 30px 0 0;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 19px;
+    color: rgba(31, 32, 65, 0.25); }
+  .colorsandtype__next {
+    display: inline-block;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    color: #1F2041; }
+  .colorsandtype__h3 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: -5px 37px 0 0;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 12.7px;
+    color: rgba(31, 32, 65, 0.25); }
+  .colorsandtype__thisisa {
+    display: inline-block;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 12.7px;
+    color: #1F2041;
+    text-transform: uppercase; }
+  .colorsandtype__body {
+    display: inline-block;
+    vertical-align: middle;
+    margin: -30px 30px 0 -15px;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.25); }
+  .colorsandtype__thisisthe {
+    display: inline-block;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75); }
