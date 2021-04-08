@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
 @font-face {
   font-family: 'Conv_Montserrat-Regular';
   src: url("../fonts/Montserrat-Regular.eot");
@@ -833,3 +832,392 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Conv_Montserrat-Regular';
   font-size: 14.5px;
   color: rgba(31, 32, 65, 0.75); }
+
+/*************************************************RoomDetails**************************************/
+.sectionaboutimg__roomimage {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
+.sectionaboutimg__roomimage3 {
+  margin-top: -1px; }
+
+.sectionabout {
+  margin: 70px 0 0 0; }
+  .sectionabout__flexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .sectionabout__inforoom {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .sectionabout__info {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    color: #1F2041; }
+  .sectionabout__comfort {
+    display: inline-block;
+    margin: 23px 0 0 10px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75); }
+  .sectionabout__smile {
+    display: inline-block;
+    margin: 23px 0 0 0; }
+  .sectionabout__walls {
+    margin: -14px 0 0 53px;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75); }
+  .sectionabout__wallsline {
+    margin: 25px 0 -15px 0;
+    border-bottom: 1px dashed rgba(31, 32, 65, 0.1);
+    background: rgba(31, 32, 65, 0.1);
+    width: 280px; }
+  .sectionabout__convenience {
+    display: inline-block;
+    margin: 41px 0 0 14px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75); }
+  .sectionabout__locationcity {
+    display: inline-block;
+    margin: 41px 0 0 0; }
+  .sectionabout__bedroom {
+    margin: -14px 0 0 53px;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75); }
+  .sectionabout__bedroomline {
+    margin: 25px 0 -15px 0;
+    border-bottom: 1px dashed rgba(31, 32, 65, 0.1);
+    background: rgba(31, 32, 65, 0.1);
+    width: 280px; }
+  .sectionabout__cosiness {
+    display: inline-block;
+    margin: 41px 0 0 14px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75); }
+  .sectionabout__whatshot {
+    display: inline-block;
+    margin: 41px 0 0 0; }
+  .sectionabout__fireplace {
+    margin: -14px 0 0 53px;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75); }
+  .sectionabout__impression {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    color: #1F2041; }
+  .sectionabout__voicesflex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .sectionabout__voices {
+    margin: 21px 0 0 0;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #BC9CFF;
+    border: 4px solid;
+    border-radius: 50%;
+    padding: 30px;
+    text-align: center; }
+  .sectionabout__voicescolor {
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 12.7px;
+    vertical-align: top; }
+  .sectionabout__list {
+    margin: 50px 0 0 30px; }
+  .sectionabout__sumptuously {
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75); }
+  .sectionabout__well {
+    margin: 10px 0 0 0;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75); }
+  .sectionabout__satisfactorily {
+    margin: 10px 0 0 0;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75); }
+  .sectionabout__dissapointed {
+    margin: 10px 0 0 0;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75); }
+  .sectionabout__revusers {
+    margin: 30px 0 0 0; }
+  .sectionabout__reviews {
+    display: inline-block;
+    margin-right: 347px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    color: #1F2041; }
+  .sectionabout__murad {
+    display: inline-block;
+    margin: 10px 0 0 -20px; }
+  .sectionabout__patricia {
+    display: inline-block;
+    margin: 10px 0 0 -20px; }
+  .sectionabout__reviewscount {
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.5); }
+  .sectionabout__username1 {
+    display: inline-block;
+    margin: 23px 0 0 -15px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75); }
+  .sectionabout__time {
+    display: inline-block;
+    margin: 15px 0 0 0;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.75); }
+  .sectionabout__comment1 {
+    display: inline-block;
+    margin: 0 0 0 10px;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75); }
+  .sectionabout__username2 {
+    display: inline-block;
+    margin: 23px 0 0 -15px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75); }
+  .sectionabout__comment2 {
+    display: inline-block;
+    margin: 0 0 0 10px;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75); }
+  .sectionabout__roomrules {
+    margin: 30px 0 0 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .sectionabout__roomrulestitle {
+    margin: 0 0 0 20px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    color: #1F2041; }
+  .sectionabout__roomruleslist {
+    margin: 20px 0 0 0;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75); }
+  .sectionabout__roomrulescancel {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    color: #1F2041; }
+  .sectionabout__cancel {
+    margin: 20px 0 0 0;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75); }
+  .sectionabout__reservation {
+    width: 380px;
+    height: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 41px 30px; }
+  .sectionabout__number {
+    display: inline-block;
+    margin: 0 125px 0 0;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 14.5px;
+    color: #1F2041; }
+  .sectionabout__numberlux {
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 12.7px;
+    color: #BC9CFF; }
+  .sectionabout__price {
+    display: inline-block;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 12.7px;
+    color: rgba(31, 32, 65, 0.5); }
+  .sectionabout__pricetime {
+    font-family: 'Conv_Montserrat-Regular';
+    font-weight: normal; }
+  .sectionabout__topinput {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 23px 0 0 0; }
+  .sectionabout__arrival {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #1F2041;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase; }
+  .sectionabout__iarrival {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+    text-indent: 15px;
+    text-transform: uppercase;
+    display: block;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 150px;
+    height: 44px;
+    margin: 6px 0 0 0;
+    background: url("images/expand_more.png") 90% 50% no-repeat; }
+  .sectionabout__departure {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #1F2041;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase; }
+  .sectionabout__ideparture {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+    text-indent: 15px;
+    text-transform: uppercase;
+    display: block;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 150px;
+    height: 44px;
+    margin: 6px 0 0 0;
+    background: url("images/expand_more.png") 90% 50% no-repeat; }
+  .sectionabout__guests {
+    display: inline-block;
+    margin: 20px 0 0 0;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #1F2041;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase; }
+  .sectionabout__iguests {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.5);
+    text-indent: 15px;
+    display: block;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 320px;
+    height: 44px;
+    margin: 6px 0 0 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("images/expand_more.png") 95% 50% no-repeat; }
+  .sectionabout__dayscount {
+    display: inline-block;
+    margin: 20.5px 136px 0 0;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75); }
+  .sectionabout__pricedayscount {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75); }
+  .sectionabout__services {
+    display: inline-block;
+    margin: 20.5px 8px 0 0;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75); }
+  .sectionabout__signprice1 {
+    margin: 16px 40px 0 0; }
+  .sectionabout__priceservices {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75); }
+  .sectionabout__moreservices {
+    display: inline-block;
+    margin: 20.5px 8px 0 0;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75); }
+  .sectionabout__signprice2 {
+    margin: 18px 95px 0 0; }
+  .sectionabout__morepriceservices {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75); }
+  .sectionabout__result {
+    display: inline-block;
+    margin: 48px 0 0 0;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #1F2041;
+    font-weight: bold;
+    font-size: 19px; }
+  .sectionabout__resultline {
+    display: inline-block;
+    border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
+    width: 167px; }
+  .sectionabout__priceresult {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #1F2041;
+    font-weight: bold;
+    font-size: 19px; }
+  .sectionabout__book {
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 14px 0 15px 0;
+    width: 320px;
+    height: 44px;
+    background: url("images/arrow_forwardright.png") 95% 50% no-repeat, -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+    background: url("images/arrow_forwardright.png") 95% 50% no-repeat, -webkit-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
+    background: url("images/arrow_forwardright.png") 95% 50% no-repeat, -o-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
+    background: url("images/arrow_forwardright.png") 95% 50% no-repeat, linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase;
+    text-align: center; }

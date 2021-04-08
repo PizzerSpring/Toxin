@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
 
 @font-face {
 	font-family: 'Conv_Montserrat-Regular';
@@ -979,6 +978,621 @@ $md4: 479.98;*/
     color: rgba(31, 32, 65, 0.75);
   }
 }
+
+/*************************************************RoomDetails**************************************/
+
+.sectionaboutimg {
+
+  &__roomimage {
+    @include flexbox();
+  }
+
+  &__roomimagecolumn {
+  }
+
+  &__roomimage3 {
+    margin-top: -1px;
+  }
+}
+.sectionabout {
+  margin: 70px 0 0 0;
+
+  // .sectionabout__inforoom
+
+  &__flexbox {
+    @include flexbox();
+    justify-content: space-between;
+  }
+
+  &__inforoom {
+    @include flexbox();
+    justify-content: space-between;
+  }
+
+  // .sectionabout__inforoomcolumn
+
+  &__inforoomcolumn {
+    
+  }
+
+  // .sectionabout__info
+
+  &__info {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    color: #1F2041;
+  }
+
+  // .sectionabout__comfort
+
+  &__comfort {
+    display: inline-block;
+    margin: 23px 0 0 10px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  &__smile {
+    display: inline-block;
+    margin: 23px 0 0 0;
+  }
+
+  // .sectionabout__walls
+
+  &__walls {
+    margin: -14px 0 0 53px;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  &__wallsline {
+    margin: 25px 0 -15px 0;
+    border-bottom: 1px dashed rgba(31, 32, 65, 0.1);
+    background: rgba(31, 32, 65, 0.1);
+    width: 280px;
+
+  }
+
+  // .sectionabout__convenience
+
+  &__convenience {
+    display: inline-block;
+    margin: 41px 0 0 14px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  &__locationcity {
+    display: inline-block;
+    margin: 41px 0 0 0;
+  }
+
+  // .sectionabout__bedroom
+
+  &__bedroom {
+    margin: -14px 0 0 53px;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  &__bedroomline {
+    margin: 25px 0 -15px 0;
+    border-bottom: 1px dashed rgba(31, 32, 65, 0.1);
+    background: rgba(31, 32, 65, 0.1);
+    width: 280px;
+  }
+  // .sectionabout__cosiness
+
+  &__cosiness {
+    display: inline-block;
+    margin: 41px 0 0 14px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  &__whatshot {
+    display: inline-block;
+    margin: 41px 0 0 0;
+
+  }
+
+  // .sectionabout__fireplace
+
+  &__fireplace {
+    margin: -14px 0 0 53px;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  // .sectionabout__impression
+
+  &__impression {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    color: #1F2041;
+  }
+
+  // .sectionabout__voices
+
+  &__voicesflex {
+    display: flex;
+  }
+
+  &__voices {
+    margin: 21px 0 0 0;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #BC9CFF;
+    border: 4px solid;
+    border-radius: 50%;
+    padding: 30px;
+    text-align: center;
+  }
+
+  &__voicescolor {
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 12.7px;
+    vertical-align: top;
+  }
+
+  // .sectionabout__list
+
+  &__list {
+    margin: 50px 0 0 30px;
+  }
+
+  // .sectionabout__sumptuously
+
+  &__sumptuously {
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  // .sectionabout__well
+
+  &__well {
+    margin: 10px 0 0 0;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  // .sectionabout__satisfactorily
+
+  &__satisfactorily {
+    margin: 10px 0 0 0;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  // .sectionabout__dissapointed
+
+  &__dissapointed {
+    margin: 10px 0 0 0;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  // .sectionabout__revusers
+
+  &__revusers {
+    margin: 30px 0 0 0;
+
+  }
+
+  // .sectionabout__reviews
+
+  &__reviews {
+    display: inline-block;
+    margin-right: 347px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    color: #1F2041;
+  }
+
+  &__murad {
+    display: inline-block;
+    margin: 10px 0 0 -20px;
+  }
+
+  &__patricia {
+    display: inline-block;
+    margin: 10px 0 0 -20px;
+  }
+
+  // .sectionabout__reviewscount
+
+  &__reviewscount {
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.5);
+  }
+
+  // .sectionabout__username1
+
+  &__username1 {
+    display: inline-block;
+    margin: 23px 0 0 -15px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  &__time {
+    display: inline-block;
+    margin: 15px 0 0 0;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  // .sectionabout__comment1
+
+  &__comment1 {
+    display: inline-block;
+    margin: 0 0 0 10px;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  // .sectionabout__username2
+
+  &__username2 {
+    display: inline-block;
+    margin: 23px 0 0 -15px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  // .sectionabout__comment2
+
+  &__comment2 {
+    display: inline-block;
+    margin: 0 0 0 10px;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  // .sectionabout__roomrules
+
+  &__roomrules {
+    margin: 30px 0 0 0;
+    @include flexbox();
+    justify-content: space-between;
+  }
+
+  // .sectionabout__roomrulescolumns
+
+  &__roomrulescolumns {
+    
+  }
+
+  &__roomrulestitle {
+    margin: 0 0 0 20px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    color: #1F2041;
+
+  }
+
+  // .sectionabout__roomruleslist
+
+  &__roomruleslist {
+    margin: 20px 0 0 0;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  // .sectionabout__pet
+
+  &__pet {
+  }
+
+  // .sectionabout__party
+
+  &__party {
+  }
+
+  // .sectionabout__time
+
+  &__timearr {
+  }
+
+  &__roomrulescancel {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    color: #1F2041;
+  }
+
+  // .sectionabout__cancel
+
+  &__cancel {
+    margin: 20px 0 0 0;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  // .sectionabout__reservation
+
+  &__reservation {
+    width: 380px;
+    height: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 41px 30px;
+  }
+
+  // .sectionabout__number
+
+  &__number {
+    display: inline-block;
+    margin: 0 125px 0 0;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 14.5px;
+    color: #1F2041;
+  }
+
+  // .sectionabout__numberlux
+
+  &__numberlux {
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 12.7px;
+    color: #BC9CFF;
+  }
+
+  &__price {
+    display: inline-block;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 12.7px;
+    color: rgba(31, 32, 65, 0.5);
+
+  }
+
+  &__pricetime {
+    font-family: 'Conv_Montserrat-Regular';
+    font-weight: normal;
+  }
+
+  // .sectionabout__titlearr
+
+  &__titlearr {
+  }
+
+  // .sectionabout__makeareservation
+
+  &__makeareservation {
+  }
+
+  &__topinput {
+    @include flexbox();
+    justify-content: space-between;
+    margin: 23px 0 0 0;
+  }
+
+  // .sectionabout__arrival
+
+  &__arrival {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #1F2041;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase;
+  }
+
+  // .sectionabout__iarrival
+
+  &__iarrival {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+    text-indent: 15px;
+    text-transform: uppercase;
+    display: block;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 150px;
+    height: 44px;
+    margin: 6px 0 0 0;
+    background: url('images/expand_more.png') 90% 50% no-repeat;
+  }
+
+  // .sectionabout__departure
+
+  &__departure {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #1F2041;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase;
+  }
+
+  // .sectionabout__ideparture
+
+  &__ideparture {
+      font-family: 'Conv_Montserrat-Regular', sans-serif;
+      font-size: 14.5px;
+      color: rgba(31, 32, 65, 0.75);
+      text-indent: 15px;
+      text-transform: uppercase;
+      display: block;
+      border: 1px solid rgba(31, 32, 65, 0.25);
+      border-radius: 4px;
+      width: 150px;
+      height: 44px;
+      margin: 6px 0 0 0;
+      background: url('images/expand_more.png') 90% 50% no-repeat;
+  }
+
+  // .sectionabout__guests
+
+  &__guests {
+    display: inline-block;
+    margin: 20px 0 0 0;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #1F2041;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase;
+  }
+
+  // .sectionabout__iguests
+
+  &__iguests {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.5);
+    text-indent: 15px;
+    display: block;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 320px;
+    height: 44px;
+    margin: 6px 0 0 0;
+    appearance: none;
+    background: url('images/expand_more.png') 95% 50% no-repeat;
+  }
+
+  // .sectionabout__dayscount
+
+  &__dayscount {
+    display: inline-block;
+    margin: 20.5px 136px 0 0;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  // .sectionabout__pricedayscount
+
+  &__pricedayscount {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  // .sectionabout__services
+
+  &__services {
+    display: inline-block;
+    margin: 20.5px 8px 0 0;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  &__signprice1 {
+    margin: 16px 40px 0 0;
+  }
+
+  // .sectionabout__priceservices
+
+  &__priceservices {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  // .sectionabout__moreservices
+
+  &__moreservices {
+    display: inline-block;
+    margin: 20.5px 8px 0 0;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  &__signprice2 {
+    margin: 18px 95px 0 0;
+  }
+
+  // .sectionabout__morepriceservices
+
+  &__morepriceservices {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  // .sectionabout__result
+
+  &__result {
+    display: inline-block;
+    margin: 48px 0 0 0;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #1F2041;
+    font-weight: bold;
+    font-size: 19px;
+  }
+
+  &__resultline {
+    display: inline-block;
+    border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
+    width: 167px;
+  }
+
+  // .sectionabout__priceresult
+
+  &__priceresult {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #1F2041;
+    font-weight: bold;
+    font-size: 19px;
+  }
+
+  // .sectionabout__book
+
+  &__book {
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 14px 0 15px 0;
+    width: 320px;
+    height: 44px;
+    background:  url('images/arrow_forwardright.png') 95% 50% no-repeat, 
+    linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
 
 
 
