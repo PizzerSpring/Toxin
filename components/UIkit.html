@@ -82,8 +82,173 @@
                 </div>
             </div>
         </section>
-        <section class="forms"></section>
-        <section class="components"></section>
+        <section class="forms">
+            <div class="container">
+                <div class="forms__flexbox">
+                    <div class="forms__column">
+                        <div class="forms__searchfilter">
+                            <form action="" class="forms__searchnumber">
+                                <h2 class="forms__title">Найдём номера под<br> ваши пожелания</h2>
+                            <div class="forms__topinput">
+                                <label class="forms__arrival" for="arrival">Прибытие
+                                    <input type="text" placeholder="  ДД.ММ.ГГГГ"  id="arrival" class="datepicker-here forms__iarrival">
+                                </label>
+                                <label class="forms__departure" for="departure">Выезд
+                                    <input id="departure" class="forms__ideparture" type="date">
+                                </label>
+                            </div>
+                                <label class="forms__guestcount" for="guestcount">Гости
+                                    <select id="guestcount" class="forms__sguestcount">
+                                        <option value="">Сколько гостей</option>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                        <option value="">4</option>
+                                        <option value="">5</option>
+                                        <option value="">6</option>
+                                        <option value="">7</option>
+                                        <option value="">8</option>
+                                        <option value="">9</option>
+                                        <option value="">10</option>
+                                    </select>
+                                </label>
+                                <a class="forms__searchbutton" href="">Подобрать номер</a>
+                            </form>
+                        </div>
+                        <div class="forms__registration">
+                            <form action="" class="forms__registrationform">
+                                <h2 class="forms__registrationtitle">Регистрация аккаунта</h2>
+                                <label class="forms__name" for="name">
+                                    <input class="forms__iname" placeholder="Имя" type="text" id="name">
+                                </label>
+                                <label class="forms__surname" for="surname">
+                                    <input class="forms__isurname" placeholder="Фамилия" type="text" id="surname">
+                                </label>
+                                <label class="forms__male" for="male">
+                                    <input checked class="forms__imale" type="radio" id="male"><span class="forms__smale">Мужчина</span>
+                                </label>
+                                <label class="forms__female" for="female">
+                                    <input class="forms__ifemale" type="radio" id="female"><span class="forms__sfemale">Женщина</span> 
+                                </label>
+                                <label class="forms__birth" for="birth">
+                                    дата рождения
+                                    <input class="forms__ibirth" placeholder="ДД.ММ.ГГГГ" type="text" id="birth">
+                                </label>
+                                <label class="forms__mail" for="mail">
+                                    данные для входа в сервис
+                                    <input class="forms__imail" placeholder="Email" type="text" id="mail">
+                                </label>
+                                <label class="forms__passlog" for="passlog">
+                                    <input class="forms__ipasslog" placeholder="Пароль" type="text" id="passlog">
+                                </label>
+                                <img class="forms__slider" src="../styles/images/slider.png" alt="">
+                                <p class="forms__specialoffers">Получать спецпредложения</p>
+                                <button class="forms__registrlog">зарегистрироваться</button>
+                                <p class="forms__haceanaccount">Уже есть аккаунт на Toxin</p>
+                                <button class="forms__signinreg">войти</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="forms__column">
+                        <div class="forms__reservation">
+                            <form action="" class="forms__makeareservation">
+                                <p class="forms__number">№ 888
+                                    <span class="forms__numberlux">люкс</span>
+                                </p>
+                                <p class="forms__price">9990P
+                                    <span class="forms__pricetime">в сутки</span>
+                                </p>
+    
+                                <p class="forms__titlearr"></p>
+                                <div class="forms__topinput">
+                                    <label class="forms__arrivalr" for="arrivalnumber">Прибытие
+                                        <input placeholder="19.08.2019" id="arrivalnumber"
+                                            class="forms__iarrivalr" type="text">
+                                    </label>
+                                    <label class="forms__departurer" for="departurenumber">Выезд
+                                        <input placeholder="23.08.2019" id="departurenumber"
+                                            class="forms__ideparturer" type="text">
+                                    </label>
+                                </div>
+                                <label class="forms__guestsr" for="guestsnumber">Гости
+                                    <select name="" id="guestsnumber" class="forms__iguestsr">
+                                        <option value="">3 гостя</option>
+                                    </select>
+                                </label>
+                                <p class="forms__dayscount">9 990₽ х 4 суток</p>
+                                <span class="forms__pricedayscount">39 960₽</span>
+                                <p class="forms__services">Сбор за услуги: скидка 2 179₽</p>
+                                <img class="forms__signprice1" src="../styles/images/sign.png" alt="">
+                                <span class="forms__priceservices">0₽</span>
+                                <p class="forms__moreservices">Сбор за доп. услуги</p>
+                                <img class="forms__signprice2" src="../styles/images/sign.png" alt="">
+                                <span class="forms__morepriceservices">300₽</span>
+                                <p class="forms__result">Итого</p>
+                                <hr class="forms__resultline">
+                                <span class="forms__priceresult">38 081₽</span>
+                                <button class="forms__book">забронировать</button>
+                            </form>
+                        </div>
+                        <div class="forms__login">
+                            <form action="" class="forms__loginform">
+                                <h2 class="forms__logintitle">Войти</h2>
+                                <label class="forms__usertitle" for="usertitle">
+                                    <input class="forms__iusertitle" placeholder="Email" type="text" id="usertitle">
+                                </label>
+                                <label class="forms__pass" for="pass">
+                                    <input class="forms__ipass" placeholder="Пароль" type="text" id="pass">
+                                </label>
+                                <button class="forms__signin">войти</button>
+                                <p class="forms__noaccaunt">Нет аккаунта на Toxin?</p>
+                                <button class="forms__create">создать</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="forms__column">
+                        <div class="forms__calendar"></div>
+                        <div class="forms__cardhotel888">
+                            <img class="forms__numberphoto" src="../styles/images/image.png" alt="">
+                                <span class="forms__circlewhite"></span>
+                                <span class="forms__circle1"></span>
+                                <span class="forms__circle2"></span>
+                                <span class="forms__circle3"></span>
+                                <p class="forms__number">№ 888 <span class="forms__lux">люкс</span></p>
+                                <p class="forms__pricelux">9 990₽ <span class="forms__day">в сутки</span></p>
+                                <hr class="forms__cardline">
+                                <p class="forms__raiting">
+                                    <img class="forms__star" src="../styles/images/star.png" alt="">
+                                    <img class="forms__star" src="../styles/images/star.png" alt="">
+                                    <img class="forms__star" src="../styles/images/star.png" alt="">
+                                    <img class="forms__star" src="../styles/images/star.png" alt="">
+                                    <img class="forms__star" src="../styles/images/star.png" alt="">
+                                </p>
+                                <p class="forms__reviews">145 <span class="forms__revs">Отзывов</span></p>
+                        </div>
+                        <div class="forms__cardhotel840">
+                            <img class="forms__numberphoto" src="../styles/images/image4.png" alt="">
+                                <span class="forms__circlewhite"></span>
+                                <span class="forms__circle1"></span>
+                                <span class="forms__circle2"></span>
+                                <span class="forms__circle3"></span>
+                                <p class="forms__numbern">№ 840</p>
+                                <p class="forms__price">9 900₽ <span class="forms__day">в сутки</span></p>
+                                <hr class="forms__cardline">
+                                <p class="forms__raiting">
+                                    <img class="forms__star" src="../styles/images/star.png" alt="">
+                                    <img class="forms__star" src="../styles/images/star.png" alt="">
+                                    <img class="forms__star" src="../styles/images/star.png" alt="">
+                                    <img class="forms__star" src="../styles/images/star.png" alt="">
+                                    <img class="forms__star" src="../styles/images/star.png" alt="">
+                                </p>
+                                <p class="forms__reviews">65 <span class="forms__revs">Отзывов</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="components">
+           
+        </section>
         <section class="sidebar"></section>
     </div>
 </body>

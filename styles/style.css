@@ -1654,3 +1654,608 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Conv_Montserrat-Regular', sans-serif;
     font-size: 14.5px;
     color: rgba(31, 32, 65, 0.75); }
+
+/***********************************************************************************************/
+.forms {
+  margin: 150px 0 0 0;
+  padding-bottom: 140px;
+  border-bottom: 1px solid rgba(31, 32, 65, 0.25);
+  /**************************************************************************************************/
+  /*******************************************************************************************/ }
+  .forms__flexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+  .forms__column {
+    margin: 0 40px 0 0; }
+  .forms__searchfilter {
+    -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    height: 394px;
+    width: 400px; }
+  .forms__searchnumber {
+    padding: 40px 30px 30px 30px;
+    height: 394px;
+    width: 400px;
+    background-color: #ffffff; }
+  .forms__title {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #1F2041;
+    font-weight: bold;
+    font-size: 25.5px;
+    margin-bottom: 21px; }
+  .forms__topinput {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .forms__arrival {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #1F2041;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase; }
+  .forms__iarrival {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+    text-indent: 8px;
+    text-transform: uppercase;
+    display: block;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 160px;
+    height: 44px;
+    margin: 6px 0 0 0;
+    background: url("images/expand_more.png") 90% 50% no-repeat; }
+  .forms__departure {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #1F2041;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase; }
+  .forms__ideparture {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+    text-indent: 8px;
+    text-transform: uppercase;
+    display: block;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 160px;
+    height: 44px;
+    margin: 6px 0 0 0; }
+  .forms__guestcount {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #1F2041;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase;
+    display: block;
+    margin: 20px 0 0 0; }
+  .forms__sguestcount {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.5);
+    text-indent: 15px;
+    display: block;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 340px;
+    height: 44px;
+    margin: 6px 0 0 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("images/expand_more.png") no-repeat right;
+    background-position: 305px; }
+  .forms__searchbutton {
+    display: block;
+    margin: 31px 0 0 0;
+    padding: 14px 0 15px 0;
+    width: 340px;
+    height: 44px;
+    background: url("images/arrow_forwardright.png") 95% 50% no-repeat, -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+    background: url("images/arrow_forwardright.png") 95% 50% no-repeat, -webkit-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
+    background: url("images/arrow_forwardright.png") 95% 50% no-repeat, -o-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
+    background: url("images/arrow_forwardright.png") 95% 50% no-repeat, linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase;
+    text-align: center; }
+  .forms__registration {
+    margin: 40px 0 0 0; }
+  .forms__registrationform {
+    width: 380px;
+    height: 646px;
+    padding: 40px 30px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2); }
+  .forms__registrationtitle {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #1F2041;
+    font-weight: bold;
+    font-size: 24px; }
+  .forms__iname {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.25);
+    text-indent: 15px;
+    display: block;
+    margin: 20px 0 0 0;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 320px;
+    height: 44px; }
+  .forms__isurname {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.25);
+    text-indent: 15px;
+    display: block;
+    margin: 20px 0 0 0;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 320px;
+    height: 44px; }
+  .forms__imale {
+    display: inline-block;
+    margin: 10.5px 0 0 0; }
+  .forms__smale {
+    display: inline-block;
+    margin: 0 20px 0 14px; }
+  .forms__sfemale {
+    display: inline-block;
+    margin: 0 0 0 14px; }
+  .forms__birth {
+    display: block;
+    margin: 19.5px 0 0 0;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #1F2041;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase; }
+  .forms__ibirth {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.25);
+    text-indent: 15px;
+    display: block;
+    margin: 5px 0 0 0;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 320px;
+    height: 44px; }
+  .forms__mail {
+    display: block;
+    margin: 20px 0 0 0;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #1F2041;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase; }
+  .forms__imail {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.25);
+    text-indent: 15px;
+    display: block;
+    margin: 5px 0 0 0;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 320px;
+    height: 44px; }
+  .forms__ipasslog {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.25);
+    text-indent: 15px;
+    display: block;
+    margin: 10px 0 0 0;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 320px;
+    height: 44px; }
+  .forms__slider {
+    display: inline-block;
+    margin: 10px 10px 0 0; }
+  .forms__specialoffers {
+    display: inline-block;
+    margin: 13px 0 0 0;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75); }
+  .forms__registrlog {
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 14px 0 15px 0;
+    width: 320px;
+    height: 44px;
+    background: url("images/arrow_forwardright.png") 95% 50% no-repeat, -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+    background: url("images/arrow_forwardright.png") 95% 50% no-repeat, -webkit-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
+    background: url("images/arrow_forwardright.png") 95% 50% no-repeat, -o-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
+    background: url("images/arrow_forwardright.png") 95% 50% no-repeat, linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase;
+    text-align: center; }
+  .forms__haceanaccount {
+    display: inline-block;
+    margin: 0 22px 0 0;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: #000000; }
+  .forms__signinreg {
+    display: inline-block;
+    margin: 30px 0 0 0;
+    padding: 13px 0 15px 0;
+    width: 99px;
+    height: 44px;
+    border-radius: 22px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #BC9CFF;
+    background: #ffffff;
+    border: 2px solid #BC9CFF;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase;
+    text-align: center; }
+  .forms__reservation {
+    width: 380px;
+    height: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px; }
+  .forms__makeareservation {
+    width: 380px;
+    height: 500px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    padding: 41px 30px; }
+  .forms__number {
+    display: inline-block;
+    margin: 0 125px 20px 0;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 14.5px;
+    color: #1F2041; }
+  .forms__numberlux {
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 12.7px;
+    color: #BC9CFF; }
+  .forms__price {
+    display: inline-block;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 12.7px;
+    color: rgba(31, 32, 65, 0.5); }
+  .forms__pricetime {
+    font-family: 'Conv_Montserrat-Regular';
+    font-weight: normal; }
+  .forms__arrivalr {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #1F2041;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase; }
+  .forms__iarrivalr {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+    text-indent: 15px;
+    text-transform: uppercase;
+    display: block;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 150px;
+    height: 44px;
+    margin: 6px 0 0 0;
+    background: url("images/expand_more.png") 90% 50% no-repeat; }
+  .forms__departurer {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #1F2041;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase; }
+  .forms__ideparturer {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+    text-indent: 15px;
+    text-transform: uppercase;
+    display: block;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 150px;
+    height: 44px;
+    margin: 6px 0 0 0;
+    background: url("images/expand_more.png") 90% 50% no-repeat; }
+  .forms__guestsr {
+    display: inline-block;
+    margin: 20px 0 0 0;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #1F2041;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase; }
+  .forms__iguestsr {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.5);
+    text-indent: 15px;
+    display: block;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 320px;
+    height: 44px;
+    margin: 6px 0 0 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("images/expand_more.png") 95% 50% no-repeat; }
+  .forms__dayscount {
+    display: inline-block;
+    margin: 20.5px 136px 0 0;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75); }
+  .forms__pricedayscount {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75); }
+  .forms__services {
+    display: inline-block;
+    margin: 20.5px 8px 0 0;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75); }
+  .forms__signprice1 {
+    margin: 16px 40px 0 0; }
+  .forms__priceservices {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75); }
+  .forms__moreservices {
+    display: inline-block;
+    margin: 20.5px 8px 0 0;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75); }
+  .forms__signprice2 {
+    margin: 18px 95px 0 0; }
+  .forms__morepriceservices {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75); }
+  .forms__result {
+    display: inline-block;
+    margin: 48px 0 0 0;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #1F2041;
+    font-weight: bold;
+    font-size: 19px; }
+  .forms__resultline {
+    display: inline-block;
+    border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
+    width: 167px; }
+  .forms__priceresult {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #1F2041;
+    font-weight: bold;
+    font-size: 19px; }
+  .forms__book {
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 14px 0 15px 0;
+    width: 320px;
+    height: 44px;
+    background: url("images/arrow_forwardright.png") 95% 50% no-repeat, -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+    background: url("images/arrow_forwardright.png") 95% 50% no-repeat, -webkit-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
+    background: url("images/arrow_forwardright.png") 95% 50% no-repeat, -o-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
+    background: url("images/arrow_forwardright.png") 95% 50% no-repeat, linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase;
+    text-align: center; }
+  .forms__loginform {
+    width: 380px;
+    height: 358px;
+    padding: 40px 30px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    margin: 40px 0 0 0; }
+  .forms__logintitle {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #1F2041;
+    font-weight: bold;
+    font-size: 24px; }
+  .forms__iusertitle {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.25);
+    text-indent: 15px;
+    display: block;
+    margin: 20px 0 0 0;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 320px;
+    height: 44px; }
+  .forms__ipass {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.25);
+    text-indent: 15px;
+    display: block;
+    margin: 10px 0 0 0;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 320px;
+    height: 44px; }
+  .forms__signin {
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 14px 0 15px 0;
+    width: 320px;
+    height: 44px;
+    background: url("images/arrow_forwardright.png") 95% 50% no-repeat, -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+    background: url("images/arrow_forwardright.png") 95% 50% no-repeat, -webkit-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
+    background: url("images/arrow_forwardright.png") 95% 50% no-repeat, -o-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
+    background: url("images/arrow_forwardright.png") 95% 50% no-repeat, linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase;
+    text-align: center; }
+  .forms__noaccaunt {
+    display: inline-block;
+    margin: 0 47px 0 0;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: #000000; }
+  .forms__create {
+    display: inline-block;
+    margin: 30px 0 0 0;
+    padding: 13px 0 15px 0;
+    width: 99px;
+    height: 44px;
+    border-radius: 22px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #BC9CFF;
+    background: #ffffff;
+    border: 2px solid #BC9CFF;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase;
+    text-align: center; }
+  .forms__calendar {
+    border: 1px solid;
+    width: 320px;
+    height: 369px; }
+  .forms__cardhotel888 {
+    margin: 40px 0 0 0;
+    height: 260px;
+    width: 271px;
+    -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    border-radius: 4px;
+    position: relative; }
+  .forms__numberphoto {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px; }
+  .forms__circlewhite {
+    position: absolute;
+    border-radius: 50%;
+    top: 128.5px;
+    left: 211.5px;
+    border: 4px solid #fff;
+    background-color: #fff; }
+  .forms__circle1 {
+    position: absolute;
+    border-radius: 50%;
+    top: 128.5px;
+    left: 225.5px;
+    border: 1px solid #fff;
+    width: 8px;
+    height: 7.5px;
+    background-color: transparent; }
+  .forms__circle2 {
+    position: absolute;
+    border-radius: 50%;
+    top: 128.5px;
+    left: 239.5px;
+    border: 1px solid #fff;
+    width: 8px;
+    height: 7.5px;
+    background-color: transparent; }
+  .forms__circle3 {
+    position: absolute;
+    border-radius: 50%;
+    top: 128.5px;
+    left: 252.5px;
+    border: 1px solid #fff;
+    width: 8px;
+    height: 7.5px;
+    background-color: transparent; }
+  .forms__number {
+    display: inline-block;
+    margin: 20px 0 12px 20px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    /*Quicksand!!!!!!!!!!!!*/
+    font-weight: bold;
+    font-size: 14.5px;
+    color: #1F2041; }
+  .forms__numbern {
+    display: inline-block;
+    margin: 20px 78px 12px 20px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    /*Quicksand!!!!!!!!!!!!*/
+    font-weight: bold;
+    font-size: 14.5px;
+    color: #1F2041; }
+  .forms__lux {
+    display: inline-block;
+    margin-left: 8px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 12.7px;
+    color: #BC9CFF;
+    text-transform: uppercase; }
+  .forms__pricelux {
+    display: inline-block;
+    margin: 0 0 12px 25px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.5); }
+  .forms__day {
+    font-family: 'Conv_Montserrat-Regular';
+    font-weight: normal;
+    font-size: 12.7px; }
+  .forms__cardline {
+    width: 230px;
+    margin: 0 auto;
+    height: 1px;
+    background: rgba(31, 32, 65, 0.1); }
+  .forms__raiting {
+    display: inline-block;
+    margin: 8px 0 0 20.20px; }
+  .forms__reviews {
+    display: inline-block;
+    margin: 8px 0 0 20px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.5);
+    vertical-align: bottom; }
+  .forms__revs {
+    font-family: 'Conv_Montserrat-Regular';
+    font-weight: normal; }
+  .forms__cardhotel840 {
+    margin: 40px 0 0 0;
+    height: 260px;
+    width: 271px;
+    -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    border-radius: 4px;
+    position: relative; }
