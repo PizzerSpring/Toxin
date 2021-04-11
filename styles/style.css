@@ -1927,7 +1927,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 4px;
     background-color: #ffffff;
     padding: 41px 30px; }
-  .forms__number {
+  .forms__numberr {
     display: inline-block;
     margin: 0 125px 20px 0;
     font-family: 'Conv_Montserrat-Bold', sans-serif;
@@ -2259,3 +2259,213 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
     border-radius: 4px;
     position: relative; }
+
+.components {
+  background: #E5E5E5; }
+
+.headerui {
+  margin: 140px 0 0 0;
+  padding: 18px 0;
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  background-color: #ffffff; }
+  .headerui__mainui {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .headerui__menuui {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+  .headerui__menuui .iconui::before {
+    content: "";
+    background: url("images/expand_more.png") no-repeat;
+    width: 17px;
+    height: 17px;
+    float: left;
+    margin: 4px 22px -4px -22px; }
+  .headerui__menulinkui {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    color: rgba(31, 32, 65, 0.5);
+    margin: 0 26px 0 0;
+    font-size: 14.5px; }
+  .headerui__loginui {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #BC9CFF;
+    font-size: 13.7px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid #BC9CFF;
+    border-radius: 22px;
+    padding: 9px 20px 10px 20px;
+    margin: 0 20px 0 0; }
+  .headerui__regui {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase;
+    background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+    background: -webkit-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
+    background: -o-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    padding: 9px 20px 10px 20px; }
+
+.headeruil {
+  margin: 40px 0 0 0;
+  padding: 18px 0;
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  background-color: #ffffff; }
+  .headeruil__mainuil {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .headeruil__menuuil {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+  .headeruil__menuuil .iconuil::before {
+    content: "";
+    background: url("images/expand_more.png") no-repeat;
+    width: 17px;
+    height: 17px;
+    float: left;
+    margin: 4px 22px -4px -22px; }
+  .headeruil__menulinkuil {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    color: rgba(31, 32, 65, 0.5);
+    margin: 0 26px 0 0;
+    font-size: 14.5px; }
+  .headeruil__loginuil {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    color: rgba(31, 32, 65, 0.5);
+    font-size: 14.5px;
+    border-left: 1px solid rgba(31, 32, 65, 0.1);
+    text-transform: capitalize;
+    padding: 9px 20px 10px 20px; }
+
+.footerui {
+  margin: 40px 0 0 0;
+  background-color: #ffffff;
+  padding-top: 104px; }
+  .footerui__topinfoui {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+  .footerui__column1ui {
+    margin-right: 50px; }
+  .footerui__textui {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+    line-height: 24px;
+    margin: 20px 0 0 0; }
+  .footerui__column2ui {
+    margin-right: 57px; }
+  .footerui__logolistui {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 12.7px;
+    font-weight: bold;
+    color: #1F2041;
+    text-transform: uppercase; }
+  .footerui__menulinkui {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.5);
+    line-height: 17px;
+    display: inline-block;
+    margin: 25px 0 0 0; }
+  .footerui__column3ui {
+    margin-right: 95px; }
+  .footerui__column4ui {
+    margin-right: 70px; }
+  .footerui__column5ui {
+    margin-right: 0; }
+  .footerui__sendui {
+    position: relative;
+    height: 100px; }
+    .footerui__sendui:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 6px;
+      margin: auto 0;
+      width: 25px;
+      height: 25px;
+      background: url("images/arrow_forward.png") no-repeat;
+      background-size: cover; }
+  .footerui__e-mailui {
+    margin: 26px 0 0 0;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 270px;
+    height: 46px;
+    text-indent: 15px;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.25);
+    /****/ }
+  .footerui__bottominfoui {
+    margin: 105px 0 0 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 70px;
+    padding-top: 26px; }
+  .footerui__copyrightui {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.7px;
+    color: rgba(31, 32, 65, 0.75);
+    text-indent: -3px; }
+  .footerui__iconlinkui {
+    margin: 0 0 0 20px; }
+
+.footeruil {
+  background-color: #ffffff;
+  margin: 40px 0 140px 0;
+  width: 768px;
+  height: 367px;
+  padding: 120px 130px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+  .footeruil__logouil {
+    margin: 0 0 20px 0; }
+  .footeruil__copyrightuil {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.7px;
+    color: rgba(31, 32, 65, 0.75);
+    text-indent: -3px;
+    margin: 0 0 25px 0; }
+  .footeruil__iconlinkuil {
+    margin: 0 0 0 20px; }
