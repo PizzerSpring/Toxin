@@ -2271,9 +2271,10 @@ $md4: 479.98;*/
 
 /***********************************************************************************************/
 .forms {
-  margin: 150px 0 0 0;
-  padding-bottom: 140px;
+ /* margin: 150px 0 0 0;*/
+  padding: 150px 0 140px 0;
   border-bottom: 1px solid rgba(31, 32, 65, 0.25);
+  background: #E5E5E5;
  
 
   // .forms__flexbox
@@ -3521,6 +3522,1251 @@ $md4: 479.98;*/
     margin: 0 0 0 20px;
   }
 }
+/*************************************************************************************************/
+.sidebar {
+  margin: 143px 0 150px 0;
+
+  // .sidebar__flexbox
+
+  &__flexbox {
+    @include flexbox();
+  }
+
+  // .sidebar__column
+
+  &__column {
+    margin-right: 126px;
+  }
+
+  // .sidebar__textfield
+
+  &__textfield {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 12.7px;
+    font-weight: bold;
+    color: #1F2041;
+    text-transform: uppercase;
+  }
+
+  // .sidebar__stextfield
+
+  &__stextfield {
+    display: inline-block;
+    margin: 0 0 0 180px;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 12.7px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.5);
+  }
+
+  // .sidebar__itextfield
+
+  &__itextfield {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.25);
+    text-indent: 15px;
+    display: block;
+    margin: 5px 0 0 0;
+    width: 320px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+  }
+
+  // .sidebar__textfocus
+
+  &__textfocus {
+    display: inline-block;
+    margin: 20.5px 0 0 0;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 12.7px;
+    font-weight: bold;
+    color: #1F2041;
+    text-transform: uppercase;
+  }
+
+  // .sidebar__stextfocus
+
+  &__stextfocus {
+    display: inline-block;
+    margin: 0 0 0 135px;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 12.7px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.5);
+  }
+
+  // .sidebar__itextfocus
+
+  &__itextfocus {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.75);
+    text-indent: 15px;
+    display: block;
+    margin: 5px 0 0 0;
+    width: 320px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.75);
+    border-radius: 4px;
+  }
+
+  // .sidebar__texdate
+
+  &__texgate {
+    display: block;
+    margin: 20.5px 0 0 0;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 12.7px;
+    font-weight: bold;
+    color: #1F2041;
+    text-transform: uppercase;
+  }
+
+  // .sidebar__itexdate
+
+  &__itexgate {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.25);
+    text-indent: 15px;
+    display: block;
+    margin: 5px 0 0 0;
+    width: 320px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    background: url('images/expand_more.png') 95% 50% no-repeat;
+  }
+
+  // .sidebar__textdate
+
+  &__textdate {
+    display: block;
+    margin: 20.5px 0 0 0;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 12.7px;
+    font-weight: bold;
+    color: #1F2041;
+    text-transform: uppercase;
+  }
+
+  // .sidebar__itextdate
+
+  &__itextdate {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.25);
+    text-indent: 15px;
+    display: block;
+    margin: 5px 0 0 0;
+    width: 320px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+  }
+
+  // .sidebar__datearrival
+
+  &__datearrival {
+    display: inline-block;
+    margin: 40px 0 0 0;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 12.7px;
+    font-weight: bold;
+    color: #1F2041;
+    text-transform: uppercase;
+  }
+
+  // .sidebar__idatearrival
+
+  &__idatearrival {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.25);
+    text-indent: 15px;
+    display: block;
+    margin: 5px 15px 0 0;
+    width: 150px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    background: url('images/expand_more.png') 90% 50% no-repeat;
+  }
+
+  // .sidebar__datedeparture
+
+  &__datedeparture {
+    display: inline-block;
+    margin: 20.5px 0 0 0;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 12.7px;
+    font-weight: bold;
+    color: #1F2041;
+    text-transform: uppercase;
+  }
+
+  // .sidebar__idatedeparture
+
+  &__idatedeparture {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.25);
+    text-indent: 15px;
+    display: block;
+    margin: 5px 0 0 0;
+    width: 150px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    background: url('images/expand_more.png') 90% 50% no-repeat;
+  }
+
+  // .sidebar__datefilter
+
+  &__datefilter {
+    display: block;
+    margin: 40px 0 0 0;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 12.7px;
+    font-weight: bold;
+    color: #1F2041;
+    text-transform: uppercase;
+  }
+
+  // .sidebar__idatefilter
+
+  &__idatefilter {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.25);
+    text-indent: 15px;
+    display: block;
+    margin: 5px 0 0 0;
+    width: 266px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    background: url('images/expand_more.png') 95% 50% no-repeat;
+  }
+
+  // .sidebar__textemail
+
+  &__textemail {
+    display: block;
+    margin: 40px 0 0 0;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 12.7px;
+    font-weight: bold;
+    color: #1F2041;
+    text-transform: uppercase;
+  }
+
+  // .sidebar__itextemail
+
+  &__itextemail {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.25);
+    text-indent: 15px;
+    display: block;
+    margin: 5px 0 0 0;
+    width: 266px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    background: url('images/arrow_forward.png') 95% 50% no-repeat;
+  }
+
+  // .sidebar__tedxtdropoff
+
+  &__def {
+    display: inline-block;
+    margin: 0 0 0 115px;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 12.7px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.5);
+
+  }
+
+  &__tedxtdropoff {
+    display: block;
+    margin: 100px 0 0 0;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 12.7px;
+    font-weight: bold;
+    color: #1F2041;
+    text-transform: uppercase;
+  }
+
+  // .sidebar__itedxtdropoff
+
+  &__itedxtdropoff {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.75);
+    text-indent: 15px;
+    display: block;
+    margin: 5px 0 0 0;
+    width: 266px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    appearance: none;
+    background: url('images/expand_more.png') 95% 50% no-repeat;
+  }
+
+  &__exp {
+    display: inline-block;
+    margin: 0 0 0 100px;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 12.7px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.5);
+
+  }
+
+  // .sidebar__textdropon
+
+  &__textdropon {
+    display: block;
+    margin: 20px 0 0 0;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 12.7px;
+    font-weight: bold;
+    color: #1F2041;
+    text-transform: uppercase;
+  }
+
+  // .sidebar__itextdropon
+
+  &__itextdropon {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.75);
+    text-indent: 15px;
+    display: block;
+    margin: 5px 0 0 0;
+    width: 266px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    appearance: none;
+    background: url('images/expand_more.png') 95% 50% no-repeat;
+  }
+
+  // .sidebar__morecomfort
+
+  &__morecomfortdown {
+    display: block;
+    margin: 54.5px 0 0 0;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase;
+    color: #1F2041;
+    background: url('images/expand_more.png') 80% 2% no-repeat;
+
+  }
+
+  &__morecomfort {
+    margin: 50px 0 0 0;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase;
+    color: #1F2041;
+    background: url('images/expand_more.png') 80% 1% no-repeat;
+  }
+
+  // .sidebar__breakfast
+
+  &__breakfast {
+    display: block;
+    margin: 18px 0 0 0;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.5);
+    text-transform: initial;
+  }
+
+  // .sidebar__ibreakfast
+
+  &__ibreakfast {
+  }
+
+  // .sidebar__ibreakfasts
+
+  &__ibreakfasts {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  // .sidebar__writetable
+
+  &__writetable {
+    display: block;
+    margin: 12px 0 0 0;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.5);
+    text-transform: initial;
+  }
+
+  // .sidebar__iwritetable
+
+  &__iwritetable {
+  }
+
+  // .sidebar__iwritetables
+
+  &__iwritetables {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  // .sidebar__chair
+
+  &__chair {
+    display: block;
+    margin: 12px 0 0 0;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.5);
+    text-transform: initial;
+  }
+
+  // .sidebar__ichair
+
+  &__ichair {
+  }
+
+  // .sidebar__ichairs
+
+  &__ichairs {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  // .sidebar__bed
+
+  &__bed {
+    display: block;
+    margin: 12px 0 0 0;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.5);
+    text-transform: initial;
+  }
+
+  // .sidebar__ibed
+
+  &__ibed {
+  }
+
+  // .sidebar__ibeds
+
+  &__ibeds {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  // .sidebar__tv
+
+  &__tv {
+    display: block;
+    margin: 12px 0 0 0;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.5);
+    text-transform: initial;
+  }
+
+  // .sidebar__itv
+
+  &__itv {
+  }
+
+  // .sidebar__itvs
+
+  &__itvs {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  // .sidebar__shampoo
+
+  &__shampoo {
+    display: block;
+    margin: 12px 0 0 0;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.5);
+    text-transform: initial;
+  }
+
+  // .sidebar__ishampoo
+
+  &__ishampoo {
+  }
+
+  // .sidebar__ishampoos
+
+  &__ishampoos {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  // .sidebar__smile
+
+  &__smile {
+    display: inline-block;
+    margin: 105px 0 0 0;
+  }
+
+  // .sidebar__comfort
+
+  &__comfort {
+    display: inline-block;
+    margin: 105px 0 0 10px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  // .sidebar__walls
+
+  &__walls {
+    margin: -14px 0 0 53px;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  // .sidebar__wallsline
+
+  &__wallsline {
+    margin: 25px 0 -15px 0;
+    border-bottom: 1px dashed rgba(31, 32, 65, 0.1);
+    background: rgba(31, 32, 65, 0.1);
+    width: 280px;
+  }
+
+  // .sidebar__locationcity
+
+  &__locationcity {
+    display: inline-block;
+    margin: 41px 0 0 0;
+  }
+
+  // .sidebar__convenience
+
+  &__convenience {
+    display: inline-block;
+    margin: 41px 0 0 14px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  // .sidebar__bedroom
+
+  &__bedroom {
+    margin: -14px 0 0 53px;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  // .sidebar__homeRules
+
+  &__homeRules {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 12.7px;
+    font-weight: bold;
+    color: #1F2041;
+    text-transform: uppercase;
+  }
+
+  // .sidebar__smoke
+
+  &__smoke {
+    display: block;
+    margin: 17px 0 0 0px;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.5);
+    text-transform: initial;
+  }
+
+  // .sidebar__ismoke
+
+  &__ismoke {
+  
+  }
+
+  // .sidebar__ismokes
+
+  &__ismokes {
+    display: inline-block;
+    margin-left: 9.5px;
+  }
+
+  // .sidebar__pet
+
+  &__pet {
+    display: block;
+    margin: 13px 0 0 0px;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.5);
+    text-transform: initial;
+  }
+
+  // .sidebar__ipet
+
+  &__ipet {
+  }
+
+  // .sidebar__ipets
+
+  &__ipets {
+    display: inline-block;
+    margin-left: 9.5px;
+  }
+
+  // .sidebar__invite
+
+  &__invite {
+    display: block;
+    margin: 13px 0 0 0px;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.5);
+    text-transform: initial;
+  }
+
+  // .sidebar__iinvite
+
+  &__iinvite {
+    vertical-align: top;
+  }
+
+  // .sidebar__iinvites
+
+  &__iinvites {
+    display: inline-block;
+    margin-left: 9.5px;
+  }
+
+  // .sidebar__rbuts
+
+  &__rbuts {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 12.7px;
+    font-weight: bold;
+    color: #1F2041;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 40px 0 0 0;
+  }
+
+  &__rb {
+    margin: 16px 0 0 0;
+  }
+
+  &__smale {
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.75);
+    text-transform: initial;
+    display: inline-block;
+    margin: 0 20px 0 14px;
+  }
+
+  &__sfemale {
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.75);
+    text-transform: initial;
+    display: inline-block;
+    margin: 0 0 0 14px;
+  }
+
+  // .sidebar__toggle
+
+  &__toggle {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 12.7px;
+    font-weight: bold;
+    color: #1F2041;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 36.5px 0 0 0;
+  }
+
+  &__tog {
+    margin: 16px 0 0 0;
+  }
+
+  // .sidebar__offersion
+
+  &__offersion {
+    
+  }
+
+  // .sidebar__offerson
+
+  &__offerson {
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.75);
+    text-transform: initial;
+    display: inline-block;
+    margin: 0 20px 0 14px;
+  }
+
+  // .sidebar__offersioff
+
+  &__offersioff {
+    
+  }
+
+  &__offersibottom {
+    margin: 10px 0 0 0;
+  }
+
+  // .sidebar__offersoff
+
+  &__offersoff {
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.75);
+    text-transform: initial;
+    display: inline-block;
+    margin: 0 20px 0 14px;
+    vertical-align: middle;
+  }
+
+  // .sidebar__like
+
+  &__like {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 12.7px;
+    font-weight: bold;
+    color: #1F2041;
+    text-transform: uppercase;
+    display: block;
+    margin: 40.5px 0 0 0;
+  }
+
+  &__li {
+    margin: 16px 0 0 0;
+  }
+
+  // .sidebar__likeion
+
+  &__likeion {
+    display: inline-block;
+    margin: 0 10px 0 0;
+  }
+
+  // .sidebar__likeioff
+
+  &__likeioff {
+  }
+
+  // .sidebar__star
+
+  &__star {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 12.7px;
+    font-weight: bold;
+    color: #1F2041;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 40.5px 0 0 0;
+  }
+
+  &__stars {
+    margin: 16px 0 0 0;
+  }
+
+  &__starion {
+    display: inline-block;
+    margin: 0 20px 0 0;
+  }
+
+  // .sidebar__staron
+
+  &__staron {
+  }
+
+  // .sidebar__staroff
+
+  &__staroff {
+  }
+
+  // .sidebar__dropguest
+
+  &__dropguest {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 12.7px;
+    font-weight: bold;
+    color: #1F2041;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 196px 0 0 0;
+  }
+
+  // .sidebar__sdropguest
+
+  &__sdropguest {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.75);
+    text-indent: 15px;
+    display: block;
+    margin: 5px 0 0 0;
+    width: 320px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    border-radius: 4px;
+    background: url('images/expand_more.png') 95% 50% no-repeat;
+    appearance: none;
+  }
+
+  // .sidebar__availability
+
+  &__availability {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 12.7px;
+    font-weight: bold;
+    color: #1F2041;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 98.5px 0 0 0;
+  }
+
+  // .sidebar__hall
+
+  &__hall {
+    display: block;
+    margin: 17px 0 0 0;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 14.5px;
+    font-weight: bold;
+    color: rgba(31, 32, 65, 0.75);
+    text-transform: initial;
+  }
+
+  // .sidebar__ihall
+
+  &__ihall {
+  }
+
+  // .sidebar__ihallm
+
+  &__ihallm {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  // .sidebar__ihalls
+
+  &__ihalls {
+    display: block;
+    margin: 5px 0 0 23px;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 12.7px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.5);
+    line-height: 14px;
+  }
+
+  // .sidebar__invalid
+
+  &__invalid {
+    display: block;
+    margin: 11px 0 0 0;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 14.5px;
+    font-weight: bold;
+    color: rgba(31, 32, 65, 0.75);
+    text-transform: initial;
+  }
+
+  // .sidebar__iinvalid
+
+  &__iinvalid {
+  }
+
+  // .sidebar__iinvalidm
+
+  &__iinvalidm {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  // .sidebar__iinvalids
+
+  &__iinvalids {
+    display: block;
+    margin: 5px 0 0 23px;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 12.7px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.5);
+  }
+
+  // .sidebar__rangePrice
+
+  &__rangePrice {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 12.7px;
+    font-weight: bold;
+    color: #1F2041;
+    text-transform: uppercase;
+  }
+
+  // .sidebar__irangePrisescount
+
+  &__irangePrisescount {
+    margin: 0 0 0 66.5px;
+    display: inline-block;
+    font-family: 'Conv_Montserrat-Regular';
+    font-weight: normal;
+    font-size: 12.7px;
+    color: rgba(31, 32, 65, 0.5);
+  }
+
+  // .sidebar__irangePrice
+
+  &__irangePrice {
+    display: block;
+    margin: 23px 0 0 0;
+    width: 282px;
+  }
+
+  // .sidebar__clickers
+
+  &__clickers {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 12.7px;
+    font-weight: bold;
+    color: #1F2041;
+    text-transform: uppercase;
+    margin: 43.5px 0 0 0;
+  }
+
+  // .sidebar__clickmepurple
+
+  &__clickmetop {
+    margin: 16px 0 0 0;
+  }
+
+  &__clickmepurple {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 12.7px;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    padding: 14px 21px 15px 19px;
+    margin: 0 19px 0 0;
+  }
+
+  // .sidebar__clickmevision
+
+  &__clickmevision {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 12.7px;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    opacity: 0.5;
+    border-radius: 22px;
+    padding: 14px 21px 15px 19px;
+  }
+
+  // .sidebar__clickmecontur
+
+  &__clickmebottom {
+    margin: 30px 0 0 0;
+  }
+
+  &__clickmecontur {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 12.7px;
+    font-weight: bold;
+    color: #BC9CFF;
+    background: #ffffff;
+    border: 2px solid #BC9CFF;
+    border-radius: 22px;
+    padding: 14px 21px 15px 19px;
+    margin: 0 19px 0 0;
+  }
+
+  // .sidebar__clickmeopacity
+
+  &__clickmeopacity {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 12.7px;
+    font-weight: bold;
+    color: #BC9CFF;
+    background: #ffffff;
+    border: 2px solid #BC9CFF;
+    border-radius: 22px;
+    opacity: 0.5;
+    padding: 14px 21px 15px 19px;
+    margin: 0 19px 0 0;
+  }
+
+  // .sidebar__clickcolor
+
+  &__clickmep {
+    margin: 30.5px 0 0 0;
+  }
+
+  &__clickcolor {
+    display: inline-block;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 12.7px;
+    font-weight: bold;
+    color: #BC9CFF;
+    margin: 0 20px 0 0;
+  }
+
+  // .sidebar__clicknocolor
+
+  &__clicknocolor {
+    display: inline-block;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 12.7px;
+    font-weight: bold;
+    color: rgba(31, 32, 65, 0.5);
+  }
+
+  // .sidebar__butpay
+
+  &__butpay {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 12.7px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 320px;
+    background:  url('images/arrow_forwardright.png') 95% 50% no-repeat, 
+    linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    padding: 14px 20px 15px 10px;
+    margin: 30.5px 0 0 0;
+  }
+
+  // .sidebar__list
+
+  &__list {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 12.7px;
+    font-weight: bold;
+    color: #1F2041;
+    text-transform: uppercase;
+    margin: 40px 0 0 0;
+  }
+
+  // .sidebar__page
+
+  &__page {
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 12.7px;
+    color: rgba(31, 32, 65, 0.5);
+    word-spacing: 25px;
+    margin: 16.5px 0 0 0;
+  }
+
+  // .sidebar__onepage
+
+  &__onepage {
+    display: inline-block;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 50%;
+    padding: 15px 19px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #ffffff;
+  }
+
+  // .sidebar__nextpagearrow
+
+  &__nextpagearrow {
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border-radius: 50%;
+    padding: 13px 13px;
+  }
+
+  // .sidebar__legend
+
+  &__legend {
+    margin: 11px 0 0 0;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.75);
+    text-transform: initial;
+  }
+
+  // .sidebar__dropguests
+
+  &__dropguests {
+    display: block;
+    margin: 230px 0 0 0;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 12.7px;
+    font-weight: bold;
+    color: #1F2041;
+    text-transform: uppercase;
+  }
+
+  // .sidebar__sdropguests
+
+  &__sdropguests {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.25);
+    text-indent: 15px;
+    display: block;
+    margin: 5px 0 0 0;
+    width: 320px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    background: url('images/expand_more.png') 95% 50% no-repeat;
+    appearance: none;
+  }
+
+  &__bottomflexbox {
+    @include flexbox();
+  }
+
+  &__bottcolumn1 {
+    margin-right: 156px;
+  }
+
+  // .sidebar__roomrulescolumns
+
+  &__roomrulescolumns {
+  }
+
+  // .sidebar__roomrulestitle
+
+  &__roomrulestitle {
+    margin: 98.5px 0 0 0;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 12.7px;
+    text-transform: uppercase;
+    color: #1F2041;
+  }
+
+  // .sidebar__roomruleslist
+
+  &__roomruleslist {
+    margin: 20px 0 0 0;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+  // .sidebar__party
+
+  &__party {
+   
+  }
+
+  // .sidebar__timearr
+
+  &__timearr {
+  }
+
+  &__muradrev {
+    margin: 90px 0 0 0;
+
+  }
+
+  &__murad {
+    display: inline-block;
+    margin: 10px 0 0 -20px;
+  }
+
+  &__username1 {
+    display: inline-block;
+    margin: 23px 0 0 -15px;
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+
+  }
+
+  &__time {
+    display: inline-block;
+    margin: 15px 0 0 0;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.75);
+
+  }
+
+  // .sidebar__h12
+
+  &__h12 {
+  }
+
+  // .sidebar__comment1
+
+  &__comment1 {
+    display: inline-block;
+    margin: 0 0 0 10px;
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14.5px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+}
+
+
 
 
 
