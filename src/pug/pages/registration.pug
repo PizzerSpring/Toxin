@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Регистрация
+    .wrapper
+       include ../../pug/includes/modules/header.pug
+       section.sectionregistration
+         form(action="").sectionregistration__registrationform
+           h2.sectionregistration__registrationtitle Регистрация аккаунта
+              label(for="name").sectionregistration__name
+                input(type="text", placeholder="Имя", id="name").sectionregistration__iname
+              label(for="surname").sectionregistration__surname
+                input(type="text", placeholder="Фамилия", id="surname").sectionregistration__isurname
+              label(for="male").sectionregistration__male
+                input(type="radio", id="male", checked).sectionregistration__imale
+                span.sectionregistration__smale Мужчина
+              label(for="female").sectionregistration__female
+                input(type="radio", id="female").sectionregistration__ifemale
+                span.sectionregistration__sfemale Женщина 
+              label(for="birth").sectionregistration__birth дата рождения
+                input(type="text", placeholder="ДД.ММ.ГГГГ", id="birth").sectionregistration__ibirth 
+              label(for="mail").sectionregistration__mail данные для входа в сервис
+                input(type="text", placeholder="Email", id="mail").sectionregistration__imail 
+              label(for="passlog").sectionregistration__passlog
+                input(type="text", placeholder="Пароль", id="passlog").sectionregistration__ipasslog
+              img(src="../../assets/img/slider.png", alt="").sectionregistration__slider
+              p.sectionregistration__specialoffers Получать спецпредложения
+              button.sectionregistration__registrlog зарегистрироваться
+              p.sectionregistration__haceanaccount Уже есть аккаунт на Toxin
+              button.sectionregistration__signinreg войти    
+       include ../../pug/includes/modules/footer.pug
+        body 

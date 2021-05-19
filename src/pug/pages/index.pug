@@ -1,0 +1,38 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Toxin
+  //-  style
+  //-     include ../../assets/css/header.css
+.wrapper
+  include ../../pug/includes/modules/header.pug
+  main.main
+    form.main__searchnumber(action='')
+      h2.main__title 
+        | Найдем номера под
+        br
+        |  ваши пожелания
+      .main__topinput
+        label.main__arrival(for='arrival')
+          | Прибытие
+          input#arrival.datepicker-here.main__iarrival(type='text' placeholder='  ДД.ММ.ГГГГ')
+        label.main__departure(for='departure')
+          | Выезд
+          input#departure.main__ideparture(type='date')
+      label.main__guestcount(for='guestcount')
+        | Гости
+        
+        select.guestcount.main__sguestcount
+          option(value="") Сколько гостей
+          -let values = [1,2,3,4,5,6,7,8,9,10];
+             each val in values
+               option(value="")= val
+      a(href="search.html").main__searchbutton Подобрать номер          
+    span.main__legend 
+      | Лучшие номера для вашей работы,
+      br
+      |  отдыха и просто вдохновения
+  include ../../pug/includes/modules/footer.pug
+body  

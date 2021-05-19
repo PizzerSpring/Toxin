@@ -1,0 +1,153 @@
+// footer style
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@font-face {
+  font-family: 'Conv_Montserrat-Regular';
+  src: url("../../fonts/Montserrat-Regular.eot");
+  src: local("☺"), url("../../fonts/Montserrat-Regular.woff") format("woff"), url("../../fonts/Montserrat-Regular.ttf") format("truetype"), url("../../fonts/Montserrat-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Conv_Montserrat-Bold';
+  src: url("../../fonts/Montserrat-Bold.eot");
+  src: local("☺"), url("../../fonts/Montserrat-Bold.woff") format("woff"), url("../../fonts/Montserrat-Bold.ttf") format("truetype"), url("../../fonts/Montserrat-Bold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@mixin flexbox() {display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex;}
+
+$font-family: 'Conv_Montserrat-Regular', sans-serif;
+$minwidth: 320px;
+$mw: 1222;
+/*$md1: $mw+12;
+$md2: 750; 
+$md3: 767.98;
+$md4: 479.98;*/
+
+/*Reset styles*/
+*{padding:0;margin:0;border:0;}
+ *,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+ :focus,:active{outline:none;}
+ a:focus,a:active{outline:none;}
+ nav,footer,header,aside{display:block;}
+ html,body{font-family: $font-family; color: #000; position: relative; padding: 0; margin: 0; min-width: $minwidth; height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+ input,button,textarea{font-family:inherit;}
+ input::-ms-clear{display:none;}
+ button{cursor:pointer;}
+ button::-moz-focus-inner{padding:0;border:0;}
+ a,a:visited{text-decoration:none;}
+ a:hover{text-decoration:none;}
+ ul li{list-style:none;}
+ img{vertical-align:top;}
+ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit; } 
+
+  .wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    @include flexbox();
+    flex-direction: column;
+}
+
+.container {
+  /* max-width: $mw+px; margin: 0 auto;  width: 100%;*/
+   /*@media(max-width: $md1+px) {max-width: 750px;}
+   @media(max-width: $md2+px) {max-width: none; padding: 0 10px;} */
+}
+
+.footer {
+  margin-top: 106px;
+
+  &__topinfo {
+    @include flexbox();
+  }
+  &__column1 {
+    margin-right: 50px;
+  }
+  &__column2 {
+    margin-right: 57px;
+  }
+  &__column3 {
+   margin-right: 95px;
+  }
+  &__column4 {
+    margin-right: 70px;
+  }
+  &__column5 {
+  margin-right: 0;
+  }
+
+  &__text {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.75);
+    line-height: 24px;
+    margin: 20px 0 0 0;
+  }
+
+  &__logolist {
+    font-family: 'Conv_Montserrat-Bold', sans-serif;
+    font-size: 12.7px;
+    font-weight: bold;
+    color: #1F2041;
+    text-transform: uppercase;
+  }
+
+  &__menulink {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.5);
+    line-height: 17px;
+    display: inline-block;
+    margin: 25px 0 0 0;
+  }
+
+  &__send {
+    position: relative;
+    height: 100px;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 6px;
+      margin: auto 0;
+      width: 25px;
+      height: 25px;
+      background: url('../../img/arrow_forward.png') no-repeat;
+      background-size: cover;
+    }
+  }
+  &__e-mail {
+    margin: 26px 0 0 0;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 270px;
+    height: 46px;
+    text-indent: 15px;
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.5px;
+    color: rgba(31, 32, 65, 0.25); /****/
+  }
+
+  &__bottominfo {
+    margin: 105px 0 0 0;
+    @include flexbox();
+    justify-content: space-between;
+    height: 70px;
+    padding-top: 26px;
+  }
+
+  &__copyright {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+    font-size: 14.7px;
+    color: rgba(31, 32, 65, 0.75);
+    text-indent: -3px;
+   
+  }
+
+  &__iconlink {
+    margin: 0 0 0 20px;
+  }
+}

@@ -1,0 +1,25 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Toxin
+  //-  style
+  //-     include ../../../assets/css/header.css
+.wrapper
+  header.header
+    .container
+      .header__main
+        .header__logo
+          a(href='index.html')
+            img(src='../../assets/img/Logo.svg' alt='')
+        nav.header__nav
+          ul.header__menu
+            -let values = ['О нас', 'Услуги','Вакансии','Новости','Соглашения'];
+              each val in values
+                li
+                  a.header__menulink(href='')= val
+            li
+              a.header__login.icon(href='login.html') Войти
+            li
+              a.header__reg(href='registration.html') Зарегистрироваться

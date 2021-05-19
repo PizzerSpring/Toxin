@@ -1,0 +1,52 @@
+footer.footer
+    .container
+      .footer__topinfo
+        .footer__column1
+          .footer__logo
+            a(href='')
+              img(src='../../assets/img/Logo.svg' alt='')
+          p.footer__text
+            | Бронирование номеров в лучшем
+            br
+            | отеле 2019 года по версии      
+            br
+            | ассоциации «Отельные взгляды»
+        .footer__column2
+          p.footer__logolist навигация
+           ul.footer__menu
+             -let valuescol1 = ['О нас', 'Новости', 'Служба поддержки', 'Услуги'];
+               each val in valuescol1
+                 li
+                   a.footer__menulink(href='')= val           
+        .footer__column3
+          p.footer__logolist о нас
+          ul.footer__menu
+            -let valuescol2 = ['О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы'];
+               each val in valuescol2
+                 li
+                   a.footer__menulink(href='')= val  
+        .footer__column4
+          p.footer__logolist служба поддержки
+          ul.footer__menu
+            -let valuescol3 = ['Соглашения', 'Сообщества', 'Связь с нами'];
+               each val in valuescol3
+                 li
+                   a.footer__menulink(href='')= val 
+        .footer__column5
+          p.footer__logolist Подписка
+          p.footer__text 
+            | Получайте специальные
+            br
+            | предложения и новости сервиса
+          form.footer__send(action='')
+            label(for='e-mail')
+              input#e-mail.footer__e-mail(type='email' placeholder='Email')
+      .footer__bottominfo
+        p.footer__copyright Copyright &copy; 2018 Toxin. Все права зачищены.
+        p.footer__icon
+          a.footer__iconlink(href='')
+            img(src='../../assets/img/twiter.png' alt='')
+          a.footer__iconlink(href='')
+            img(src='../../assets/img/facebook.png' alt='')
+          a.footer__iconlink(href='')
+            img(src='../../assets/img/instagram.png' alt='')
