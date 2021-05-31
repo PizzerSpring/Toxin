@@ -8,8 +8,8 @@ import './assets/scss/modules/header.scss';
 import './assets/scss/modules/footer.scss';
 import './assets/scss/modules/login.scss';
 import './assets/scss/modules/registration.scss';
-//import './assets/scss/modules/searchRoomFilter.scss';
-//import './assets/scss/modules/roomDetails.scss';
+import './assets/scss/modules/searchRoomFilter.scss';
+import './assets/scss/modules/roomDetails.scss';
 
 // CSS (example)
 // import './assets/css/main.css'

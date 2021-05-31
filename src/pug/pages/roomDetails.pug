@@ -7,5 +7,122 @@ html(lang="en")
         title Информация о номере
     .wrapper
         include ../../pug/includes/modules/header.pug
+        section.sectionaboutimg
+          article.sectionaboutimg__roomimage
+            .sectionaboutimg__roomimagecolumn
+              img(src="../../assets/img/imager1.png", alt="").sectionaboutimg__roomimage
+            .sectionaboutimg__roomimagecolumn
+              img(src="../../assets/img/imager2.png", alt="").sectionaboutimg__roomimage2
+              img(src="../../assets/img/imager3.png", alt="").sectionaboutimg__roomimage3
+        section.sectionabout
+          .container
+            .sectionabout__flexbox
+              .sectionabout__column
+                article.sectionabout__inforoom
+                  .sectionabout__inforoomcolumn
+                    h2.sectionabout__info Сведения о номере
+                    img(src="../../assets/img/insert_emoticon.png", alt="").sectionabout__smile
+                    h3.sectionabout__comfort Комфорт
+                    p.sectionabout__walls Шумопоглощающие стены
+                    hr.sectionabout__wallsline
+                    img(src="../../assets/img/location_city.png", alt="").sectionabout__locationcity
+                    h3.sectionabout__convenience Удобство
+                    p.sectionabout__bedroom Окно в каждой из спален
+                    hr.sectionabout__bedroomline
+                    img(src="../../assets/img/whatshot.png", alt="").sectionabout__whatshot
+                    h3.sectionabout__cosiness Уют
+                    p.sectionabout__fireplace Номер оснащён камином
+                  .sectionabout__inforoomcolumn
+                    h2.sectionabout__impression Впечатления от номера
+                    .sectionabout__voicesflex
+                      p.sectionabout__voices 260
+                        br
+                        span.sectionabout__voicescolor голосов
+                      ul.sectionabout__list
+                        li.sectionabout__sumptuously Великолепно
+                        li.sectionabout__well Хорошо
+                        li.sectionabout__satisfactorily Удовлетворительно
+                        li.sectionabout__dissapointed Разочарован
+                article.sectionabout__revusers
+                  h2.sectionabout__reviews Отзывы посетителей номера
+                  span.sectionabout__reviewscount 2 отзыва
+                  .sectionabout__muradrev
+                    img(src="../../assets/img/murad.png", alt="").sectionabout__murad 
+                    p.sectionabout__username1 Мурад Сарафанов
+                      br
+                      span.sectionabout__time 5 дней назад
+                    .sectionabout__h12
+                      img(src="../../assets/img/heart12.png", alt="")
+                      p.sectionabout__comment1
+                        | Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий.
+                        br
+                        | И стены действительно, шумоподавляющие. Выкрикивал комплименты повару — никто
+                        br
+                        | не жаловалс из соседей.
+                  .sectionabout__patriciarev
+                    img(src="../../assets/img/patricia.png", alt="").sectionabout__patricia
+                    p.sectionabout__username2 Патрисия Стёклышкова
+                      br
+                      span.sectionabout__time Неделю назад
+                    .sectionabout__h2
+                      img(src="../../assets/img/heart2.png", alt="")
+                      p.sectionabout__comment2 
+                        | Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать,
+                        br
+                        | каждый день новое блюдо и десерт как комплимент
+                article.sectionabout__roomrules
+                  .sectionabout__roomrulescolumns
+                    h2.sectionabout__roomrulestitle Правила
+                    ul.sectionabout__roomruleslist
+                      li.sectionabout__pet Нельзя с питомцами
+                      li.sectionabout__party Без вечеринок и мероприятий
+                      li.sectionabout__timearr 
+                        | Время прибытия — после 13:00,
+                        br
+                        | а выезд до 12:00
+                  .sectionabout__roomrulescolumns
+                    h2.sectionabout__roomrulescancel Отмена
+                    p.sectionabout__cancel 
+                      | Бесплатная отмена в течение 48 ч. После
+                      br 
+                      | этого при отмене не позднее чем за 5 дн. до
+                      br
+                      | прибытия вы получите полный возврат за
+                      br
+                      | вычетом сбора за услуги.
+              .sectionabout__column
+                aside.sectionabout__reservation
+                  p.sectionabout__number № 888
+                    span.sectionabout__numberlux люкс
+                  p.sectionabout__price 9990P
+                    | !{' '}
+                    span.sectionabout__pricetime в сутки
+                  p.sectionabout__titlearr
+                  form(action="").sectionabout__makeareservation
+                    .sectionabout__topinput
+                      label(for="arrivalnumber").sectionabout__arrival Прибытие
+                        input(type="text", id="arrivalnumber", placeholder="19.08.2019").sectionabout__iarrival
+                      label(for="departurenumber").sectionabout__departure Выезд
+                        input(type="text", id="departurenumber", placeholder="23.08.2019").sectionabout__ideparture
+                    label(for="guestsnumber").sectionabout__guests Гости
+                      select(name="", id="guestsnumber").sectionabout__iguests
+                        option(value="") 3 гостя
+                    p.sectionabout__dayscount 9 990₽ х 4 суток
+                    span.sectionabout__pricedayscount 39 960₽
+                    p.sectionabout__services Сбор за услуги: скидка 2 179₽
+                    img(src="../../assets/img/sign.png", alt="").sectionabout__signprice1
+                    span.sectionabout__priceservices 0₽
+                    p.sectionabout__moreservices Сбор за доп. услуги
+                    img(src="../../assets/img/sign.png", alt="").sectionabout__signprice2
+                    span.sectionabout__morepriceservices 300₽
+                    p.sectionabout__result Итого
+                    hr.sectionabout__resultline
+                    span.sectionabout__priceresult 38 081₽
+                    button.sectionabout__book забронировать   
+                                               
+                               
+
+                                                        
+        
         include ../../pug/includes/modules/footer.pug   
     body 

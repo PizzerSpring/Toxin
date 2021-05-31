@@ -1,3 +1,4 @@
+include ../utils/mixins.pug
 doctype html
 html(lang="en")
     head
@@ -7,5 +8,89 @@ html(lang="en")
         title Поиск номера
     .wrapper
         include ../../pug/includes/modules/header.pug
+        section.section
+          .container
+            .section__numbers
+              form(action="").section__searchfilter
+                label(for="darrival").section__darrival Даты пребывания в отеле
+                  input(type="text", placeholder="19 авг - 23 авг", id="darrival").section__idarrival
+                label(for="guests").section__guests Гости
+                  input(type="text", placeholder="3 гостя, 1 младенец", id="guests").section__iguests 
+                label(for="rangePrice").section__rangePrice Диапазон цены
+                  span.section__irangePrisescount 5 000₽ - 10 000₽   
+                  input(type="range", id="rangePrice").section__irangePrice
+                  span.section__irangePrices Стоимость за сутки пребывания в номере
+                .section__homeRules
+                  label(for="smoke").section__smoke
+                    input(type="checkbox", id="smoke").section__ismoke
+                    span.section__ismokes Можно курить
+                  label(for="pet").section__pet
+                    input(type="checkbox", id="pet").section__ipet 
+                    span.section__ipets Можно с питомцами
+                  label(for="invite").section__invite
+                    input(type="checkbox", id="invite").section__iinvite
+                    span.section__iinvites 
+                      | Можно пригласить гостей
+                      br
+                      | (до 10 человек)
+                .section__availability
+                  label(for="hall").section__hall
+                    input(type="checkbox", id="hall").section__ihall
+                    span.section__ihallm Широкий коридор
+                    span.section__ihalls 
+                      | Ширина коридоров в номере
+                      br
+                      | не менее 91 см.
+                  label(for="invalid").section__invalid
+                    input(type="checkbox", id="invalid").section__iinvalid
+                    span.section__iinvalidm Помощник для инвалидов
+                    span.section__iinvalids 
+                      | На 1 этаже вас встретит специалист
+                      br
+                      | и проводит до номера.
+                label(for="comfort").section__comfort
+                  select(name="", id="comfort").section__scomfort
+                    option(value="")  2 спальни 2 кровати
+                .section__morecomfort
+                  label(for="breakfast").section__breakfast
+                    input(type="checkbox", id="breakfast").section__ibreakfast
+                    span.section__ibreakfasts Завтрак
+                  label(for="writetable").section__writetable 
+                    input(type="checkbox", id="writetable").section__iwritetable
+                    span.section__iwritetables Письменный стол
+                  label(for="chair").section__chair
+                    input(type="checkbox", id="chair").section__ichair
+                    span.section__ichairs Стул для кормления 
+                  label(for="bed").section__bed
+                    input(type="checkbox", id="bed").section__ibed
+                    span.section__ibeds Кроватка
+                  label(for="tv").section__tv
+                    input(type="checkbox", id="").section__itv 
+                    span.section__itvs Телевизор
+                  label(for="shampoo").section__shampoo
+                    input(type="checkbox", id="shampoo").section__ishampoo
+                    span.section__ishampoos Шампунь 
+              .section__cardnumbers
+                h2.section__cardnumberstitle Номера, которые мы для вас подобрали
+                .section__gridcontainer
+                  +hotelPreview('../../assets/img/image.png','888', '9990₽', '145', true)
+                  +hotelPreview('../../assets/img/image4.png','840', '9900₽', '65') 
+                  +hotelPreview('../../assets/img/image5.png','980', '8500₽', '35', true) 
+                  +hotelPreview('../../assets/img/image6.png','856', '7300₽', '19')
+                  +hotelPreview('../../assets/img/image 7.1.png','740', '6000₽', '44') 
+                  +hotelPreview('../../assets/img/image 7.2.png','982', '5800₽', '56') 
+                  +hotelPreview('../../assets/img/image 7.png','678', '5500₽', '45') 
+                  +hotelPreview('../../assets/img/image 8.png','450', '5300₽', '39') 
+                  +hotelPreview('../../assets/img/image 9.png','350', '5000₽', '77') 
+                  +hotelPreview('../../assets/img/image 10.png','666', '5000₽', '25')         
+                  +hotelPreview('../../assets/img/image 11.png','444', '5000₽', '15') 
+                  +hotelPreview('../../assets/img/image 12.png','352', '5000₽', '55')    
+                .section__list
+                  .section__page 
+                    a(href="").section__onepage 1
+                    |  2 3 ... 15
+                    a(href="") 
+                      img(src="../../assets/img/nextpagearrow.png", alt="").section__nextpagearrow
+                  .section__legend 1 – 12 из 100+ вариантов аренды                                                                                                                                                
         include ../../pug/includes/modules/footer.pug     
     body 

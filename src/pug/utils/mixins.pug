@@ -2,3 +2,29 @@ mixin item(title, descr)
   .item
     h2.item-title= title
     p.item-descr= descr
+
+
+mixin hotelPreview(source, number, price, reviews, lux)
+  a(href="roomDetails.html") 
+    .section__cardhotel
+     img(src= source, alt="").section__numberphoto
+     span.section__circlewhite
+     span.section__circle1
+     span.section__circle2
+     span.section__circle3
+     p.section__number= '№ ' + number
+       if(lux)
+         span.section__lux люкс
+       else
+         span.section__nolux   
+     p.section__pricelux= price + ' '
+       span.section__day в сутки
+     hr.section__cardline
+     p.section__raiting
+       img(src="../../assets/img/star.png", alt="").section__star     
+       img(src="../../assets/img/star.png", alt="").section__star
+       img(src="../../assets/img/star.png", alt="").section__star
+       img(src="../../assets/img/star.png", alt="").section__star
+       img(src="../../assets/img/star.png", alt="").section__star
+     p.section__reviews= reviews
+       span.section__revs  Отзывов 
