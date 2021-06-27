@@ -1,7 +1,28 @@
-// Font
-$mainFont                : 'Montserrat', Helvetica, Arial, sans-serif;
+//@import "./fonts.scss";
 
-// Size
+// Font
+
+$mainBoldFont: "Conv_Montserrat-Bold", sans-serif;
+$mainRegularFont: "Conv_Montserrat-Regular", sans-serif;
+
+
+$mainFont: 'Montserrat', Helvetica, Arial, sans-serif;
+
+
+// All size
+
+$mainBigSize: 14.5px;
+$mainMiddle: 13.7px;
+$mainSmallSize: 12.7px;
+
+$minwidth: 320px;
+$mw: 1222;
+$md1: $mw+12;
+$md2: 750; 
+$md3: 767.98;
+$md4: 479.98;
+
+
 $mainFontColor           : #101010;
 $mainFontSize            : 18px;
 $mainFontWeight          : 400;
@@ -13,8 +34,21 @@ $tableWidth              : 768px;
 $phoneWidth              : 480px;
 $smPhoneWidth            : 320px;
 
-// Main color
-$default-color           : #ffffff;
+// All color
+$white-color:#ffffff;
+$light-black:#1f2041;
+$light-black-transparensy-third:rgba(31, 32, 65, 0.75);
+$light-black-transparensy-half:rgba(31, 32, 65, 0.5);
+$light-black-transparensy-fourth:rgba(31, 32, 65, 0.25);
+$light-black-transparensy-halfhalf:rgba(31, 32, 65, 0.05);
+$light-black-transparensy-onetenth:rgba(31, 32, 65, 0.1);
+$light-black-transparensy-onetenthtwo:rgba(31, 32, 65, 0.12);
+$almostblack: rgba(0,0,0, 0.2);
+$lilac:#bc9cff;
+$blue: #8ba4f9;
+$black-color: #000000;
+
+//
 $primary-color           : #444ce0;
 $success-color           : #26de81;
 $danger-color            : #fc5c65;
