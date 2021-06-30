@@ -1,14 +1,7 @@
 @import "../utils/fonts.scss";
 @import "../utils/vars.scss";
 @import "../utils/reset.scss";
-
-@mixin flexbox() {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-}
+@import "../utils/mixins.scss";
 
 .wrapper {
   width: 100%;
@@ -27,7 +20,6 @@
 .header {
   padding: 18px 0;
   box-shadow: 0px 10px 20px $light-black-transparensy-halfhalf;
-
   &__main {
     @include flexbox();
     justify-content: space-between;
@@ -35,29 +27,19 @@
     .header__menu {
       @include flexbox();
       .header__menulink {
-        font-family: $mainRegularFont;
-        color: $light-black-transparensy-half;
+        @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-half); //CSS JAVASCRIPT //CSS JAVASCRIPT
         margin: 0 26px 0 0;
-        font-size: $mainBigSize;
       }
-
       .header__login {
-        font-family: $mainBoldFont;
-        color: $lilac;
-        font-size: $mainMiddle;
-        font-weight: bold;
+        @include fontw($mainBoldFont, $mainMiddle, $lilac, bold);
         text-transform: uppercase;
         border: 2px solid $lilac;
         border-radius: 22px;
         padding: 9px 20px 10px 20px;
         margin: 0 20px 0 0;
       }
-
       .header__reg {
-        font-family: $mainBoldFont;
-        color: #ffffff;
-        font-weight: bold;
-        font-size: $mainSmallSize;
+        @include fontw($mainBoldFont, $mainSmallSize, $white-color, bold);
         text-transform: uppercase;
         background: linear-gradient(180deg, $lilac 0%, $blue 100%);
         border-radius: 22px;

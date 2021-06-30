@@ -1,14 +1,7 @@
 @import "../utils/fonts.scss";
 @import "../utils/vars.scss";
 @import "../utils/reset.scss";
-
-@mixin flexbox() {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-}
+@import "../utils/mixins.scss";
 
 .wrapper {
   width: 100%;
@@ -39,161 +32,84 @@
     top: 19px;
     box-shadow: 0px 0px 25px $almostblack;
     .sectionregistration__registrationtitle {
-      font-family: $mainBoldFont;
-      color: $light-black;
-      font-weight: bold;
-      font-size: 24px;
+      @include fontw($mainBoldFont, 24px, $light-black, bold);
       .sectionregistration__iname {
-        font-family: $mainRegularFont;
-        font-size: $mainBigSize;
-        color: $light-black-transparensy-fourth;
-        text-indent: 15px;
-        display: block;
+        @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-fourth);
+        @extend %middleInput;
         margin: 20px 0 0 0;
-        border: 1px solid $light-black-transparensy-fourth;
-        border-radius: 4px;
-        width: 320px;
-        height: 44px;
       }
       .sectionregistration__isurname {
-        font-family: $mainRegularFont;
-        font-size: $mainBigSize;
-        color: $light-black-transparensy-fourth;
-        text-indent: 15px;
-        display: block;
+        @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-fourth);
+        @extend %middleInput;
         margin: 20px 0 0 0;
-        border: 1px solid $light-black-transparensy-fourth;
-        border-radius: 4px;
-        width: 320px;
-        height: 44px;
       }
       .sectionregistration__imale {
         display: inline-block;
-        margin: 10.5px 0 0 0;
-      }
+        margin: 10.5px 0 0 0;       // CSS JAVASCRIPT
+      }  
       .sectionregistration__smale {
         display: inline-block;
         margin: 0 20px 0 14px;
-        font-family: $mainRegularFont;
-        font-size: 14px;
-        font-weight: normal;
-        color: $light-black-transparensy-third;
+        @include fontw($mainRegularFont, 14px, $light-black-transparensy-third, normal);
         vertical-align: middle;
       }
       .sectionregistration__sfemale {
         display: inline-block;
         margin: 0 0 0 10px;
-        font-family: $mainRegularFont;
-        font-size: 14px;
-        font-weight: 400;
-        color: $light-black-transparensy-third;
-        vertical-align: middle;
+        @include fontw($mainRegularFont, 14px, $light-black-transparensy-third, 400);
+        vertical-align: middle;   // CSS JAVASCRIPT
       }
       .sectionregistration__birth {
         display: block;
         margin: 19.5px 0 0 0;
-        font-family: $mainBoldFont;
-        color: $light-black;
-        font-weight: bold;
-        font-size: $mainSmallSize;
+        @include fontw($mainBoldFont, $mainSmallSize, $light-black, bold);
         text-transform: uppercase;
       }
       .sectionregistration__ibirth {
-        font-family: $mainRegularFont;
-        font-size: $mainBigSize;
-        color: $light-black-transparensy-fourth;
-        text-indent: 15px;
-        display: block;
-        margin: 5px 0 0 0;
-        border: 1px solid $light-black-transparensy-fourth;
-        border-radius: 4px;
-        width: 320px;
-        height: 44px;
+        @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-fourth);
+        @extend %middleInput;
+        margin: 5px 0 0 0;   // CSS JAVASCRIPT
       }
       .sectionregistration__mail {
         display: block;
         margin: 20px 0 0 0;
-        font-family: $mainBoldFont;
-        color: $light-black;
-        font-weight: bold;
-        font-size: $mainSmallSize;
+        @include fontw($mainBoldFont, $mainSmallSize, $light-black, bold);
         text-transform: uppercase;
       }
       .sectionregistration__imail {
-        font-family: $mainRegularFont;
-        font-size: $mainBigSize;
-        color: $light-black-transparensy-fourth;
-        text-indent: 15px;
-        display: block;
+        @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-fourth);
+        @extend %middleInput;
         margin: 5px 0 0 0;
-        border: 1px solid $light-black-transparensy-fourth;
-        border-radius: 4px;
-        width: 320px;
-        height: 44px;
+
       }
       .sectionregistration__ipasslog {
-        font-family: $mainRegularFont;
-        font-size: $mainBigSize;
-        color: $light-black-transparensy-fourth;
-        text-indent: 15px;
-        display: block;
+        @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-fourth);
+        @extend %middleInput;
         margin: 10px 0 0 0;
-        border: 1px solid $light-black-transparensy-fourth;
-        border-radius: 4px;
-        width: 320px;
-        height: 44px;
       }
       .sectionregistration__slider {
         display: inline-block;
-        margin: 10px 10px 0 0;
+        margin: 10px 10px 0 0;  //CSS JAVASCRIPT
       }
       .sectionregistration__specialoffers {
         display: inline-block;
         margin: 13px 0 0 0;
-        font-family: $mainRegularFont;
-        font-size: $mainBigSize;
-        font-weight: normal;
-        color: $light-black-transparensy-third;
+        @include fontw($mainRegularFont, $mainBigSize, $light-black-transparensy-third, normal);
       }
       .sectionregistration__registrlog {
-        display: block;
-        margin: 20px 0 0 0;
-        padding: 14px 0 15px 0;
-        width: 320px;
-        height: 44px;
-        background: url("../../img/arrow_forwardright.png") 95% 50% no-repeat,
-          linear-gradient(180deg, $lilac 0%, $blue 100%);
-        border-radius: 22px;
-        font-family: $mainBoldFont;
-        color: $white-color;
-        font-weight: bold;
-        font-size: $mainSmallSize;
-        text-transform: uppercase;
-        text-align: center;
+        @extend %middleButton;
+        margin: 20px 0 0 0; //CSS
+        @include fontw($mainBoldFont, $mainSmallSize, $white-color, bold);
       }
       .sectionregistration__haceanaccount {
         display: inline-block;
         margin: 0 22px 0 0;
-        font-family: $mainRegularFont;
-        font-size: $mainBigSize;
-        font-weight: normal;
-        color: $black-color;
+        @include fontw($mainRegularFont, $mainBigSize, $black-color, normal);
       }
       .sectionregistration__signinreg {
-        display: inline-block;
+        @extend %smallButton;
         margin: 30px 0 0 0;
-        padding: 13px 0 15px 0;
-        width: 99px;
-        height: 44px;
-        border-radius: 22px;
-        font-family: $mainBoldFont;
-        color: $lilac;
-        background: $white-color;
-        border: 2px solid $lilac;
-        font-weight: bold;
-        font-size: $mainSmallSize;
-        text-transform: uppercase;
-        text-align: center;
+        @include fontw($mainBoldFont, $mainSmallSize, $lilac, bold);
       }
     }
   }

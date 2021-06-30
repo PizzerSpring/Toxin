@@ -1,14 +1,7 @@
 @import "../utils/fonts.scss";
 @import "../utils/vars.scss";
 @import "../utils/reset.scss";
-
-@mixin flexbox() {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-}
+@import "../utils/mixins.scss";
 
 .wrapper {
   width: 100%;
@@ -28,7 +21,6 @@
   background-image: url("../../img/image3.png");
   height: 830px;
   position: relative;
-
   &__searchnumber {
     padding: 40px 30px 30px 30px;
     position: absolute;
@@ -38,110 +30,61 @@
     width: 400px;
     background-color: $white-color;
     .main__title {
-      font-family: $mainBoldFont;
-      color: $light-black;
-      font-weight: bold;
-      font-size: 25.5px;
+      @include fontw($mainBoldFont, 25.5px, $light-black, bold);
       margin-bottom: 21px;
     }
     .main__topinput {
       @include flexbox();
       justify-content: space-between;
       .main__arrival {
-        font-family: $mainBoldFont;
-        color: $light-black;
-        font-weight: bold;
-        font-size: $mainSmallSize;
+        @include fontw($mainBoldFont, $mainSmallSize, $light-black, bold);
         text-transform: uppercase;
         .main__iarrival {
-          font-family: $mainRegularFont;
-          font-size: $mainBigSize;
-          color: $light-black-transparensy-third;
-          text-indent: 8px;
-          text-transform: uppercase;
-          display: block;
-          border: 1px solid $light-black-transparensy-fourth;
-          border-radius: 4px;
-          width: 160px;
-          height: 44px;
+          @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-third);
+          @extend %smallInput;
           margin: 6px 0 0 0;
-          background: url("../../img/expand_more.png") 90% 50% no-repeat;
+          background: url("../../img/expand_more.png") 90% 50% no-repeat; //CSS JAVASCRIPT
         }
       }
        .main__departure {
-        font-family: $mainBoldFont;
-        color: #1f2041;
-        font-weight: bold;
-        font-size: $mainSmallSize;
+        @include fontw($mainBoldFont, $mainSmallSize, $light-black, bold);
         text-transform: uppercase;
         .main__ideparture {
-          font-family: $mainRegularFont;
-          font-size: $mainBigSize;
-          color: $light-black-transparensy-third;
-          text-indent: 8px;
-          text-transform: uppercase;
-          display: block;
-          border: 1px solid $light-black-transparensy-fourth;
-          border-radius: 4px;
-          width: 160px;
-          height: 44px;
+          @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-third);
+          @extend %smallInput; 
           margin: 6px 0 0 0;
         }
         .main__ideparture::-webkit-calendar-picker-indicator {
-          background: url("../../img/expand_more.png") no-repeat;
+          background: url("../../img/expand_more.png") no-repeat; //CSS JAVASCRIPT
           background-position: 0px 5px;
         }
       }
     }
     .main__guestcount {
-      font-family: $mainBoldFont;
-      color: $light-black;
-      font-weight: bold;
-      font-size: $mainSmallSize;
+      @include fontw($mainBoldFont, $mainSmallSize, $light-black, bold);
       text-transform: uppercase;
       display: block;
       margin: 20px 0 0 0;
       .main__sguestcount {
-        font-family: $mainRegularFont;
-        font-size: $mainBigSize;
-        color: $light-black-transparensy-half;
-        text-indent: 6px;
-        display: block;
-        border: 1px solid $light-black-transparensy-fourth;
-        border-radius: 4px;
-        width: 340px;
-        height: 44px;
+        @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-half);
+        @extend %bigSelect; 
         margin: 6px 0 0 0;
-        appearance: none;
-        background: url("../../img/expand_more.png") no-repeat right;
+        background: url("../../img/expand_more.png") no-repeat right;  //CSS JAVASCRIPT
         background-position: 305px;
       }
     }
     .main__searchbutton {
-      display: block;
       margin: 31px 0 0 0;
-      padding: 14px 0 15px 0;
-      width: 340px;
-      height: 44px;
-      background: url("../../img/arrow_forwardright.png") 95% 50% no-repeat,
-        linear-gradient(180deg, $lilac 0%, $blue 100%);
-      border-radius: 22px;
-      font-family: $mainBoldFont;
-      color: $white-color;
-      font-weight: bold;
-      font-size: $mainSmallSize;
-      text-transform: uppercase;
-      text-align: center;
+      @include fontw($mainBoldFont, $mainSmallSize,  $white-color, bold);  //CSS
+      @extend %bigButton;
     }
   }
   &__legend {
     position: absolute;
     top: 764px;
     left: 1056px;
-    font-family: $mainRegularFont;
-    font-size: $mainBigSize;
+    @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-third);
     text-indent: -40px;
-    color: $light-black-transparensy-third;
     line-height: 24px;
   }
 }

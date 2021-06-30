@@ -1,14 +1,7 @@
 @import "../utils/fonts.scss";
 @import "../utils/vars.scss";
 @import "../utils/reset.scss";
-
-@mixin flexbox() {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-}
+@import "../utils/mixins.scss";
 
 .wrapper {
   width: 100%;

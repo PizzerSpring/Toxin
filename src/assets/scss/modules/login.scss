@@ -1,14 +1,7 @@
 @import "../utils/fonts.scss";
 @import "../utils/vars.scss";
 @import "../utils/reset.scss";
-
-@mixin flexbox() {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-}
+@import "../utils/mixins.scss";
 
 .wrapper {
   width: 100%;
@@ -39,73 +32,30 @@
     top: 230px;
     box-shadow: 0px 0px 25px $almostblack;
     .sectionlogin__logintitle {
-      font-family: $mainBoldFont;
-      color: $light-black;
-      font-weight: bold;
-      font-size: 24px;
+      @include fontw($mainBoldFont, 24px, $light-black, bold);
     }
     .sectionlogin__iusertitle {
-      font-family: $mainRegularFont;
-      font-size: $mainBigSize;
-      color: $light-black-transparensy-fourth;
-      text-indent: 15px;
-      display: block;
+      @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-fourth);
+      @extend %middleInput;
       margin: 20px 0 0 0;
-      border: 1px solid $light-black-transparensy-fourth;
-      border-radius: 4px;
-      width: 320px;
-      height: 44px;
     }
     .sectionlogin__ipass {
-      font-family: $mainRegularFont;
-      font-size: $mainBigSize;
-      color: $light-black-transparensy-fourth;
-      text-indent: 15px;
-      display: block;
+      @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-fourth);
+      @extend %middleInput;
       margin: 10px 0 0 0;
-      border: 1px solid $light-black-transparensy-fourth;
-      border-radius: 4px;
-      width: 320px;
-      height: 44px;
     }
     .sectionlogin__signin {
-      display: block;
+      @extend %middleButton; // CSS
       margin: 20px 0 0 0;
-      padding: 14px 0 15px 0;
-      width: 320px;
-      height: 44px;
-      background: url("../../img/arrow_forwardright.png") 95% 50% no-repeat,
-        linear-gradient(180deg, $lilac 0%, $blue 100%);
-      border-radius: 22px;
-      font-family: $mainBoldFont;
-      color: $white-color;
-      font-weight: bold;
-      font-size: $mainSmallSize;
-      text-transform: uppercase;
-      text-align: center;
     }
     .sectionlogin__noaccaunt {
       display: inline-block;
       margin: 0 47px 0 0;
-      font-family: $mainRegularFont;
-      font-size: $mainBigSize;
-      color: $black-color;
+      @include font($mainRegularFont, $mainBigSize, $black-color);
     }
     .sectionlogin__create {
-      display: inline-block;
+      @extend %smallButton;
       margin: 30px 0 0 0;
-      padding: 13px 0 15px 0;
-      width: 99px;
-      height: 44px;
-      border-radius: 22px;
-      font-family: $mainBoldFont;
-      color: $lilac;
-      background: $white-color;
-      border: 2px solid $lilac;
-      font-weight: bold;
-      font-size: $mainSmallSize;
-      text-transform: uppercase;
-      text-align: center;
     }
   }
 }

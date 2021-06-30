@@ -1,14 +1,7 @@
 @import "../utils/fonts.scss";
 @import "../utils/vars.scss";
 @import "../utils/reset.scss";
-
-@mixin flexbox() {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-}
+@import "../utils/mixins.scss";
 
 .wrapper {
   width: 100%;
@@ -32,9 +25,7 @@
     .footer__column1 {
       margin-right: 50px;
       .footer__text {
-        font-family: $mainRegularFont;
-        font-size: $mainBigSize;
-        color: $light-black-transparensy-third;
+        @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-third); 
         line-height: 24px;
         margin: 20px 0 0 0;
       }
@@ -42,16 +33,11 @@
     .footer__column2 {
       margin-right: 57px;
       .footer__logolist {
-        font-family: $mainBoldFont;
-        font-size: $mainSmallSize;
-        font-weight: bold;
-        color: $light-black;
+        @include fontw($mainBoldFont, $mainSmallSize, $light-black, bold);
         text-transform: uppercase;
       }
       .footer__menulink {
-        font-family: $mainRegularFont;
-        font-size: $mainBigSize;
-        color: $light-black-transparensy-half;
+        @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-half);
         line-height: 17px;
         display: inline-block;
         margin: 25px 0 0 0;
@@ -60,16 +46,11 @@
     .footer__column3 {
       margin-right: 95px;
       .footer__logolist {
-        font-family: $mainBoldFont;
-        font-size: $mainSmallSize;
-        font-weight: bold;
-        color: $light-black;
+        @include fontw($mainBoldFont, $mainSmallSize, $light-black, bold);
         text-transform: uppercase;
       }
       .footer__menulink {
-        font-family: $mainRegularFont;
-        font-size: $mainBigSize;
-        color: $light-black-transparensy-half;
+        @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-half);
         line-height: 17px;
         display: inline-block;
         margin: 25px 0 0 0;
@@ -78,16 +59,11 @@
     .footer__column4 {
       margin-right: 70px;
       .footer__logolist {
-        font-family: $mainBoldFont;
-        font-size: $mainSmallSize;
-        font-weight: bold;
-        color: $light-black;
+        @include fontw($mainBoldFont, $mainSmallSize, $light-black, bold);
         text-transform: uppercase;
       }
       .footer__menulink {
-        font-family: $mainRegularFont;
-        font-size: $mainBigSize;
-        color: $light-black-transparensy-half;
+        @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-half);
         line-height: 17px;
         display: inline-block;
         margin: 25px 0 0 0;
@@ -96,17 +72,12 @@
     .footer__column5 {
       margin-right: 0;
       .footer__text {
-        font-family: $mainRegularFont;
-        font-size: $mainBigSize;
-        color: $light-black-transparensy-third;
+        @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-third);
         line-height: 24px;
         margin: 20px 0 0 0;
       }
       .footer__logolist {
-        font-family: $mainBoldFont;
-        font-size: $mainSmallSize;
-        font-weight: bold;
-        color: $light-black;
+        @include fontw($mainBoldFont, $mainSmallSize, $light-black, bold); 
         text-transform: uppercase;
       }
       .footer__send {
@@ -121,7 +92,7 @@
           margin: auto 0;
           width: 25px;
           height: 25px;
-          background: url("../../img/arrow_forward.png") no-repeat;
+          background: url("../../img/arrow_forward.png") no-repeat; //CSS JAVACSRIPT 
           background-size: cover;
         }
         .footer__e-mail {
@@ -131,9 +102,7 @@
           width: 270px;
           height: 46px;
           text-indent: 15px;
-          font-family: $mainRegularFont;
-          font-size: $mainBigSize;
-          color: $light-black-transparensy-fourth; /****/
+          @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-fourth); 
         }
       }
     }
@@ -146,9 +115,7 @@
     height: 70px;
     padding-top: 26px;
     .footer__copyright {
-      font-family: $mainRegularFont;
-      font-size: 14.7px;
-      color: $light-black-transparensy-third;
+      @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-third);
       text-indent: -3px;
     }
     .footer__iconlink {

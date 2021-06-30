@@ -5,7 +5,7 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Войти 
-    .wrapper
+    .wrapper  
        include ../../pug/includes/modules/header.pug
        section.sectionlogin
          form(action="").sectionlogin__loginform
@@ -14,8 +14,8 @@ html(lang="en")
              input(type="text", placeholder="Email", id="usertitle").sectionlogin__iusertitle
            label(for="pass").sectionlogin__pass
              input(type="text", placeholder="Пароль", id="pass").sectionlogin__ipass
-           button.sectionlogin__signin  войти
+           a(href="search.html").sectionlogin__signin  войти
            p.sectionlogin__noaccaunt Нет аккаунта на Toxin? 
-           button.sectionlogin__create  создать
+           a(href="registration.html").sectionlogin__create  создать
        include ../../pug/includes/modules/footer.pug     
     body 

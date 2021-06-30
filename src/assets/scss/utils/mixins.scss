@@ -1,4 +1,5 @@
 // px to rem
+
 @function rem($pixels, $context: $mainFontSize) {
   @if (unitless($pixels)) {
     $pixels: $pixels * 1px;
@@ -9,14 +10,114 @@
   @return $pixels / $context * 1rem;
 }
 
-@mixin size($width,$height: $width) {
+@mixin size($width, $height: $width) {
   width: $width;
   height: $height;
 }
 
 @mixin placeholder {
-  ::-webkit-input-placeholder {@content}
-  :-moz-placeholder           {@content}
-  ::-moz-placeholder          {@content}
-  :-ms-input-placeholder      {@content}
+  ::-webkit-input-placeholder {
+    @content;
+  }
+  :-moz-placeholder {
+    @content;
+  }
+  ::-moz-placeholder {
+    @content;
+  }
+  :-ms-input-placeholder {
+    @content;
+  }
+}
+
+//mixins with prefics
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+//mixins
+
+@mixin font($ff, $fz, $fc) {
+  font-family: $ff;
+  font-size: $fz;
+  color: $fc;
+}
+
+@mixin fontw($ff, $fz, $fc, $fw) {
+  font-family: $ff;
+  font-size: $fz;
+  color: $fc;
+  font-weight: $fw;
+}
+
+//extends
+
+%smallInput {
+  text-indent: 8px;
+  text-transform: uppercase;
+  display: block;
+  border: 1px solid $light-black-transparensy-fourth;
+  border-radius: 4px;
+  width: 160px;
+  height: 44px;
+}
+
+%middleInput {
+  text-indent: 15px;
+  display: block;
+  border: 1px solid $light-black-transparensy-fourth;
+  border-radius: 4px;
+  width: 320px;
+  height: 44px;
+}
+
+%bigSelect {
+  text-indent: 6px;
+  display: block;
+  border: 1px solid $light-black-transparensy-fourth;
+  border-radius: 4px;
+  width: 340px;
+  height: 44px;
+  appearance: none;
+}
+
+%middleButton {
+  display: block;
+  padding: 15px 0 15px 0;
+  width: 320px;
+  height: 44px;
+  background: url("../../img/arrow_forwardright.png") 95% 50% no-repeat, linear-gradient(180deg, $lilac 0%, $blue 100%);
+  border-radius: 22px;
+  @include fontw($mainBoldFont, $mainSmallSize, $white-color, bold);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+%smallButton {
+  display: inline-block;
+  padding: 14px 0 15px 0;
+  width: 99px;
+  height: 44px;
+  border-radius: 22px;
+  @include fontw($mainBoldFont, $mainSmallSize, $lilac, bold);
+  background: $white-color;
+  border: 2px solid $lilac;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+%bigButton {
+  display: block;
+  padding: 14px 0 15px 0;
+  width: 340px;
+  height: 44px;
+  background: url("../../img/arrow_forwardright.png") 95% 50% no-repeat, linear-gradient(180deg, $lilac 0%, $blue 100%);
+  border-radius: 22px;
+  text-transform: uppercase;
+  text-align: center;
 }
