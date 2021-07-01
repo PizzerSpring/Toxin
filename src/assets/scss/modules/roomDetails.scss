@@ -35,18 +35,12 @@
       @include flexbox();
       justify-content: space-between;
       .sectionabout__info {
-        font-family: $mainBoldFont;
-        font-weight: bold;
-        font-size: 19px;
-        color: $light-black;
+        @include fontw($mainBoldFont, 19px, $light-black, bold);
       }
       .sectionabout__comfort {
         display: inline-block;
         margin: 23px 0 0 10px;
-        font-family: $mainBoldFont;
-        font-weight: bold;
-        font-size: $mainBigSize;
-        color: $light-black-transparensy-third;
+        @include fontw($mainBoldFont, $mainBigSize, $light-black-transparensy-third, bold);
       }
       .sectionabout__smile {
         display: inline-block;
@@ -54,9 +48,7 @@
       }
       .sectionabout__walls {
         margin: -14px 0 0 53px;
-        font-family: $mainRegularFont;
-        font-size: $mainBigSize;
-        color: $light-black-transparensy-third;
+        @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-third);
       }
       .sectionabout__wallsline {
         margin: 25px 0 -15px 0;
@@ -67,10 +59,7 @@
       .sectionabout__convenience {
         display: inline-block;
         margin: 41px 0 0 14px;
-        font-family: $mainBoldFont;
-        font-weight: bold;
-        font-size: $mainBigSize;
-        color: $light-black-transparensy-third;
+        @include fontw($mainBoldFont, $mainBigSize, $light-black-transparensy-third, bold);
       }
       .sectionabout__locationcity {
         display: inline-block;
@@ -78,9 +67,7 @@
       }
       .sectionabout__bedroom {
         margin: -14px 0 0 53px;
-        font-family: $mainRegularFont;
-        font-size: $mainBigSize;
-        color: $light-black-transparensy-third;
+        @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-third);
       }
       .sectionabout__bedroomline {
         margin: 25px 0 -15px 0;
@@ -91,10 +78,7 @@
       .sectionabout__cosiness {
         display: inline-block;
         margin: 41px 0 0 14px;
-        font-family: $mainBoldFont;
-        font-weight: bold;
-        font-size: $mainBigSize;
-        color: $light-black-transparensy-third;
+        @include fontw($mainBoldFont, $mainBigSize, $light-black-transparensy-third, bold);
       }
       .sectionabout__whatshot {
         display: inline-block;
@@ -102,58 +86,42 @@
       }
       .sectionabout__fireplace {
         margin: -14px 0 0 53px;
-        font-family: $mainRegularFont;
-        font-size: $mainBigSize;
-        color: $light-black-transparensy-third;
+        @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-third);
       }
       .sectionabout__impression {
-        font-family: $mainBoldFont;
-        font-weight: bold;
-        font-size: 19px;
-        color: $light-black;
+        @include fontw($mainBoldFont, 19px, $light-black, bold);
       }
       .sectionabout__voicesflex {
         display: flex;
         .sectionabout__voices {
           margin: 21px 0 0 0;
-          font-family: $mainBoldFont;
-          font-weight: bold;
-          font-size: 24px;
-          color: $lilac;
+          @include fontw($mainBoldFont, 24px, $lilac, bold);
           border: 4px solid;
           border-radius: 50%;
           padding: 30px;
-          text-align: center;
+          text-align: center;  
           .sectionabout__voicescolor {
             font-family: $mainRegularFont;
             font-size: $mainSmallSize;
-            vertical-align: top;
+            vertical-align: top;  // CSS 
           }
         }
         .sectionabout__list {
           margin: 50px 0 0 30px;
           .sectionabout__sumptuously {
-            font-family: $mainRegularFont;
-            font-size: $mainBigSize;
-            color: $light-black-transparensy-third;
+            @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-third);
           }
           .sectionabout__well {
             margin: 10px 0 0 0;
-            font-family: $mainRegularFont;
-            font-size: $mainBigSize;
-            color: $light-black-transparensy-third;
+            @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-third);
           }
           .sectionabout__satisfactorily {
             margin: 10px 0 0 0;
-            font-family: $mainRegularFont;
-            font-size: $mainBigSize;
-            color: $light-black-transparensy-third;
+            @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-third);
           }
           .sectionabout__dissapointed {
             margin: 10px 0 0 0;
-            font-family: $mainRegularFont;
-            font-size: $mainBigSize;
-            color: $light-black-transparensy-third;
+            @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-third); // CSS 
           }
         }
       }
@@ -163,15 +131,10 @@
       .sectionabout__reviews {
         display: inline-block;
         margin-right: 347px;
-        font-family: $mainBoldFont;
-        font-weight: bold;
-        font-size: 19px;
-        color: $light-black;
+        @include fontw($mainBoldFont, 19px, $light-black, bold);
       }
       .sectionabout__reviewscount {
-        font-family: $mainRegularFont;
-        font-size: $mainBigSize;
-        color: $light-black-transparensy-half;
+        @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-half);
       }
       .sectionabout__murad {
         display: inline-block;
@@ -180,26 +143,18 @@
       .sectionabout__username1 {
         display: inline-block;
         margin: 23px 0 0 -15px;
-        font-family: $mainBoldFont;
-        font-weight: bold;
-        font-size: $mainBigSize;
-        color: $light-black-transparensy-third;
+        @include fontw($mainBoldFont, $mainBigSize, $light-black-transparensy-third, bold);
         .sectionabout__time {
           display: inline-block;
           margin: 15px 0 0 0;
-          font-family: $mainRegularFont;
-          font-size: $mainBigSize;
-          font-weight: normal;
-          color: $light-black-transparensy-third;
+          @include fontw($mainRegularFont, $mainBigSize, $light-black-transparensy-third, normal);  // CSS JAVACRIPT
         }
       }
       .sectionabout__comment1 {
         display: inline-block;
         margin: 0 0 0 10px;
-        font-family: $mainRegularFont;
-        font-size: $mainBigSize;
+        @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-third);
         line-height: 24px;
-        color: $light-black-transparensy-third;
       }
 
       .sectionabout__patricia {
@@ -209,26 +164,18 @@
       .sectionabout__username2 {
         display: inline-block;
         margin: 23px 0 0 -15px;
-        font-family: $mainBoldFont;
-        font-weight: bold;
-        font-size: 14.5px;
-        color: $light-black-transparensy-third;
+        @include fontw($mainBoldFont, 14.5px, $light-black-transparensy-third, bold);
         .sectionabout__time {
           display: inline-block;
           margin: 15px 0 0 0;
-          font-family: $mainRegularFont;
-          font-size: $mainBigSize;
-          font-weight: normal;
-          color: $light-black-transparensy-third;
+          @include fontw($mainRegularFont, $mainBigSize, $light-black-transparensy-third, normal); // CSS JAVACRIPT
         }
       }
       .sectionabout__comment2 {
         display: inline-block;
         margin: 0 0 0 10px;
-        font-family: $mainRegularFont;
-        font-size: $mainBigSize;
+        @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-third);
         line-height: 24px;
-        color: $light-black-transparensy-third;
       }
     }
     .sectionabout__roomrules {
@@ -237,61 +184,43 @@
       justify-content: space-between;
       .sectionabout__roomrulestitle {
         margin: 0 0 0 20px;
-        font-family: $mainBoldFont;
-        font-weight: bold;
-        font-size: 19px;
-        color: $light-black;
+        @include fontw($mainBoldFont, 19px, $light-black, bold);
       }
       .sectionabout__roomruleslist {
         margin: 20px 0 0 0;
-        font-family: $mainRegularFont;
-        font-size: $mainBigSize;
+        @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-third);
         line-height: 24px;
-        color: $light-black-transparensy-third;
       }
       .sectionabout__roomrulescancel {
-        font-family: $mainBoldFont;
-        font-weight: bold;
-        font-size: 19px;
-        color: $light-black;
+        @include fontw($mainBoldFont, 19px, $light-black, bold);
       }
       .sectionabout__cancel {
         margin: 20px 0 0 0;
-        font-family: $mainRegularFont;
-        font-size: $mainBigSize;
+        @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-third);
         line-height: 24px;
-        color: $light-black-transparensy-third;
       }
     }
     .sectionabout__reservation {
       width: 380px;
       height: 500px;
       border: 1px solid $light-black-transparensy-onetenthtwo;
-      box-shadow: 0px 0px 25px $almostblack;
+      @include box-shadow(0px, 0px, 25px, $almostblack);
       border-radius: 4px;
       padding: 41px 30px;
       .sectionabout__number {
         display: inline-block;
-        margin: 0 125px 0 0;
-        font-family: $mainBoldFont;
-        font-weight: bold;
-        font-size: $mainBigSize;
-        color: $light-black;
+        margin: 0 125px 0 0;  // CSS JAVACRIPT
+        @include fontw($mainBoldFont, $mainBigSize, $light-black, bold);
         .sectionabout__numberlux {
-          font-family: $mainRegularFont;
-          font-size: $mainSmallSize;
-          color: $lilac;
+          @include font($mainRegularFont, $mainSmallSize, $lilac);
         }
       }
       .sectionabout__price {
         display: inline-block;
-        font-family: $mainBoldFont;
-        font-weight: bold;
-        font-size: $mainSmallSize;
-        color: $light-black-transparensy-half;
+        @include fontw($mainBoldFont, $mainSmallSize, $light-black-transparensy-half, bold);
         .sectionabout__pricetime {
           font-family: $mainRegularFont;
-          font-weight: normal;
+          font-weight: normal;  // CSS 
         }
       }
       .sectionabout__topinput {
@@ -299,120 +228,67 @@
         justify-content: space-between;
         margin: 23px 0 0 0;
         .sectionabout__arrival {
-          font-family: $mainBoldFont;
-          color: $light-black;
-          font-weight: bold;
-          font-size: $mainSmallSize;
-          text-transform: uppercase;
+          @include fontw($mainBoldFont, $mainSmallSize, $light-black, bold);
+          text-transform: uppercase;  
           .sectionabout__iarrival {
-            font-family: $mainRegularFont;
-            font-size: $mainBigSize;
-            color: $light-black-transparensy-third;
-            text-indent: 15px;
-            text-transform: uppercase;
-            display: block;
-            border: 1px solid $light-black-transparensy-fourth;
-            border-radius: 4px;
-            width: 150px;
-            height: 44px;
-            margin: 6px 0 0 0;
-            background: url("../../img/expand_more.png") 90% 50% no-repeat;
+            @extend %verySmallInput;  // CSS JAVACRIPT
           }
         }
         .sectionabout__departure {
-          font-family: $mainBoldFont;
-          color: $light-black;
-          font-weight: bold;
-          font-size: $mainSmallSize;
-          text-transform: uppercase;
+          @include fontw($mainBoldFont, $mainSmallSize, $light-black, bold);
+          text-transform: uppercase;  
           .sectionabout__ideparture {
-            font-family: $mainRegularFont;
-            font-size: $mainBigSize;
-            color: $light-black-transparensy-third;
-            text-indent: 15px;
-            text-transform: uppercase;
-            display: block;
-            border: 1px solid $light-black-transparensy-fourth;
-            border-radius: 4px;
-            width: 150px;
-            height: 44px;
-            margin: 6px 0 0 0;
-            background: url("../../img/expand_more.png") 90% 50% no-repeat;
+            @extend %verySmallInput;  // CSS JAVACRIPT  
           }
         }
       }
       .sectionabout__guests {
         display: inline-block;
         margin: 20px 0 0 0;
-        font-family: $mainBoldFont;
-        color: $light-black;
-        font-weight: bold;
-        font-size: $mainSmallSize;
-        text-transform: uppercase;
+        @include fontw($mainBoldFont, $mainSmallSize, $light-black, bold);
+        text-transform: uppercase;  
         .sectionabout__iguests {
-          font-family: $mainRegularFont;
-          font-size: $mainBigSize;
-          color: $light-black-transparensy-half;
-          text-indent: 15px;
-          display: block;
-          border: 1px solid $light-black-transparensy-fourth;
-          border-radius: 4px;
-          width: 320px;
-          height: 44px;
+          @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-half);
+          @extend %middleInput;
           margin: 6px 0 0 0;
           appearance: none;
-          background: url("../../img/expand_more.png") 95% 50% no-repeat;
+          background: url("../../img/expand_more.png") 95% 50% no-repeat;  // CSS JAVACRIPT
         }
       }
       .sectionabout__dayscount {
         display: inline-block;
         margin: 20.5px 136px 0 0;
-        font-family: $mainRegularFont;
-        font-size: $mainBigSize;
-        color: $light-black-transparensy-third;
+        @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-third); 
       }
       .sectionabout__pricedayscount {
-        font-family: $mainRegularFont;
-        font-size: $mainBigSize;
-        color: $light-black-transparensy-third;
+        @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-third); // CSS JAVACRIPT
       }
       .sectionabout__services {
         display: inline-block;
         margin: 20.5px 8px 0 0;
-        font-family: $mainRegularFont;
-        font-size: $mainBigSize;
-        color: $light-black-transparensy-third;
+        @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-third); 
       }
       .sectionabout__signprice1 {
         margin: 16px 40px 0 0;
       }
       .sectionabout__priceservices {
-        font-family: $mainRegularFont;
-        font-size: $mainBigSize;
-        color: $light-black-transparensy-third;
+        @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-third); // CSS JAVACRIPT
       }
       .sectionabout__moreservices {
         display: inline-block;
         margin: 20.5px 8px 0 0;
-        font-family: $mainRegularFont;
-        font-size: $mainBigSize;
-        color: $light-black-transparensy-third;
+        @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-third);
       }
       .sectionabout__signprice2 {
         margin: 18px 95px 0 0;
       }
       .sectionabout__morepriceservices {
-        font-family: $mainRegularFont;
-        font-size: $mainBigSize;
-        color: $light-black-transparensy-third;
+        @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-third);  // CSS JAVACRIPT
       }
       .sectionabout__result {
         display: inline-block;
         margin: 48px 0 0 0;
-        font-family: $mainBoldFont;
-        color: $light-black;
-        font-weight: bold;
-        font-size: 19px;
+        @include fontw($mainBoldFont, 19px, $light-black, bold);
       }
       .sectionabout__resultline {
         display: inline-block;
@@ -420,26 +296,12 @@
         width: 167px;
       }
       .sectionabout__priceresult {
-        font-family: $mainBoldFont;
-        color: $light-black;
-        font-weight: bold;
-        font-size: 19px;
+        @include fontw($mainBoldFont, 19px, $light-black, bold);  // CSS JAVACRIPT
       }
       .sectionabout__book {
-        display: block;
+        @extend %middleButton;
         margin: 20px 0 0 0;
-        padding: 14px 0 15px 0;
-        width: 320px;
-        height: 44px;
-        background: url("../../img/arrow_forwardright.png") 95% 50% no-repeat,
-          linear-gradient(180deg, $lilac 0%, $blue 100%);
-        border-radius: 22px;
-        font-family: $mainBoldFont;
-        color: $white-color;
-        font-weight: bold;
-        font-size: $mainSmallSize;
-        text-transform: uppercase;
-        text-align: center;
+        @include fontw($mainBoldFont, $mainSmallSize, $white-color, bold);
       }
     }
   }

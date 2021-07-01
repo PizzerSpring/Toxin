@@ -40,6 +40,16 @@
   display: flex;
 }
 
+@mixin grid() {
+  display: -ms-grid;
+  display: grid;
+}
+
+@mixin box-shadow($x, $y, $blur, $colorShadow) {
+  -webkit-box-shadow: $x $y $blur $colorShadow;
+  box-shadow: $x $y $blur $colorShadow;
+}
+
 //mixins
 
 @mixin font($ff, $fz, $fc) {
@@ -76,6 +86,19 @@
   height: 44px;
 }
 
+%verySmallInput {
+  @include font($mainRegularFont, $mainSmallSize, $light-black-transparensy-third);
+  text-indent: 15px;
+  text-transform: uppercase;
+  display: block;
+  border: 1px solid $light-black-transparensy-fourth;
+  border-radius: 4px;
+  width: 150px;
+  height: 44px;
+  margin: 6px 0 0 0;
+  background: url("../../img/expand_more.png") 90% 50% no-repeat;
+}
+
 %bigSelect {
   text-indent: 6px;
   display: block;
@@ -84,6 +107,17 @@
   width: 340px;
   height: 44px;
   appearance: none;
+}
+
+%middleSelect {
+  display: block;
+  @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-third);
+  border: 1px solid $light-black-transparensy-fourth;
+  border-radius: 4px;
+  width: 266px;
+  height: 44px;
+  text-indent: 10px;
+  background: url("../../img/expand_more.png") 94% 50% no-repeat;
 }
 
 %middleButton {
@@ -120,4 +154,19 @@
   border-radius: 22px;
   text-transform: uppercase;
   text-align: center;
+}
+
+%moreComfortList {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+%cicrcle {
+  position: absolute;
+  border-radius: 50%;
+  top: 128.5px;
+  border: 1px solid $white-color;
+  width: 8px;
+  height: 7.5px;
+  background-color: transparent;
 }

@@ -1,14 +1,7 @@
 @import "../utils/fonts.scss";
 @import "../utils/vars.scss";
 @import "../utils/reset.scss";
-
-@mixin flexbox() {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-}
+@import "../utils/mixins.scss";
 
 .wrapper {
   width: 100%;
@@ -32,106 +25,64 @@
       .section__darrival {
         display: block;
         margin: 30px 0 0 0;
-        font-family: $mainBoldFont;
-        font-weight: bold;
-        font-size: $mainSmallSize;
+        @include fontw($mainBoldFont, $mainSmallSize, $light-black, bold);
         text-transform: uppercase;
-        color: $light-black;
         .section__idarrival {
-          display: block;
-          margin: 5px 0 0 0;
-          font-family: $mainRegularFont;
-          font-size: $mainBigSize;
-          color: $light-black-transparensy-third;
-          border: 1px solid $light-black-transparensy-fourth;
-          border-radius: 4px;
-          width: 266px;
-          height: 44px;
-          text-indent: 10px;
-          background: url("../../img/expand_more.png") 94% 50% no-repeat;
+          @extend %middleSelect;
+          margin: 5px 0 0 0;  // CSS JAVACRIPT
         }
       }
       .section__guests {
         display: block;
         margin: 20.5px 0 0 0;
-        font-family: $mainBoldFont;
-        font-weight: bold;
-        font-size: $mainSmallSize;
+        @include fontw($mainBoldFont, $mainSmallSize, $light-black, bold);
         text-transform: uppercase;
-        color: $light-black;
         .section__iguests {
-          display: block;
-          margin: 5px 0 0 0;
-          font-family: $mainRegularFont;
-          font-size: $mainBigSize;
-          color: $light-black-transparensy-third;
-          border: 1px solid $light-black-transparensy-fourth;
-          border-radius: 4px;
-          width: 266px;
-          height: 44px;
-          text-indent: 10px;
-          background: url("../../img/expand_more.png") 94% 50% no-repeat;
+          @extend %middleSelect;
+          margin: 5px 0 0 0;  // CSS JAVACRIPT
         }
       }
       .section__rangePrice {
         display: block;
         margin: 30.5px 0 0 0;
-        font-family: $mainBoldFont;
-        font-weight: bold;
-        font-size: $mainSmallSize;
+        @include fontw($mainBoldFont, $mainSmallSize, $light-black, bold);
         text-transform: uppercase;
-        color: $light-black;
         .section__irangePrice {
           display: block;
           margin: 23px 0 0 0;
-          width: 282px;
+          width: 282px;  // CSS JAVACRIPT
         }
         .section__irangePrisescount {
           margin: 0 0 0 42.5px;
           display: inline-block;
-          font-family: $mainRegularFont;
-          font-weight: normal;
-          font-size: $mainSmallSize;
-          color: $light-black-transparensy-half;
+          @include fontw($mainRegularFont, $mainSmallSize, $light-black-transparensy-half, normal); // CSS JAVACRIPT
         }
         .section__irangePrices {
           display: block;
           margin: 13.5px 0 0 0;
-          font-family: $mainRegularFont;
-          font-weight: normal;
-          font-size: $mainSmallSize;
-          color: $light-black-transparensy-half;
+          @include fontw($mainRegularFont, $mainSmallSize, $light-black-transparensy-half, normal);
           text-transform: initial;
         }
       }
       .section__homeRules {
         display: block;
         margin: 30px 0 0 0;
-        font-family: $mainBoldFont;
-        font-weight: bold;
-        font-size: $mainSmallSize;
+        @include fontw($mainBoldFont, $mainSmallSize, $light-black, bold);
         text-transform: uppercase;
-        color: $light-black;
         .section__smoke {
           display: block;
           margin: 17px 0 0 0px;
-          font-family: $mainRegularFont;
-          font-size: $mainBigSize;
-          font-weight: normal;
-          color: $light-black-transparensy-half;
+          @include fontw($mainRegularFont, $mainBigSize, $light-black-transparensy-half, normal);
           text-transform: initial;
           .section__ismokes {
             display: inline-block;
-            margin-left: 9.5px;
+            margin-left: 9.5px; 
           }
         }
         .section__pet {
           display: block;
           margin: 13px 0 0 0px;
-          font-family: $mainRegularFont;
-          font-size: $mainBigSize;
-          font-weight: normal;
-          color: $light-black-transparensy-half;
+          @include fontw($mainRegularFont, $mainBigSize, $light-black-transparensy-half, normal);
           text-transform: initial;
           .section__ipets {
             display: inline-block;
@@ -141,35 +92,26 @@
         .section__invite {
           display: block;
           margin: 13px 0 0 0px;
-          font-family: $mainRegularFont;
-          font-size: $mainBigSize;
-          font-weight: normal;
-          color: $light-black-transparensy-half;
+          @include fontw($mainRegularFont, $mainBigSize, $light-black-transparensy-half, normal);
           text-transform: initial;
           .section__iinvite {
             vertical-align: top;
           }
           .section__iinvites {
             display: inline-block;
-            margin-left: 9.5px;
+            margin-left: 9.5px;  // CSS JAVACRIPT
           }
         }
       }
       .section__availability {
         display: block;
         margin: 31.5px 0 0 0px;
-        font-family: $mainBoldFont;
-        font-weight: bold;
-        font-size: $mainSmallSize;
+        @include fontw($mainBoldFont, $mainSmallSize,  $light-black, bold);
         text-transform: uppercase;
-        color: $light-black;
         .section__hall {
           display: block;
           margin: 17px 0 0 0;
-          font-family: $mainBoldFont;
-          font-size: $mainBigSize;
-          font-weight: bold;
-          color: $light-black-transparensy-third;
+          @include fontw($mainBoldFont, $mainBigSize,  $light-black-transparensy-third, bold);
           text-transform: initial;
           .section__ihallm {
             display: inline-block;
@@ -178,20 +120,14 @@
           .section__ihalls {
             display: block;
             margin: 5px 0 0 23px;
-            font-family: $mainRegularFont;
-            font-size: $mainSmallSize;
-            font-weight: normal;
-            color: $light-black-transparensy-half;
+            @include fontw($mainRegularFont, $mainSmallSize, $light-black-transparensy-half, normal);
             line-height: 14px;
           }
         }
         .section__invalid {
           display: block;
           margin: 11px 0 0 0;
-          font-family: $mainBoldFont;
-          font-size: $mainBigSize;
-          font-weight: bold;
-          color: $light-black-transparensy-third;
+          @include fontw($mainBoldFont, $mainBigSize,  $light-black-transparensy-third, bold);
           text-transform: initial;
           .section__iinvalidm {
             display: inline-block;
@@ -200,121 +136,78 @@
           .section__iinvalids {
             display: block;
             margin: 5px 0 0 23px;
-            font-family: $mainRegularFont;
-            font-size: $mainSmallSize;
-            font-weight: normal;
-            color: $light-black-transparensy-half;
+            @include fontw($mainRegularFont, $mainSmallSize, $light-black-transparensy-half, normal);  // CSS JAVACRIPT
           }
         }
       }
       .section__comfort {
         display: block;
         margin: 30.5px 0 0 0;
-        font-family: $mainBoldFont;
-        font-weight: bold;
-        font-size: $mainSmallSize;
+        @include fontw($mainBoldFont, $mainSmallSize,  $light-black, bold);
         text-transform: uppercase;
-        color: $light-black;
         .section__scomfort {
-          display: block;
           margin: 5px 0 0 0;
-          margin: 5px 0 0 0;
-          font-family: $mainRegularFont;
-          font-size: $mainBigSize;
-          color: $light-black-transparensy-third;
-          border: 1px solid $light-black-transparensy-fourth;
-          border-radius: 4px;
-          width: 266px;
-          height: 44px;
-          text-indent: 10px;
-          appearance: none;
-          background: url("../../img/expand_more.png") 94% 50% no-repeat;
+          @extend %middleSelect;
+          appearance: none;  // CSS JAVACRIPT
         }
       }
       .section__morecomfort {
         margin: 30px 0 0 0;
-        font-family: $mainBoldFont;
-        font-weight: bold;
-        font-size: $mainSmallSize;
+        @include fontw($mainBoldFont, $mainSmallSize,  $light-black, bold);
         text-transform: uppercase;
-        color: $light-black;
-        background: url("../../img/expand_more.png") 40% 2% no-repeat;
+        background: url("../../img/expand_more.png") 40% 2% no-repeat;  // CSS JAVACRIPT
         .section__breakfast {
           display: block;
           margin: 18px 0 0 0;
-          font-family: $mainRegularFont;
-          font-size: $mainBigSize;
-          font-weight: normal;
-          color: $light-black-transparensy-half;
+          @include fontw($mainRegularFont, $mainBigSize, $light-black-transparensy-half, normal);
           text-transform: initial;
           .section__ibreakfasts {
-            display: inline-block;
-            margin-left: 10px;
+            @extend %moreComfortList;
           }
         }
         .section__writetable {
           display: block;
           margin: 12px 0 0 0;
-          font-family: $mainRegularFont;
-          font-size: $mainBigSize;
-          font-weight: normal;
-          color: $light-black-transparensy-half;
+          @include fontw($mainRegularFont, $mainBigSize, $light-black-transparensy-half, normal);
           text-transform: initial;
           .section__iwritetables {
-            display: inline-block;
-            margin-left: 10px;
+            @extend %moreComfortList;
           }
         }
         .section__chair {
           display: block;
           margin: 12px 0 0 0;
-          font-family: $mainRegularFont;
-          font-size: $mainBigSize;
-          font-weight: normal;
-          color: $light-black-transparensy-half;
+          @include fontw($mainRegularFont, $mainBigSize, $light-black-transparensy-half, normal);
           text-transform: initial;
           .section__ichairs {
-            display: inline-block;
-            margin-left: 10px;
+            @extend %moreComfortList;
           }
         }
         .section__bed {
           display: block;
           margin: 12px 0 0 0;
-          font-family: $mainRegularFont;
-          font-size: $mainBigSize;
-          font-weight: normal;
-          color: $light-black-transparensy-half;
+          @include fontw($mainRegularFont, $mainBigSize, $light-black-transparensy-half, normal);
           text-transform: initial;
           .section__ibeds {
-            display: inline-block;
-            margin-left: 10px;
+            @extend %moreComfortList;
           }
         }
         .section__tv {
           display: block;
           margin: 12px 0 0 0;
-          font-family: $mainRegularFont;
-          font-size: $mainBigSize;
-          font-weight: normal;
-          color: $light-black-transparensy-half;
+          @include fontw($mainRegularFont, $mainBigSize, $light-black-transparensy-half, normal);
           text-transform: initial;
           .section__itvs {
-            display: inline-block;
-            margin-left: 10px;
+            @extend %moreComfortList;
           }
         }
         .section__shampoo {
           display: block;
           margin: 12px 0 0 0;
-          font-family: $mainRegularFont;
-          font-size: $mainBigSize;
-          font-weight: normal;
-          color: $light-black-transparensy-half;
+          @include fontw($mainRegularFont, $mainBigSize, $light-black-transparensy-half, normal);
           text-transform: initial;
           .section__ishampoos {
-            display: inline-block;
-            margin-left: 10px;
+            @extend %moreComfortList;  // CSS JAVACRIPT
           }
         }
       }
@@ -325,20 +218,17 @@
     flex-basis: 130%;
     margin-top: 30px;
     .section__cardnumberstitle {
-      font-family: $mainBoldFont;
-      font-weight: bold;
-      font-size: 24px;
-      color: $light-black;
+      @include fontw($mainBoldFont, 24px,  $light-black, bold);
       margin-bottom: 20px;
     }
     .section__gridcontainer {
-      display: grid;
+      @include grid();
       grid-template-columns: 1fr 1fr 1fr;
       gap: 30px;
       .section__cardhotel {
         height: 260px;
         width: 271px;
-        box-shadow: 0px 10px 20px $light-black-transparensy-halfhalf;
+        @include box-shadow(0px, 10px, 20px, $light-black-transparensy-halfhalf);
         border-radius: 4px;
         position: relative;
         .section__numberphoto {
@@ -351,53 +241,29 @@
           top: 128.5px;
           left: 211.5px;
           border: 4px solid $white-color;
-          background-color: $white-color;
+          background-color: $white-color;  
         }
         .section__circle1 {
-          position: absolute;
-          border-radius: 50%;
-          top: 128.5px;
+          @extend %cicrcle;
           left: 225.5px;
-          border: 1px solid $white-color;
-          width: 8px;
-          height: 7.5px;
-          background-color: transparent;
         }
         .section__circle2 {
-          position: absolute;
-          border-radius: 50%;
-          top: 128.5px;
+          @extend %cicrcle;
           left: 239.5px;
-          border: 1px solid $white-color;
-          width: 8px;
-          height: 7.5px;
-          background-color: transparent;
         }
         .section__circle3 {
-          position: absolute;
-          border-radius: 50%;
-          top: 128.5px;
-          left: 252.5px;
-          border: 1px solid $white-color;
-          width: 8px;
-          height: 7.5px;
-          background-color: transparent;
+          @extend %cicrcle;
+          left: 252.5px;  // CSS JAVACRIPT
         }
         .section__number {
           display: inline-block;
           margin: 20px 0 12px 20px;
-          font-family: $mainBoldFont; /*Quicksand!!!!!!!!!!!!*/
-          font-weight: bold;
-          font-size: $mainBigSize;
-          color: $light-black;
+          @include fontw($mainBoldFont, $mainBigSize,  $light-black, bold); /*Quicksand!!!!!!!!!!!!*/
           .section__lux {
             display: inline-block;
             margin-right: 5px;
             margin-left: 8px;
-            font-family: $mainBoldFont;
-            font-weight: bold;
-            font-size: $mainSmallSize;
-            color: $lilac;
+            @include fontw($mainBoldFont, $mainSmallSize,  $lilac, bold);
             text-transform: uppercase;
           }
           .section__nolux {
@@ -408,10 +274,7 @@
         .section__pricelux {
           display: inline-block;
           margin: 0 0 12px 25px;
-          font-family: $mainBoldFont;
-          font-weight: bold;
-          font-size: $mainBigSize;
-          color: $light-black-transparensy-half;
+          @include fontw($mainBoldFont, $mainBigSize,  $light-black-transparensy-half, bold);
           .section__day {
             font-family: $mainRegularFont;
             font-weight: normal;
@@ -426,15 +289,12 @@
         }
         .section__raiting {
           display: inline-block;
-          margin: 8px 0 0 20.2px;
+          margin: 8px 0 0 20.2px;  // CSS JAVACRIPT
         }
         .section__reviews {
           display: inline-block;
           margin: 8px 0 0 27px;
-          font-family: $mainBoldFont;
-          font-weight: bold;
-          font-size: $mainBigSize;
-          color: $light-black-transparensy-half;
+          @include fontw($mainBoldFont, $mainBigSize,  $light-black-transparensy-half, bold);
           vertical-align: bottom;
           .section__revs {
             font-family: $mainRegularFont;
@@ -447,28 +307,24 @@
       margin: 40.5px 0 0 0;
       text-align: center;
       .section__page {
-        font-family: $mainRegularFont;
-        font-size: $mainSmallSize;
-        color: $light-black-transparensy-half;
+        @include font($mainRegularFont, $mainSmallSize, $light-black-transparensy-third);
         word-spacing: 25px;
         .section__onepage {
           display: inline-block;
           background: linear-gradient(180deg, $lilac 0%, $blue 100%);
           border-radius: 50%;
           padding: 15px 19px;
-          font-family: $mainBoldFont;
-          font-weight: bold;
-          font-size: 12px;
-          color: $white-color;
+          @include fontw($mainBoldFont, 12px,  $white-color, bold);
         }
         .section__nextpagearrow {
           background: linear-gradient(180deg, $light-green 0%, $light-blue 100%);
           border-radius: 50%;
-          padding: 13px 13px;
+          padding: 13px 13px;  // CSS JAVACRIPT
         }
       }
       .section__legend {
         margin: 11px 0 0 0;
+        @include font($mainRegularFont, $mainBigSize, $light-black-transparensy-third);
         font-family: $mainRegularFont;
         font-size: $mainBigSize;
         color: $light-black-transparensy-third;
