@@ -29,7 +29,7 @@
         text-transform: uppercase;
         .section__idarrival {
           @extend %middleSelect;
-          margin: 5px 0 0 0;  // CSS JAVACRIPT
+          margin: 5px 0 0 0; // CSS JAVACRIPT
         }
       }
       .section__guests {
@@ -39,7 +39,7 @@
         text-transform: uppercase;
         .section__iguests {
           @extend %middleSelect;
-          margin: 5px 0 0 0;  // CSS JAVACRIPT
+          margin: 5px 0 0 0; // CSS JAVACRIPT
         }
       }
       .section__rangePrice {
@@ -48,9 +48,11 @@
         @include fontw($mainBoldFont, $mainSmallSize, $light-black, bold);
         text-transform: uppercase;
         .section__irangePrice {
+          background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
           display: block;
           margin: 23px 0 0 0;
-          width: 282px;  // CSS JAVACRIPT
+          width: 282px; // CSS JAVACRIPT HTML
+          height: 6px;
         }
         .section__irangePrisescount {
           margin: 0 0 0 42.5px;
@@ -71,91 +73,174 @@
         text-transform: uppercase;
         .section__smoke {
           display: block;
+          position: relative;
           margin: 17px 0 0 0px;
           @include fontw($mainRegularFont, $mainBigSize, $light-black-transparensy-half, normal);
           text-transform: initial;
           .section__ismokes {
             display: inline-block;
-            margin-left: 9.5px; 
+            margin-left: 17.5px;
+            vertical-align: middle;
+          }
+          .section__ismoke {
+            opacity: 0;
+          }
+          .section__radioButtonSmoke {
+            @extend %checkBox;
+                
+            .section__vectorLeftS {
+              @extend %checkboxmarkLeft; 
+            }
+            .section__vectorRightS {
+              @extend %checkboxmarkRight;
+            }
+          }
+          .section__radioButtonSmoke:hover {
+              @extend %chechBoxhover; 
           }
         }
         .section__pet {
           display: block;
-          margin: 13px 0 0 0px;
+          position: relative;
+          margin: 17.5px 0 0 0px;
           @include fontw($mainRegularFont, $mainBigSize, $light-black-transparensy-half, normal);
           text-transform: initial;
+          .section__ipet {
+            opacity: 0;
+          }
+          .section__radioButtonPet {
+            @extend %checkBox;              
+            .section__vectorLeftP {
+              @extend %checkboxmarkLeft;              
+            }
+            .section__vectorRightP {
+              @extend %checkboxmarkRight;
+            }
+          }
+          .section__radioButtonPet:hover {
+            @extend %chechBoxhover;
+          }
           .section__ipets {
             display: inline-block;
-            margin-left: 9.5px;
+            vertical-align: middle;
+            margin-left: 17.5px;
           }
         }
         .section__invite {
           display: block;
-          margin: 13px 0 0 0px;
+          position: relative;
+          margin: 17.5px 0 0 0px;
           @include fontw($mainRegularFont, $mainBigSize, $light-black-transparensy-half, normal);
           text-transform: initial;
           .section__iinvite {
             vertical-align: top;
+            opacity: 0;
           }
           .section__iinvites {
             display: inline-block;
-            margin-left: 9.5px;  // CSS JAVACRIPT
+            margin-left: 17.5px;
+          }
+          .section__radioButtonInvite {
+            @extend %checkBox;          
+            .section__vectorLeftI {
+              @extend %checkboxmarkLeft;             
+            }
+            .section__vectorRightI {
+              @extend %checkboxmarkRight;
+            }
+          }
+          .section__radioButtonInvite:hover {
+              @extend %chechBoxhover;
           }
         }
       }
       .section__availability {
         display: block;
         margin: 31.5px 0 0 0px;
-        @include fontw($mainBoldFont, $mainSmallSize,  $light-black, bold);
+        @include fontw($mainBoldFont, $mainSmallSize, $light-black, bold);
         text-transform: uppercase;
         .section__hall {
           display: block;
+          position: relative;
           margin: 17px 0 0 0;
-          @include fontw($mainBoldFont, $mainBigSize,  $light-black-transparensy-third, bold);
+          @include fontw($mainBoldFont, $mainBigSize, $light-black-transparensy-third, bold);
           text-transform: initial;
           .section__ihallm {
             display: inline-block;
-            margin-left: 10px;
+            margin-left: 17.5px;
           }
+          .section__ihall {
+            opacity: 0;
+          }
+
           .section__ihalls {
             display: block;
-            margin: 5px 0 0 23px;
+            margin: 5px 0 0 30px;
             @include fontw($mainRegularFont, $mainSmallSize, $light-black-transparensy-half, normal);
             line-height: 14px;
+          }
+          .section__radioButtonHall {
+            @extend %checkBox;          
+            .section__vectorLeftH {
+              @extend %checkboxmarkLeft;             
+            }
+            .section__vectorRightH {
+              @extend %checkboxmarkRight;
+            }
+          }
+          .section__radioButtonHall:hover {
+            @extend %chechBoxhover;
           }
         }
         .section__invalid {
           display: block;
+          position: relative;
           margin: 11px 0 0 0;
-          @include fontw($mainBoldFont, $mainBigSize,  $light-black-transparensy-third, bold);
+          @include fontw($mainBoldFont, $mainBigSize, $light-black-transparensy-third, bold);
           text-transform: initial;
           .section__iinvalidm {
             display: inline-block;
-            margin-left: 10px;
+            margin-left: 17.5px;
+          }
+          .section__iinvalid {
+            opacity: 0;
           }
           .section__iinvalids {
             display: block;
-            margin: 5px 0 0 23px;
-            @include fontw($mainRegularFont, $mainSmallSize, $light-black-transparensy-half, normal);  // CSS JAVACRIPT
+            margin: 5px 0 0 30px;
+            @include fontw($mainRegularFont, $mainSmallSize, $light-black-transparensy-half, normal); 
+          }
+          .section__radioButtonInvalid {
+            @extend %checkBox;
+                
+            .section__vectorLeftIn {
+              @extend %checkboxmarkLeft; 
+            }
+            .section__vectorRightIn {
+              @extend %checkboxmarkRight;
+            }
+          }
+          .section__radioButtonInvalid:hover {
+              @extend %chechBoxhover; 
           }
         }
       }
       .section__comfort {
         display: block;
         margin: 30.5px 0 0 0;
-        @include fontw($mainBoldFont, $mainSmallSize,  $light-black, bold);
+        @include fontw($mainBoldFont, $mainSmallSize, $light-black, bold);
         text-transform: uppercase;
         .section__scomfort {
           margin: 5px 0 0 0;
           @extend %middleSelect;
-          appearance: none;  // CSS JAVACRIPT
+          appearance: none; // CSS JAVACRIPT
         }
       }
       .section__morecomfort {
         margin: 30px 0 0 0;
-        @include fontw($mainBoldFont, $mainSmallSize,  $light-black, bold);
+        @include fontw($mainBoldFont, $mainSmallSize, $light-black, bold);
         text-transform: uppercase;
-        background: url("../../img/expand_more.png") 40% 2% no-repeat;  // CSS JAVACRIPT
+        background: url("../../img/expand_more.png") 40% 2% no-repeat; // CSS JAVACRIPT
         .section__breakfast {
           display: block;
           margin: 18px 0 0 0;
@@ -207,7 +292,7 @@
           @include fontw($mainRegularFont, $mainBigSize, $light-black-transparensy-half, normal);
           text-transform: initial;
           .section__ishampoos {
-            @extend %moreComfortList;  // CSS JAVACRIPT
+            @extend %moreComfortList; // CSS JAVACRIPT
           }
         }
       }
@@ -218,7 +303,7 @@
     flex-basis: 130%;
     margin-top: 30px;
     .section__cardnumberstitle {
-      @include fontw($mainBoldFont, 24px,  $light-black, bold);
+      @include fontw($mainBoldFont, 24px, $light-black, bold);
       margin-bottom: 20px;
     }
     .section__gridcontainer {
@@ -241,7 +326,7 @@
           top: 128.5px;
           left: 211.5px;
           border: 4px solid $white-color;
-          background-color: $white-color;  
+          background-color: $white-color;
         }
         .section__circle1 {
           @extend %cicrcle;
@@ -253,17 +338,17 @@
         }
         .section__circle3 {
           @extend %cicrcle;
-          left: 252.5px;  // CSS JAVACRIPT
+          left: 252.5px; // CSS JAVACRIPT
         }
         .section__number {
           display: inline-block;
           margin: 20px 0 12px 20px;
-          @include fontw($mainBoldFont, $mainBigSize,  $light-black, bold); /*Quicksand!!!!!!!!!!!!*/
+          @include fontw($mainBoldFont, $mainBigSize, $light-black, bold); /*Quicksand!!!!!!!!!!!!*/
           .section__lux {
             display: inline-block;
             margin-right: 5px;
             margin-left: 8px;
-            @include fontw($mainBoldFont, $mainSmallSize,  $lilac, bold);
+            @include fontw($mainBoldFont, $mainSmallSize, $lilac, bold);
             text-transform: uppercase;
           }
           .section__nolux {
@@ -274,7 +359,7 @@
         .section__pricelux {
           display: inline-block;
           margin: 0 0 12px 25px;
-          @include fontw($mainBoldFont, $mainBigSize,  $light-black-transparensy-half, bold);
+          @include fontw($mainBoldFont, $mainBigSize, $light-black-transparensy-half, bold);
           .section__day {
             font-family: $mainRegularFont;
             font-weight: normal;
@@ -289,12 +374,12 @@
         }
         .section__raiting {
           display: inline-block;
-          margin: 8px 0 0 20.2px;  // CSS JAVACRIPT
+          margin: 8px 0 0 20.2px; // CSS JAVACRIPT
         }
         .section__reviews {
           display: inline-block;
           margin: 8px 0 0 27px;
-          @include fontw($mainBoldFont, $mainBigSize,  $light-black-transparensy-half, bold);
+          @include fontw($mainBoldFont, $mainBigSize, $light-black-transparensy-half, bold);
           vertical-align: bottom;
           .section__revs {
             font-family: $mainRegularFont;
@@ -314,12 +399,12 @@
           background: linear-gradient(180deg, $lilac 0%, $blue 100%);
           border-radius: 50%;
           padding: 15px 19px;
-          @include fontw($mainBoldFont, 12px,  $white-color, bold);
+          @include fontw($mainBoldFont, 12px, $white-color, bold);
         }
         .section__nextpagearrow {
           background: linear-gradient(180deg, $light-green 0%, $light-blue 100%);
           border-radius: 50%;
-          padding: 13px 13px;  // CSS JAVACRIPT
+          padding: 13px 13px; // CSS JAVACRIPT
         }
       }
       .section__legend {
@@ -332,3 +417,7 @@
     }
   }
 }
+
+
+
+
